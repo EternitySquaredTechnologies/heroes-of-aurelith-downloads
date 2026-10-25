@@ -1,0 +1,1424 @@
+[
+  {
+    "id": "osbric",
+    "name": "Warden Osbric Greyhelm",
+    "role": "Captain of the royal guard",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#8a8a92",
+      "cloth": "#4a5a7a",
+      "accent": "#c8a050",
+      "hat": "helm"
+    },
+    "greeting": [
+      "Another stranger. Good. The ones I know are all dead or under suspicion.",
+      "Stay out of the Tower after dark and we will get along."
+    ],
+    "talk": [
+      {
+        "label": "What happened here?",
+        "lines": [
+          "The king is dead. Poisoned, then stabbed, in his own tower, eleven days ago. The Crown was lifted from its stand.",
+          "We found a white mask on the floor with its eyeholes sealed. Make of that what you like. I have made nothing of it yet."
+        ]
+      },
+      {
+        "label": "Who are you?",
+        "lines": [
+          "Osbric. I commanded the guard for thirty years. I still do, for the few I trust.",
+          "I do not have many. That is why I am speaking to you."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "maud",
+    "name": "Sergeant Maud Harrow",
+    "role": "Drill sergeant",
+    "look": {
+      "g": "f",
+      "skin": 2,
+      "hair": "#4a2e1c",
+      "cloth": "#7a3a34",
+      "accent": "#d8d8e0",
+      "hat": "none"
+    },
+    "greeting": [
+      "Stand up straight. Hold that sword like you mean it.",
+      "The yard is yours when you want it. The monsters in the Reach are for after."
+    ],
+    "talk": [
+      {
+        "label": "Tell me about fighting.",
+        "lines": [
+          "One level for everything. You earn points as you climb and spend them in the skill tree, press K. Swords, bows, staves, shields: any of them can carry you the whole way.",
+          "A shield in your off hand opens the Defense tree and takes a flat slice off every blow. Wear one even if you fight from a distance."
+        ]
+      },
+      {
+        "label": "Can I hire a sword?",
+        "lines": [
+          "Not yet. Contracts for sellswords, archers, and hedge mages are being drawn up. Come back when the clerks are done arguing."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "dagny",
+    "name": "Quartermaster Dagny Fell",
+    "role": "Armory",
+    "look": {
+      "g": "f",
+      "skin": 3,
+      "hair": "#2a1a14",
+      "cloth": "#5a5040",
+      "accent": "#c89a3c",
+      "hat": "none"
+    },
+    "greeting": [
+      "Armor is cheaper than a funeral. Look around."
+    ],
+    "talk": [
+      {
+        "label": "About the gear",
+        "lines": [
+          "Leather for the quick, chain for the stubborn. Tier two needs level 10 to wear, tier three needs 20. I do not sell moonsilver. Nobody does."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "armory"
+      }
+    ]
+  },
+  {
+    "id": "corwin",
+    "name": "Corwin Vale",
+    "role": "Keeper of the Storage",
+    "look": {
+      "g": "m",
+      "skin": 0,
+      "hair": "#c8c0b0",
+      "cloth": "#3a4a5a",
+      "accent": "#e8c860",
+      "hat": "none"
+    },
+    "greeting": [
+      "Welcome to the Storage. Everything you leave is yours alone, and it stays in every town you visit."
+    ],
+    "talk": [
+      {
+        "label": "How does it work?",
+        "lines": [
+          "You have 120 places to set things down. The Crown Steward can sell you more. Put gear and spare ore in, take it out anywhere there is a storage keeper.",
+          "I also change coin. A hundred iron bits for one gold coin, and the same back. No fee. I am not that sort of man."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "storage"
+      }
+    ]
+  },
+  {
+    "id": "ferrin",
+    "name": "Ferrin Dray",
+    "role": "General Goods",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#6a4a2a",
+      "cloth": "#7a6a3a",
+      "accent": "#d8c890",
+      "hat": "none"
+    },
+    "greeting": [
+      "Rope, bread, axes, anything. If I do not have it, you do not need it."
+    ],
+    "talk": [
+      {
+        "label": "Where do I start?",
+        "lines": [
+          "Buy an axe, a pickaxe, a rod, and a snare. Chop pine west of the wall, dig copper and tin at the Old Quarry east of it, fish the pond south, and snare rabbits in the meadow beyond.",
+          "Cook what you catch at the range in the Gilded Hound. Smelt and forge at Brandt. Craft at the hall. Sell me what you do not need. I pay forty percent. It is not personal."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "general_store"
+      }
+    ]
+  },
+  {
+    "id": "brandt",
+    "name": "Tolliver Brandt",
+    "role": "Smith",
+    "look": {
+      "g": "m",
+      "skin": 3,
+      "hair": "#2a1a14",
+      "cloth": "#6a4a3a",
+      "accent": "#d86a3c",
+      "hat": "none"
+    },
+    "greeting": [
+      "Mind the sparks. Bronze today, steel when you have earned it."
+    ],
+    "talk": [
+      {
+        "label": "How do I smith?",
+        "lines": [
+          "Smelt at the furnace: one copper and one tin make a bronze bar. Then the anvil. Daggers take a bar, swords take two. The higher the tier, the higher your Smithing level has to be: 1, 10, 20, 30."
+        ]
+      },
+      {
+        "label": "Do you know Gimrik?",
+        "lines": [
+          "Old Gimrik Ironvein? Every smith knows Gimrik. He will not forge what he is not proud of. I forge it anyway and sleep fine."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "smithy"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "hild",
+    "name": "Hild Wefting",
+    "role": "Master of the Crafters Hall",
+    "look": {
+      "g": "f",
+      "skin": 1,
+      "hair": "#8a5a3a",
+      "cloth": "#4a7a5a",
+      "accent": "#e8d8a0",
+      "hat": "none"
+    },
+    "greeting": [
+      "Come in, come in. Do not sit on the bench, it is not finished."
+    ],
+    "talk": [
+      {
+        "label": "What can I make here?",
+        "lines": [
+          "At the bench: bows and staves from logs, and armor from hides. Two logs make a bow. Four hides make a jerkin. Snare rabbits for soft leather.",
+          "The levels match the gear tiers. Level 10 for iron-grade, 20 and 30 beyond."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "crafters_hall"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "bram",
+    "name": "Bram Oakley",
+    "role": "Innkeeper, the Gilded Hound",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#6a4a2a",
+      "cloth": "#8a5a3a",
+      "accent": "#f4f0dc",
+      "hat": "none"
+    },
+    "greeting": [
+      "A bed, a bowl, or both? The range is free for guests."
+    ],
+    "talk": [
+      {
+        "label": "The name of the inn?",
+        "lines": [
+          "The Gilded Hound. The hound was a real hound. The gold was the king's idea of a joke. He drank here once, before the Tower got his attention."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "inn",
+        "cost": 4
+      },
+      {
+        "kind": "shop",
+        "shop": "tavern"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "wystan",
+    "name": "Wystan the Piper",
+    "role": "Bard",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#c88a3a",
+      "cloth": "#7a3a6a",
+      "accent": "#f0d070",
+      "hat": "feather"
+    },
+    "greeting": [
+      "A song for a bit? Fine. A song for nothing? Even better."
+    ],
+    "talk": [
+      {
+        "label": "Sing something.",
+        "lines": [
+          "\"In the days when the Well was young, and men feared it not, / the bells of Aldmoor rang at dusk to call the wanderers home.\"",
+          "That is as far as I got. The rest is in Innsharrow, and I am not going to Innsharrow."
+        ]
+      },
+      {
+        "label": "Heard any rumors?",
+        "lines": [
+          "The cook in the Tower swears her stew was clean. The stable boy swears a masked figure left by night. The guard swears at everyone.",
+          "I would ask Tam. He sees more than he says."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "elowen",
+    "name": "Magister Elowen Vane",
+    "role": "Academy of the Royal Art",
+    "look": {
+      "g": "f",
+      "skin": 0,
+      "hair": "#e8e8f0",
+      "cloth": "#4a3a8a",
+      "accent": "#e8c860",
+      "hat": "none"
+    },
+    "greeting": [
+      "Magic is a craft, not a gift. You, however, look like you have a little of both."
+    ],
+    "talk": [
+      {
+        "label": "Explain the skill trees.",
+        "lines": [
+          "There are four: Melee, Range, Magic, Defense. You earn points with every level, five a level up to fifty. Spend them where you like. Rows open at levels 8, 16, 24, 32, and 40.",
+          "Skills joined to one another feed each other: three percent more damage for every rank in the skill above. All four trees can carry you through any content if you commit to one."
+        ]
+      },
+      {
+        "label": "Is the Academy still open?",
+        "lines": [
+          "It is open. The king funded half of it, so we are open for as long as the chancellor can find the other half."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "academy"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "pell",
+    "name": "Initiate Pell",
+    "role": "Academy student",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#4a2e1c",
+      "cloth": "#6a5a9a",
+      "accent": "#c8d8f0",
+      "hat": "none"
+    },
+    "greeting": [
+      "I am supposed to be copying runes. Do not tell the Magister you saw me."
+    ],
+    "talk": [
+      {
+        "label": "What do you study?",
+        "lines": [
+          "Orundel. The thing under everything. It leaks upward and makes wolves cast two shadows. Nobody knows why. I am going to find out and then I am going to be famous."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "aldous",
+    "name": "Lord Steward Aldous Pryce",
+    "role": "Crown Steward",
+    "look": {
+      "g": "m",
+      "skin": 0,
+      "hair": "#c8c8d0",
+      "cloth": "#7a2a34",
+      "accent": "#e8c860",
+      "hat": "none"
+    },
+    "greeting": [
+      "The Crown has no king and the Tower has a steward. That is the arrangement.",
+      "Deeds earn the realm's favor. I trade in it."
+    ],
+    "talk": [
+      {
+        "label": "What is favor?",
+        "lines": [
+          "Tokens of the realm's thanks. You earn them for deeds, never for coin. They cannot be traded or sold, which is the point.",
+          "I can give you a title to wear or more room in the Storage."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "steward",
+        "perks": [
+          {
+            "id": "title_reach_walker",
+            "label": "Title: Reach-Walker",
+            "cost": 2,
+            "type": "title",
+            "value": "Reach-Walker"
+          },
+          {
+            "id": "title_tower_friend",
+            "label": "Title: Friend of the Tower",
+            "cost": 4,
+            "type": "title",
+            "value": "Friend of the Tower"
+          },
+          {
+            "id": "title_bellkeeper",
+            "label": "Title: Bellkeeper",
+            "cost": 6,
+            "type": "title",
+            "value": "Bellkeeper"
+          },
+          {
+            "id": "slots_20",
+            "label": "Twenty more storage places",
+            "cost": 3,
+            "type": "slots",
+            "value": "20"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wynne",
+    "name": "Crown Guard Wynne",
+    "role": "Tower guard",
+    "look": {
+      "g": "f",
+      "skin": 2,
+      "hair": "#2a1a14",
+      "cloth": "#6a6a7a",
+      "accent": "#c8a050",
+      "hat": "helm"
+    },
+    "greeting": [
+      "No one goes up. Warden's orders. Not even you."
+    ],
+    "talk": [
+      {
+        "label": "What did you see that night?",
+        "lines": [
+          "Nothing. I was on the east stair. That is the whole problem. Every guard that night was on the wrong stair."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "tam",
+    "name": "Tam",
+    "role": "Stable boy",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#a86a2a",
+      "cloth": "#6a8a5a",
+      "accent": "#d8c890",
+      "hat": "none"
+    },
+    "greeting": [
+      "I did not take the mare. I did not."
+    ],
+    "talk": [
+      {
+        "label": "You saw something?",
+        "lines": [
+          "I saw a tall man in a pale mask go out by the west gate on the night of the Harvest Watch. He did not walk like a man. He walked like water poured out of a jug."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "hob",
+    "name": "Gatewarden Hob",
+    "role": "South gate",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#8a8a8a",
+      "cloth": "#5a4a3a",
+      "accent": "#c8a050",
+      "hat": "none"
+    },
+    "greeting": [
+      "Gate is open, gate is mended, gate is mine. Mostly."
+    ],
+    "talk": [
+      {
+        "label": "Anything out there?",
+        "lines": [
+          "Moss imps close to the wall, glowcap crawlers farther out. Gnashers beyond that, and they come in packs. If a gnasher looks at you, you are already late."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "cedric",
+    "name": "Cedric the Crier",
+    "role": "Town crier",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#a8a8a8",
+      "cloth": "#8a2a2a",
+      "accent": "#f0e0a0",
+      "hat": "feather"
+    },
+    "greeting": [
+      "Hear ye! Hear... oh, it is just you."
+    ],
+    "talk": [
+      {
+        "label": "The news?",
+        "lines": [
+          "The Warden asks the city to stay calm. The Academy asks the city to stay out of its cellar. The innkeeper asks the city to stop using the word \"haunted\"."
+        ]
+      },
+      {
+        "label": "Controls?",
+        "lines": [
+          "Click the ground to walk, click a person to speak, click a tree or a rock to work it. K skills, I bag, E gear, C stats, J journal. Press M for the whole map."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "pip",
+    "name": "Pip Tuckerwick",
+    "role": "Errand boy",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#2a1a14",
+      "cloth": "#4a4a3a",
+      "accent": "#d86a3c",
+      "hat": "hood"
+    },
+    "greeting": [
+      "I am nineteen. Do not look at me like that. I am nineteen."
+    ],
+    "talk": [
+      {
+        "label": "Know anything?",
+        "lines": [
+          "I know that a pie vendor on Cobbler Row has a bag with a hole in it, and that guard Wynne is afraid of cats. I also know the Tower has a second stair. Do not tell the Warden I said."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "alda",
+    "name": "Alda Brook",
+    "role": "Woodcutter",
+    "look": {
+      "g": "f",
+      "skin": 2,
+      "hair": "#8a5a3a",
+      "cloth": "#6a7a4a",
+      "accent": "#e8d8a0",
+      "hat": "none"
+    },
+    "greeting": [
+      "Pines are good wood. Soft, quick, forgiving. Like me."
+    ],
+    "talk": [
+      {
+        "label": "Tips on forestry?",
+        "lines": [
+          "Pine opens at level 1. Birch at 10, oak at 20, willow at 30. A pine you cut may or may not fall; if it does, it grows back in under a minute. Take your time, there are plenty."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "woodsman"
+      }
+    ]
+  },
+  {
+    "id": "dunstan",
+    "name": "Dunstan Coll",
+    "role": "Prospector",
+    "look": {
+      "g": "m",
+      "skin": 3,
+      "hair": "#4a3a2a",
+      "cloth": "#6a5a4a",
+      "accent": "#c8803c",
+      "hat": "none"
+    },
+    "greeting": [
+      "Copper and tin, both here, both for the taking. The wall keeps the quarry quiet."
+    ],
+    "talk": [
+      {
+        "label": "Tips on mining?",
+        "lines": [
+          "Dig copper and tin, bring them to a furnace. Both ores are level 1. Iron is level 10, but it is not here. Dunhollow has the iron. Go there when you can bear to be stared at by tired people."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "prospector"
+      }
+    ]
+  },
+  {
+    "id": "marl",
+    "name": "Old Marl",
+    "role": "Angler",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#d8d8d8",
+      "cloth": "#4a6a7a",
+      "accent": "#f0e8c0",
+      "hat": "hood"
+    },
+    "greeting": [
+      "Quiet. They hear you."
+    ],
+    "talk": [
+      {
+        "label": "Tips on fishing?",
+        "lines": [
+          "Shrimp in the pond shallows. Level 1, easy. Trout at 10 is in Lake Aelmere. Cook your catch. A raw shrimp is a fine lesson in regret."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "angler"
+      }
+    ]
+  },
+  {
+    "id": "rowan",
+    "name": "Rowan Fenwick",
+    "role": "Trapper",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#6a4a2a",
+      "cloth": "#5a6a3a",
+      "accent": "#c8a050",
+      "hat": "hood"
+    },
+    "greeting": [
+      "Shh. Rabbits."
+    ],
+    "talk": [
+      {
+        "label": "Tips on hunting?",
+        "lines": [
+          "Set a snare at a warren. You get a pelt and sometimes meat. Pelts are soft leather, and soft leather is armor if you take it to the Crafters' Hall."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "trapper"
+      }
+    ]
+  },
+  {
+    "id": "ines",
+    "name": "Ines Holloway",
+    "role": "Farmer",
+    "look": {
+      "g": "f",
+      "skin": 1,
+      "hair": "#8a5a2a",
+      "cloth": "#9a6a3a",
+      "accent": "#e0c070",
+      "hat": "none"
+    },
+    "greeting": [
+      "Mind the gate, love. The hens get out."
+    ],
+    "talk": [
+      {
+        "label": "What do you grow here?",
+        "lines": [
+          "Barley, mostly, and a little flax. The hay goes to the quarry mules. Bread for the city comes from my oven, and you can buy it at the general store, so you need not pay my prices."
+        ]
+      },
+      {
+        "label": "Any trouble out here?",
+        "lines": [
+          "Moss imps in the hedge, now and then. The goblins up by the pines keep to themselves, which is more than I can say for their pine nuts. I find them in the hen house."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "wren",
+    "name": "Wren Thistle",
+    "role": "Warren scout",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#5a3a22",
+      "cloth": "#4a5a38",
+      "accent": "#c8a050",
+      "hat": "hood"
+    },
+    "greeting": [
+      "Keep your voice down. The warren is right there."
+    ],
+    "talk": [
+      {
+        "label": "What is in the warren?",
+        "lines": [
+          "Goblins, a lot of them. Pinegrubs up front, nutcrackers behind them with the big clubs. They eat pine nuts all day and they are never short of any."
+        ]
+      },
+      {
+        "label": "Who leads them?",
+        "lines": [
+          "The Mind Goblin. Big as a cart, ugly as a boiled boot, and he throws pine nuts at you from across the room. It sounds funny until the third one lands.",
+          "Go in with food and a full bag. You cannot run from him once the fight starts."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "brenna",
+    "name": "Brenna Tuck",
+    "role": "Innkeeper, the Lantern and Pick",
+    "look": {
+      "g": "f",
+      "skin": 2,
+      "hair": "#6a3a22",
+      "cloth": "#7a5a3a",
+      "accent": "#f0e8c8",
+      "hat": "none"
+    },
+    "greeting": [
+      "Beds are six bits. The soup is free if you do not ask what is in it."
+    ],
+    "talk": [
+      {
+        "label": "What is the village like?",
+        "lines": [
+          "Dunhollow lives on iron. The Foreman Marrow keeps the shifts, Peg buys the ore, Brannoch makes it into something. The mine under the hill is the reason we are here and the reason half of us do not sleep."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "inn",
+        "cost": 6
+      },
+      {
+        "kind": "shop",
+        "shop": "tavern"
+      }
+    ]
+  },
+  {
+    "id": "dorrin",
+    "name": "Dorrin Hale",
+    "role": "Keeper of the Storage",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#a0a0a8",
+      "cloth": "#5a4a3a",
+      "accent": "#e8c860",
+      "hat": "none"
+    },
+    "greeting": [
+      "Same storage as every town. What you leave in Caer Aldmoor you can take out here."
+    ],
+    "talk": [
+      {
+        "label": "Is it safe?",
+        "lines": [
+          "Safer than the rest of the Downs. Nothing has taken from this room in thirty years, and I count the shelves every night."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "storage"
+      }
+    ]
+  },
+  {
+    "id": "marrow",
+    "name": "Foreman Edda Marrow",
+    "role": "Foreman of the Dunhollow works",
+    "look": {
+      "g": "f",
+      "skin": 3,
+      "hair": "#3a2a22",
+      "cloth": "#5a5a4a",
+      "accent": "#d8b050",
+      "hat": "helm"
+    },
+    "greeting": [
+      "If you are here for work, wait your turn. If you are here to complain, wait longer."
+    ],
+    "talk": [
+      {
+        "label": "What is the Delve?",
+        "lines": [
+          "The mine under the hill, the Black Sump. It flooded eleven weeks ago, in the night. The second shift was below. We have not heard from them since.",
+          "The man who ran that shift was my brother. I would like to know what happened to him before anyone else tells me."
+        ]
+      },
+      {
+        "label": "Who was the last foreman?",
+        "lines": [
+          "I am the only foreman Dunhollow has. Ask me again when the Delve is quiet."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "peg",
+    "name": "Peg Anvil",
+    "role": "Ore buyer",
+    "look": {
+      "g": "f",
+      "skin": 1,
+      "hair": "#8a5a2a",
+      "cloth": "#6a4a3a",
+      "accent": "#c88a3c",
+      "hat": "none"
+    },
+    "greeting": [
+      "I buy ore at fair weight and sell picks at a fair price. Do not weigh your thumb."
+    ],
+    "talk": [
+      {
+        "label": "Any trouble?",
+        "lines": [
+          "Rats. They come up out of the Delve through the drains and eat the sacks. I would pay for the lot of them."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "ore_store"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "brannoch",
+    "name": "Brannoch Stoke",
+    "role": "Smith",
+    "look": {
+      "g": "m",
+      "skin": 3,
+      "hair": "#1a1210",
+      "cloth": "#6a4a3a",
+      "accent": "#d86a3c",
+      "hat": "none"
+    },
+    "greeting": [
+      "The furnace is lit. Anvil is free. Do not stand there and talk."
+    ],
+    "talk": [
+      {
+        "label": "How do I smelt iron?",
+        "lines": [
+          "One ore, one bar, at the furnace. Smithing level 10. Then bars go to the anvil for blades and daggers. Coal and iron together make steel, at level 20."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "dunhollow_smithy"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "wil",
+    "name": "Wil Nettle",
+    "role": "Shepherd",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#a89a80",
+      "cloth": "#6a6a4a",
+      "accent": "#d8c890",
+      "hat": "hood"
+    },
+    "greeting": [
+      "Mind the pen. The ewes bite."
+    ],
+    "talk": [
+      {
+        "label": "What do you keep?",
+        "lines": [
+          "Forty ewes, a ram, and a dog who thinks the ram is his. The Downs grass is good. The boars are not."
+        ]
+      },
+      {
+        "label": "Seen anything odd?",
+        "lines": [
+          "The bats come out of the Delve at dusk, in a cloud. They used to come back before dawn. Now they stay out."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "corley",
+    "name": "Corley Reeve",
+    "role": "Miner, second shift",
+    "look": {
+      "g": "m",
+      "skin": 0,
+      "hair": "#7a6a5a",
+      "cloth": "#4a4a4a",
+      "accent": "#c8a050",
+      "hat": "helm"
+    },
+    "greeting": [
+      "I am not leaving. Not until my crew is out of there."
+    ],
+    "talk": [
+      {
+        "label": "Why are you here?",
+        "lines": [
+          "I was on the second shift. I came up for a break and the water came down the main shaft behind me. I have sat at this door every day since."
+        ]
+      },
+      {
+        "label": "What is down there?",
+        "lines": [
+          "Rats, bats, wretches that were my friends, boars that came in through the broken wall. And at the bottom, the Foreman. The old foreman. Edda Marrow's brother. He still gives orders. He does not give them to people."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "guide",
+    "name": "Reeve Isolde Penn",
+    "role": "Guide to newcomers",
+    "look": {
+      "g": "f",
+      "skin": 2,
+      "hair": "#7a4a2a",
+      "cloth": "#3f6a58",
+      "accent": "#e0c060",
+      "hat": "none"
+    },
+    "greeting": [
+      "You are the one who came up the south road. I am Isolde Penn. I keep newcomers out of the Sump and out of trouble.",
+      "Ask me whatever you like. Everyone does, the first morning."
+    ],
+    "talk": [
+      {
+        "label": "How do I get around?",
+        "lines": [
+          "Click the ground to walk. Scroll or press plus and minus to zoom, and M shows the whole map.",
+          "Click a person to talk to them, or a tree, rock or pond to work it. Hold the mouse over anything and a small card tells you what it is."
+        ]
+      },
+      {
+        "label": "How does fighting work?",
+        "lines": [
+          "Click a monster to start a fight. It plays out in turns on a grid. Move on the blue tiles, pick an ability from the bar, then click your target.",
+          "Your weapon sets your reach. Blades and daggers fight up close, a bow reaches six tiles and a staff five. If it goes badly you can flee, though the monsters stay angry for a moment."
+        ]
+      },
+      {
+        "label": "What is hit chance?",
+        "lines": [
+          "A weapon swing lands about three times in four against a foe your own level. A higher skill or accuracy gear improves it, and a tougher foe lowers it. It never falls below one in twenty.",
+          "Spells never miss, unless something has blinded you. Open your stats with C to see your own number."
+        ]
+      },
+      {
+        "label": "Skills, gear and bag",
+        "lines": [
+          "K opens your skills, where you spend a point each time you level. I is your bag, E is what you wear, and C shows your stats.",
+          "Better gear comes from drops, from the smith, and from the shops. Rare and legendary pieces carry powers of their own."
+        ]
+      },
+      {
+        "label": "Gathering and crafting",
+        "lines": [
+          "Chop trees, mine rock, fish the pond and snare rabbits. Pine is level one, birch ten, oak twenty and willow thirty. Dark-green narrow trees are pines, pale trunks are birch.",
+          "Take what you gather to the smith and the cook. They turn it into gear and food."
+        ]
+      },
+      {
+        "label": "Portals, checkpoints and signing out",
+        "lines": [
+          "Press T to cast the town portal. It takes a few breaths, you have to stand still, and it will not work in a fight. It carries you to your last checkpoint.",
+          "Walk into a safe place near a bellstone or a town gate and it becomes your checkpoint. That is where you wake after a fall or a sign-out.",
+          "One warning. Sign out in the middle of a fight inside a dungeon and you lose what that delve gave you."
+        ]
+      },
+      {
+        "label": "Where should I start?",
+        "lines": [
+          "Warden Osbric stands by the Crown Tower, north of here. He wants a stranger with fresh eyes. His first errand is easy.",
+          "Tam at the stable has moss imps chewing his harness, south of the gate. Clear three and you will have earned a hearing."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "tansy",
+    "name": "Tansy Gale",
+    "role": "Landlady, the Salt Lantern",
+    "look": {
+      "g": "f",
+      "skin": 1,
+      "hair": "#b8b0a0",
+      "cloth": "#4a5a6a",
+      "accent": "#e8d8a0",
+      "hat": "none"
+    },
+    "greeting": [
+      "Mind the rope on the floor. The fog gets in everywhere and brings the damp with it.",
+      "Beds are eight bits. The fish is good. Ask nothing about the cellar."
+    ],
+    "talk": [
+      {
+        "label": "What is Innsharrow like?",
+        "lines": [
+          "Fog, rope and tar. We are a fishing town. That is the story and we all keep to it.",
+          "The old families come in on the first of the month, drink one cup each, and leave before the tide turns. I pour. I do not listen."
+        ]
+      },
+      {
+        "label": "The harbor bells",
+        "lines": [
+          "They ring when a certain kind of boat comes in. No, I will not say which kind."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "inn",
+        "cost": 8
+      },
+      {
+        "kind": "shop",
+        "shop": "salt_lantern"
+      }
+    ]
+  },
+  {
+    "id": "maid",
+    "name": "Aelwyn",
+    "role": "Tavern hand",
+    "look": {
+      "g": "f",
+      "skin": 2,
+      "hair": "#3a2a22",
+      "cloth": "#6a5a4a",
+      "accent": "#c8a860",
+      "hat": "none"
+    },
+    "greeting": [
+      "If you are here to tell me who I am, do not. I have heard it. Twice today.",
+      "I am carrying plates. Plates do not ask questions."
+    ],
+    "talk": [
+      {
+        "label": "You look like someone I have seen.",
+        "lines": [
+          "Everyone says that. It is the nose. Please stop looking at my nose."
+        ]
+      },
+      {
+        "label": "Do you want to leave?",
+        "lines": [
+          "I want to hit something. A lot. The boars in the dunes would do. They do not look at my face."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "jory",
+    "name": "Harbormaster Jory Fenn",
+    "role": "Harbormaster",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#5a5a5a",
+      "cloth": "#2a4a6a",
+      "accent": "#d8c060",
+      "hat": "hood"
+    },
+    "greeting": [
+      "Every boat that ties up here, I know. Every boat that does not, I also know. Fishing licence is free. Honesty is extra."
+    ],
+    "talk": [
+      {
+        "label": "How is the harbor?",
+        "lines": [
+          "Busy for a fishing port. We land a lot of cargo for a place that lands so few fish. I keep my ledger tidy and my eyes on the ledger."
+        ]
+      },
+      {
+        "label": "Where do I fish?",
+        "lines": [
+          "Piers out to the south. Trout near the shore, level ten. Salmon farther out, level twenty. Tuna at the pier heads, thirty. You will want a better rod each time. Wick sells them."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "wick",
+    "name": "Wick Marlowe",
+    "role": "Net-loft keeper",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#6a3a22",
+      "cloth": "#6a5a3a",
+      "accent": "#a8c8d8",
+      "hat": "none"
+    },
+    "greeting": [
+      "Nets, rods, hooks, bait. If it can be caught I sell something that catches it."
+    ],
+    "talk": [
+      {
+        "label": "Which rod?",
+        "lines": [
+          "Ash for trout. Oak for salmon. For tuna you want a lantern rod, and I cannot sell you one. The only ones I have seen came out of the water on their own."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "harbor_tackle"
+      }
+    ]
+  },
+  {
+    "id": "brisket",
+    "name": "Brisket Hale",
+    "role": "Cook at the Cookhouse",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#8a6a4a",
+      "cloth": "#d8d0c0",
+      "accent": "#e0a040",
+      "hat": "none"
+    },
+    "greeting": [
+      "Use the range. Cook your own, or buy mine. Raw fish makes poor friends."
+    ],
+    "talk": [
+      {
+        "label": "What should I cook?",
+        "lines": [
+          "Trout at ten. Salmon at twenty. Tuna at thirty, and take it off the heat early or it turns to rope. A cooked fish heals more than any bread."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "cookhouse"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "orla",
+    "name": "Dame Orla Quill",
+    "role": "Master of the archery yard",
+    "look": {
+      "g": "f",
+      "skin": 1,
+      "hair": "#c8c0b0",
+      "cloth": "#4a6a4a",
+      "accent": "#d8b060",
+      "hat": "none"
+    },
+    "greeting": [
+      "Draw to the ear. Loose on the breath. Anyone who tells you different has not hit anything."
+    ],
+    "talk": [
+      {
+        "label": "Teach me.",
+        "lines": [
+          "A bow reaches six tiles, so you fight with space. Stay at the edge of their reach and keep moving. Anything that closes on you, you have already lost the exchange.",
+          "Buy a birch bow before you buy anything else. Then go and shoot gnashers on the road until you stop flinching."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "archery_yard"
+      },
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "sable",
+    "name": "Sable Quist",
+    "role": "Regular at the Gull's Rest",
+    "look": {
+      "g": "f",
+      "skin": 2,
+      "hair": "#1a1a1a",
+      "cloth": "#3a3a4a",
+      "accent": "#a090c0",
+      "hat": "hood"
+    },
+    "greeting": [
+      "You are not from the families. Good. That means you will listen to me and then forget me."
+    ],
+    "talk": [
+      {
+        "label": "What do the families do?",
+        "lines": [
+          "They land things at night. Crates with no marks. Men who do not give names. Sometimes they ask the harbor bells to ring twice and the tide to go out early."
+        ]
+      },
+      {
+        "label": "The Pale Circle",
+        "lines": [
+          "I never said that word. I said a man in a white mask paid for my silence. I took it. Whoever asks next gets the same story."
+        ]
+      }
+    ],
+    "services": []
+  },
+  {
+    "id": "osgar",
+    "name": "Osgar Thorne",
+    "role": "Trapper",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#3a2a22",
+      "cloth": "#4a5a3a",
+      "accent": "#c0a050",
+      "hat": "hood"
+    },
+    "greeting": [
+      "Snares, nets, pits. If it walks, I can make it stop."
+    ],
+    "talk": [
+      {
+        "label": "What traps work?",
+        "lines": [
+          "Rope snares for small game. Net traps for wolves, and they are not enough. Pit traps hold anything that is not clever. The pack-lord is clever."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "trappers_stall"
+      }
+    ]
+  },
+  {
+    "id": "warden_leofric",
+    "name": "Warden Leofric",
+    "role": "Warden of Wargwatch",
+    "look": {
+      "g": "m",
+      "skin": 1,
+      "hair": "#7a7a7a",
+      "cloth": "#3a4a3a",
+      "accent": "#b8c0a0",
+      "hat": "hood"
+    },
+    "greeting": [
+      "You have the look of someone who finishes things. Good. I have a pack that needs finishing."
+    ],
+    "talk": [
+      {
+        "label": "What is wrong with the wolves?",
+        "lines": [
+          "Someone is feeding them meat that has been in the ground. It does not rot. It makes them hungry, and then it makes them worse.",
+          "The trail runs to the Nameless Cairns. I have not gone in. I am not proud of that."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "quests"
+      }
+    ]
+  },
+  {
+    "id": "bowyer_ansel",
+    "name": "Ansel Brack",
+    "role": "Bowyer",
+    "look": {
+      "g": "m",
+      "skin": 2,
+      "hair": "#5a3a22",
+      "cloth": "#8a6a3a",
+      "accent": "#6a8a5a",
+      "hat": "none"
+    },
+    "greeting": [
+      "Oak for the road, willow for the long shot. Ask me about draw weights and I will not stop."
+    ],
+    "talk": [
+      {
+        "label": "Which bow?",
+        "lines": [
+          "Oak for most. Willow if you have the coin and the shoulders. Either way, do not shoot a wight. Fire and blunt, as the saying goes."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "bowyer"
+      }
+    ]
+  },
+  {
+    "id": "smoker_edda",
+    "name": "Edda Fell",
+    "role": "Smokehouse keeper",
+    "look": {
+      "g": "f",
+      "skin": 1,
+      "hair": "#4a3a32",
+      "cloth": "#8a5a3a",
+      "accent": "#d8a860",
+      "hat": "none"
+    },
+    "greeting": [
+      "Venison, smoked slow. Do not ask what kind of wood. The wood is none of your business."
+    ],
+    "talk": [
+      {
+        "label": "Any news?",
+        "lines": [
+          "The Warden has been quiet for a week. When the Warden is quiet, someone is about to be sent somewhere."
+        ]
+      }
+    ],
+    "services": [
+      {
+        "kind": "shop",
+        "shop": "smokehouse"
+      }
+    ]
+  }
+]
