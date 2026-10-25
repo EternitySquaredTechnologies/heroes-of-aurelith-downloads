@@ -1,0 +1,537 @@
+[
+  {
+    "id": "general_store",
+    "name": "Dray & Daughter, General Goods",
+    "stock": [
+      {
+        "item": "bread",
+        "price": 3,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_shrimp",
+        "price": 4,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_rabbit",
+        "price": 7,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "bronze_axe",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_axe",
+        "price": 90,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "bronze_pickaxe",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_pickaxe",
+        "price": 90,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "reed_rod",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "ash_rod",
+        "price": 90,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "rope_snare",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hemp_snare",
+        "price": 90,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "smithy",
+    "name": "Brandt's Smithy",
+    "stock": [
+      {
+        "item": "bronze_bar",
+        "price": 8,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_bar",
+        "price": 30,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "bronze_dagger",
+        "price": 8,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "bronze_sword",
+        "price": 10,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_dagger",
+        "price": 56,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_sword",
+        "price": 70,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "steel_dagger",
+        "price": 4,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "steel_sword",
+        "price": 5,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "foremans_pick",
+        "price": 2,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "steel_pickaxe",
+        "price": 5,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "steel_axe",
+        "price": 5,
+        "cur": "gold_coins"
+      }
+    ]
+  },
+  {
+    "id": "crafters_hall",
+    "name": "Crafters' Hall",
+    "stock": [
+      {
+        "item": "soft_leather",
+        "price": 4,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hard_leather",
+        "price": 14,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "pine_logs",
+        "price": 2,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "pine_shortbow",
+        "price": 10,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "birch_bow",
+        "price": 70,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "oak_bow",
+        "price": 5,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "hazel_staff",
+        "price": 12,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "rowan_staff",
+        "price": 84,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "yew_staff",
+        "price": 5,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "oak_rod",
+        "price": 5,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "net_trap",
+        "price": 5,
+        "cur": "gold_coins"
+      }
+    ]
+  },
+  {
+    "id": "armory",
+    "name": "The Barracks Armory",
+    "stock": [
+      {
+        "item": "soft_leather_head",
+        "price": 7,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "soft_leather_body",
+        "price": 14,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "soft_leather_legs",
+        "price": 10,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "soft_leather_offhand",
+        "price": 8,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "soft_leather_cloak",
+        "price": 6,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hard_leather_head",
+        "price": 45,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hard_leather_body",
+        "price": 90,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hard_leather_legs",
+        "price": 63,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hard_leather_offhand",
+        "price": 54,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hard_leather_cloak",
+        "price": 36,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "chain_head",
+        "price": 3,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "chain_body",
+        "price": 6,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "chain_legs",
+        "price": 4,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "chain_offhand",
+        "price": 3,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "chain_cloak",
+        "price": 2,
+        "cur": "gold_coins"
+      }
+    ]
+  },
+  {
+    "id": "tavern",
+    "name": "The Gilded Hound",
+    "stock": [
+      {
+        "item": "bread",
+        "price": 3,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_shrimp",
+        "price": 4,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_rabbit",
+        "price": 7,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_trout",
+        "price": 12,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "woodsman",
+    "name": "Alda's Axes",
+    "stock": [
+      {
+        "item": "bronze_axe",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_axe",
+        "price": 90,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "prospector",
+    "name": "Dunstan's Picks",
+    "stock": [
+      {
+        "item": "bronze_pickaxe",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_pickaxe",
+        "price": 90,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "angler",
+    "name": "Marl's Tackle",
+    "stock": [
+      {
+        "item": "reed_rod",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "ash_rod",
+        "price": 90,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "raw_shrimp",
+        "price": 2,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "trapper",
+    "name": "Rowan's Snares",
+    "stock": [
+      {
+        "item": "rope_snare",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "hemp_snare",
+        "price": 90,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "ore_store",
+    "name": "Peg's Ore Store",
+    "stock": [
+      {
+        "item": "bronze_pickaxe",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_pickaxe",
+        "price": 90,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_bar",
+        "price": 30,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "coal",
+        "price": 20,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "bread",
+        "price": 3,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "dunhollow_smithy",
+    "name": "Brannoch's Forge",
+    "stock": [
+      {
+        "item": "iron_bar",
+        "price": 30,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "bronze_bar",
+        "price": 8,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_dagger",
+        "price": 56,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "iron_sword",
+        "price": 70,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "steel_dagger",
+        "price": 4,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "steel_sword",
+        "price": 5,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "steel_pickaxe",
+        "price": 5,
+        "cur": "gold_coins"
+      },
+      {
+        "item": "steel_axe",
+        "price": 5,
+        "cur": "gold_coins"
+      }
+    ]
+  },
+  {
+    "id": "salt_lantern",
+    "name": "The Salt Lantern",
+    "stock": [
+      {
+        "item": "bread",
+        "price": 3,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_shrimp",
+        "price": 4,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_trout",
+        "price": 12,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_salmon",
+        "price": 40,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "harbor_tackle",
+    "name": "Wick's Net Loft",
+    "stock": [
+      {
+        "item": "reed_rod",
+        "price": 16,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "ash_rod",
+        "price": 90,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "oak_rod",
+        "price": 500,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "raw_shrimp",
+        "price": 2,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "cookhouse",
+    "name": "The Cookhouse",
+    "stock": [
+      {
+        "item": "bread",
+        "price": 3,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_trout",
+        "price": 12,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_salmon",
+        "price": 40,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "cooked_tuna",
+        "price": 120,
+        "cur": "iron_bits"
+      }
+    ]
+  },
+  {
+    "id": "archery_yard",
+    "name": "Dame Orla's Yard",
+    "stock": [
+      {
+        "item": "pine_shortbow",
+        "price": 10,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "birch_bow",
+        "price": 70,
+        "cur": "iron_bits"
+      },
+      {
+        "item": "oak_bow",
+        "price": 450,
+        "cur": "iron_bits"
+      }
+    ]
+  }
+]

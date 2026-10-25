@@ -31,15 +31,15 @@
     },
     {
       "path": "data/npcs.json",
-      "size": 29585,
-      "sha256": "ebd4f1d54d0dd48d0d043d5262408bf9969ce536cfda41906bc254314969fa23",
-      "url": "c/ebd4f1d54d0dd48d0d043d5262408bf9969ce536cfda41906bc254314969fa23"
+      "size": 36037,
+      "sha256": "66a50b3177dd4c28df30b325348edeeb8f7a78d108b9c91dc6161750023f6d91",
+      "url": "c/66a50b3177dd4c28df30b325348edeeb8f7a78d108b9c91dc6161750023f6d91"
     },
     {
       "path": "data/quests.json",
-      "size": 17965,
-      "sha256": "026f8ab3d456f0639f8771fada9831acbfe5a66bfb6858c173913691c319db82",
-      "url": "c/026f8ab3d456f0639f8771fada9831acbfe5a66bfb6858c173913691c319db82"
+      "size": 22810,
+      "sha256": "6a70d0870ca1fcd1023eaad4245b91b8a100edad34bd171bf84f8b529409a0f7",
+      "url": "c/6a70d0870ca1fcd1023eaad4245b91b8a100edad34bd171bf84f8b529409a0f7"
     },
     {
       "path": "data/recipes.json",
@@ -49,21 +49,21 @@
     },
     {
       "path": "data/shops.json",
-      "size": 8035,
-      "sha256": "6a17a51d75d748c14fed48ba6acc059b9317502e1cf91dac9965643a65bdb99a",
-      "url": "c/6a17a51d75d748c14fed48ba6acc059b9317502e1cf91dac9965643a65bdb99a"
+      "size": 10333,
+      "sha256": "58070da30d12ba54db2de6f5988f74e289c7134245feb652042beb4941855d63",
+      "url": "c/58070da30d12ba54db2de6f5988f74e289c7134245feb652042beb4941855d63"
     },
     {
       "path": "data/stations.json",
-      "size": 5798,
-      "sha256": "352f1f7a13f87b967de6b919bb83628f5421e96c4e3958a671da81ad2489478e",
-      "url": "c/352f1f7a13f87b967de6b919bb83628f5421e96c4e3958a671da81ad2489478e"
+      "size": 7301,
+      "sha256": "89c157abfcc3d53b3e32e77940964da29c633d62afbac66051063c89fbf59439",
+      "url": "c/89c157abfcc3d53b3e32e77940964da29c633d62afbac66051063c89fbf59439"
     },
     {
       "path": "maps/mossgate.json",
-      "size": 90644,
-      "sha256": "937d7c8d07abbe2e2a4ef2843737a13b6047c74ba3086c74450760cee6595be8",
-      "url": "c/937d7c8d07abbe2e2a4ef2843737a13b6047c74ba3086c74450760cee6595be8"
+      "size": 132892,
+      "sha256": "da8a45dde2e5b2d72df2d29264748845f28f5f6af169d0c66179ca352b30610f",
+      "url": "c/da8a45dde2e5b2d72df2d29264748845f28f5f6af169d0c66179ca352b30610f"
     },
     {
       "path": "tiles/placeholder.png",
@@ -79,9 +79,9 @@
     },
     {
       "path": "ui/game.js",
-      "size": 160116,
-      "sha256": "f9aa1997ee580c628136ed81280963c067d83d99941749bbb88ad688e84158cc",
-      "url": "c/f9aa1997ee580c628136ed81280963c067d83d99941749bbb88ad688e84158cc"
+      "size": 160927,
+      "sha256": "1ca8d418718486da56f48160e9fe2cf653c1a4e50f057a67f8060c1e4e418d46",
+      "url": "c/1ca8d418718486da56f48160e9fe2cf653c1a4e50f057a67f8060c1e4e418d46"
     },
     {
       "path": "ui/icon.png",
@@ -108,5 +108,5 @@
       "url": "c/9b25e424243985a80c165e7598467c027be39f10a6b6ed0104f0f5007dbc9d91"
     }
   ],
-  "signature": "8esidid4nnuWfXtAs08N48nTbNTtv9yLxhLT/zaXSCsSXV7ECZzUQUsVS/O2zwHqWNOblU0lylgp2ihKcfc3DQ=="
+  "signature": "k/ehsk6MCJDzJnme51x5jjWlO8wdo5xQzfKPYeFpaS8wF5n7vXlmavYIfGCMz+d5icq9n3JcG00H6OiLXZ3iBA=="
 }
