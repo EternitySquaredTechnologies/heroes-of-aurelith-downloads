@@ -70,7 +70,43 @@
       "size": 3383,
       "sha256": "a114cebafd0a4a005fe1ea96370128462d7ee4f66d3983a30d422a2be744b171",
       "url": "c/a114cebafd0a4a005fe1ea96370128462d7ee4f66d3983a30d422a2be744b171"
+    },
+    {
+      "path": "ui/audio.js",
+      "size": 13011,
+      "sha256": "e58d8f22f2045e79d769b46bc0378a58d114074341d8292110faa0955ce45b68",
+      "url": "c/e58d8f22f2045e79d769b46bc0378a58d114074341d8292110faa0955ce45b68"
+    },
+    {
+      "path": "ui/game.js",
+      "size": 157420,
+      "sha256": "98e9c98d448b45131decb3e6d0bbf85e14e63d3a647e25a17997a3b52215fe90",
+      "url": "c/98e9c98d448b45131decb3e6d0bbf85e14e63d3a647e25a17997a3b52215fe90"
+    },
+    {
+      "path": "ui/icon.png",
+      "size": 3608,
+      "sha256": "84ac49d1776d32151940a1677899c6bc9f93e9a303b641ecc17a1296e65f2f41",
+      "url": "c/84ac49d1776d32151940a1677899c6bc9f93e9a303b641ecc17a1296e65f2f41"
+    },
+    {
+      "path": "ui/index.html",
+      "size": 8876,
+      "sha256": "cca1ac996145dd69780578dfa9f6b153d8b825b7e9a64ed6f5456e13b003ed3a",
+      "url": "c/cca1ac996145dd69780578dfa9f6b153d8b825b7e9a64ed6f5456e13b003ed3a"
+    },
+    {
+      "path": "ui/renderer.js",
+      "size": 7024,
+      "sha256": "f547e732f0e2364202d34568fcec66e21832a0ca0ed82a36a075eff76cc95f21",
+      "url": "c/f547e732f0e2364202d34568fcec66e21832a0ca0ed82a36a075eff76cc95f21"
+    },
+    {
+      "path": "ui/style.css",
+      "size": 16028,
+      "sha256": "9b25e424243985a80c165e7598467c027be39f10a6b6ed0104f0f5007dbc9d91",
+      "url": "c/9b25e424243985a80c165e7598467c027be39f10a6b6ed0104f0f5007dbc9d91"
     }
   ],
-  "signature": "4lNaFls4hxVEUF+C9D6zdRBpHDRW1VKXnzd6lOZlD1GFe3NPxdqLdNwDG7oVx+huFRt686r9HpZXD2hPkiIpBA=="
+  "signature": "FNQg+oWqdlSUI+C3aVZ7+shkQNBY1/efX88QihJ42oGAZ8X7H6gresBZgLQDdvSpKSFAqBOn+f6jufEqq11rCg=="
 }
