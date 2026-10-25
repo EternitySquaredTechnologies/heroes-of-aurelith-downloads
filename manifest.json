@@ -79,9 +79,9 @@
     },
     {
       "path": "ui/game.js",
-      "size": 157420,
-      "sha256": "98e9c98d448b45131decb3e6d0bbf85e14e63d3a647e25a17997a3b52215fe90",
-      "url": "c/98e9c98d448b45131decb3e6d0bbf85e14e63d3a647e25a17997a3b52215fe90"
+      "size": 160116,
+      "sha256": "f9aa1997ee580c628136ed81280963c067d83d99941749bbb88ad688e84158cc",
+      "url": "c/f9aa1997ee580c628136ed81280963c067d83d99941749bbb88ad688e84158cc"
     },
     {
       "path": "ui/icon.png",
@@ -108,5 +108,5 @@
       "url": "c/9b25e424243985a80c165e7598467c027be39f10a6b6ed0104f0f5007dbc9d91"
     }
   ],
-  "signature": "FNQg+oWqdlSUI+C3aVZ7+shkQNBY1/efX88QihJ42oGAZ8X7H6gresBZgLQDdvSpKSFAqBOn+f6jufEqq11rCg=="
+  "signature": "8esidid4nnuWfXtAs08N48nTbNTtv9yLxhLT/zaXSCsSXV7ECZzUQUsVS/O2zwHqWNOblU0lylgp2ihKcfc3DQ=="
 }
