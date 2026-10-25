@@ -1,0 +1,873 @@
+[
+  {
+    "id": "the_empty_stand",
+    "name": "The Empty Stand",
+    "summary": "The king is dead and the Crown is gone. Osbric wants a stranger with fresh eyes.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "tam",
+        "todo": "Ask Tam what he saw. He wants three moss imps driven off the road first.",
+        "say": [
+          "The harness is safe again. Thank you."
+        ],
+        "waiting": [
+          "I will tell you what I saw. But the imps keep chewing the harness. Drive off three, outside the wall, and I will tell you everything. They are south of the gate, among the trees."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "moss_imp",
+          "count": 3
+        }
+      },
+      {
+        "npc": "tam",
+        "todo": "Hear what Tam saw.",
+        "say": [
+          "A tall man in a pale mask walked out by the west gate on the night of the Harvest Watch. He did not walk like a man. He walked like water poured out of a jug.",
+          "Tell the Warden. Tell him I did not take the mare."
+        ],
+        "need": {
+          "type": "none"
+        }
+      },
+      {
+        "npc": "osbric",
+        "todo": "Tell Osbric about the masked man.",
+        "say": [
+          "The west gate. Of course. They went the long way round, so no guard would see.",
+          "You have done more in an afternoon than my whole watch did in eleven days. Take this. It is not much, but you will need the tools."
+        ],
+        "need": {
+          "type": "none"
+        }
+      }
+    ],
+    "reward": {
+      "xp": 120,
+      "iron_bits": 40,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": [
+        {
+          "item": "bronze_axe",
+          "qty": 1
+        },
+        {
+          "item": "bronze_pickaxe",
+          "qty": 1
+        },
+        {
+          "item": "reed_rod",
+          "qty": 1
+        },
+        {
+          "item": "rope_snare",
+          "qty": 1
+        }
+      ]
+    },
+    "done": [
+      "Osbric looks at the west gate for a long time, then back at you.",
+      "\"Good work, Wanderer. Come back when you have more of the Reach in your boots.\""
+    ],
+    "giver": "osbric",
+    "offer": [
+      "The Crown lay on a stand in the Tower. Look at it if you like; the guard on the door will let you stand outside, no further.",
+      "Before that, go to the stable and talk to Tam. He saw something that night and he is too frightened to say what.",
+      "Be kind to him. He is twelve and thinks he is in trouble."
+    ]
+  },
+  {
+    "id": "first_lesson",
+    "name": "The First Lesson",
+    "summary": "Magister Elowen wants to see you spend your first skill point.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "elowen",
+        "todo": "Open the skill tree (K) and spend a point, then return to the Magister.",
+        "say": [],
+        "waiting": [
+          "You have not spent a point yet. Press K."
+        ],
+        "need": {
+          "type": "spent",
+          "points": 1
+        }
+      }
+    ],
+    "reward": {
+      "xp": 40,
+      "iron_bits": 20,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "\"Good. Now you know how it feels. Every rank counts, and you can take them all back for a fee if you change your mind.\"",
+      "She nods, once, the way teachers do when you have not embarrassed them."
+    ],
+    "giver": "elowen",
+    "offer": [
+      "You have points to spend already. Open the tree with K and put one into anything. A hero with unspent points is a hero who is not trying."
+    ]
+  },
+  {
+    "id": "timber_for_the_gate",
+    "name": "Timber for the Gate",
+    "summary": "Hob needs pine to mend the south gate.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "hob",
+        "todo": "Bring Hob 10 pine logs (Forestry).",
+        "say": [],
+        "waiting": [
+          "Ten pine logs. Alda Brook is in the grove west of the wall. Chop a tree, it takes a few swings."
+        ],
+        "need": {
+          "type": "have",
+          "item": "pine_logs",
+          "count": 10
+        }
+      }
+    ],
+    "reward": {
+      "xp": 60,
+      "iron_bits": 70,
+      "gold_coins": 0,
+      "favor_tokens": 0,
+      "items": []
+    },
+    "done": [
+      "Hob takes the logs, counts them twice, and counts them a third time on principle.",
+      "\"Honest weight. Fine work.\""
+    ],
+    "giver": "hob",
+    "offer": [
+      "The south gate has not been mended since before the war. Ten pine logs, cut and clean. I will pay you out of my own pocket, which is a sentence I have never said."
+    ]
+  },
+  {
+    "id": "copper_and_tin",
+    "name": "Copper and Tin",
+    "summary": "Brandt needs bronze bars for the guard.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "brandt",
+        "todo": "Bring Brandt 3 bronze bars (Mining and Smithing).",
+        "say": [],
+        "waiting": [
+          "Three bronze bars. One copper and one tin each. The furnace is behind me."
+        ],
+        "need": {
+          "type": "have",
+          "item": "bronze_bar",
+          "count": 3
+        }
+      }
+    ],
+    "reward": {
+      "xp": 80,
+      "iron_bits": 120,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Brandt turns a bar over, sniffs it, and nods.",
+      "\"Clean smelt. You might be a smith yet.\""
+    ],
+    "giver": "brandt",
+    "offer": [
+      "The guard wants new buckles and I am out of bronze. Three bars. Copper and tin from the Old Quarry, smelt them at my furnace, a bar each.",
+      "Do it yourself. I will not pay for work I could do faster myself."
+    ]
+  },
+  {
+    "id": "supper_for_the_watch",
+    "name": "Supper for the Watch",
+    "summary": "Bram needs five cooked shrimp for the night watch.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "bram",
+        "todo": "Bring Bram 5 cooked shrimp (Fishing and Cooking).",
+        "say": [],
+        "waiting": [
+          "Five cooked shrimp. Catch them in the pond, cook them at my range. Do not burn them."
+        ],
+        "need": {
+          "type": "have",
+          "item": "cooked_shrimp",
+          "count": 5
+        }
+      }
+    ],
+    "reward": {
+      "xp": 60,
+      "iron_bits": 80,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": [
+        {
+          "item": "bread",
+          "qty": 3
+        }
+      ]
+    },
+    "done": [
+      "Bram counts them. \"Five. Good. Have some bread. I mean it.\""
+    ],
+    "giver": "bram",
+    "offer": [
+      "The night watch eats better than the day watch, and I resent it. Five cooked shrimp, and I will not ask where you got them."
+    ]
+  },
+  {
+    "id": "leather_for_the_barracks",
+    "name": "Leather for the Barracks",
+    "summary": "Hild needs soft leather for new guard caps.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "hild",
+        "todo": "Bring Hild 4 soft leather (Hunting).",
+        "say": [],
+        "waiting": [
+          "Four soft leather. Rowan Fenwick will sell you a snare."
+        ],
+        "need": {
+          "type": "have",
+          "item": "soft_leather",
+          "count": 4
+        }
+      }
+    ],
+    "reward": {
+      "xp": 60,
+      "iron_bits": 60,
+      "gold_coins": 0,
+      "favor_tokens": 0,
+      "items": [
+        {
+          "item": "soft_leather_head",
+          "qty": 1
+        }
+      ]
+    },
+    "done": [
+      "Hild turns the leather in the light. \"Supple. You have a good eye. Keep the cap.\""
+    ],
+    "giver": "hild",
+    "offer": [
+      "The guard wears out caps like some people wear out socks. Four pieces of soft leather. Snare rabbits in the meadow south-west of the wall."
+    ]
+  },
+  {
+    "id": "imps_on_the_road",
+    "name": "Imps on the Road",
+    "summary": "Hob says the moss imps have got bold.",
+    "level": 1,
+    "after": [
+      "the_empty_stand"
+    ],
+    "steps": [
+      {
+        "npc": "hob",
+        "todo": "Defeat eight moss imps.",
+        "say": [],
+        "waiting": [
+          "Eight moss imps. Along the south road and in the trees."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "moss_imp",
+          "count": 8
+        }
+      }
+    ],
+    "reward": {
+      "xp": 100,
+      "iron_bits": 100,
+      "gold_coins": 0,
+      "favor_tokens": 0,
+      "items": []
+    },
+    "done": [
+      "Hob nods. \"The road is quieter. Thank you.\""
+    ],
+    "giver": "hob",
+    "offer": [
+      "The imps have started biting carts. Eight of them. Not a hero's job, just a job."
+    ]
+  },
+  {
+    "id": "glow_in_the_dark",
+    "name": "Glow in the Dark",
+    "summary": "Sergeant Maud wants the glowcap crawlers thinned out.",
+    "level": 3,
+    "after": [
+      "the_empty_stand"
+    ],
+    "steps": [
+      {
+        "npc": "maud",
+        "todo": "Defeat six glowcap crawlers.",
+        "say": [],
+        "waiting": [
+          "Six glowcap crawlers. They poison on a hit; eat before you start."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "glowcap_crawler",
+          "count": 6
+        }
+      }
+    ],
+    "reward": {
+      "xp": 160,
+      "iron_bits": 80,
+      "gold_coins": 1,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Maud grunts. \"Not bad for a Wanderer. You may report to the yard whenever you want a drink of water.\""
+    ],
+    "giver": "maud",
+    "offer": [
+      "Crawlers. Poison on every bite. Six of them, farther out than the imps. Bring a shield and some food."
+    ]
+  },
+  {
+    "id": "gnashers_on_the_road",
+    "name": "Gnashers on the Road",
+    "summary": "The Warden wants the gnashers cleared from the road beyond the Reach.",
+    "level": 5,
+    "after": [
+      "glow_in_the_dark"
+    ],
+    "steps": [
+      {
+        "npc": "osbric",
+        "todo": "Defeat three gnashers.",
+        "say": [],
+        "waiting": [
+          "Three gnashers. They are in the far corners of the Reach."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "gnasher",
+          "count": 3
+        }
+      }
+    ],
+    "reward": {
+      "xp": 300,
+      "iron_bits": 150,
+      "gold_coins": 2,
+      "favor_tokens": 2,
+      "items": []
+    },
+    "done": [
+      "Osbric clasps your arm. \"The Reach is yours for now. Wait until you see the Moors.\""
+    ],
+    "giver": "osbric",
+    "offer": [
+      "The gnashers have taken the far road. They come in packs of three. Bring armor, bring food, and do not go alone if you can help it. You can't, I know. Go anyway."
+    ]
+  },
+  {
+    "id": "the_mind_goblin",
+    "name": "The Mind Goblin",
+    "summary": "Wren wants the goblins cleared from the warren and their leader put down.",
+    "level": 8,
+    "after": [
+      "glow_in_the_dark"
+    ],
+    "steps": [
+      {
+        "npc": "wren",
+        "todo": "Defeat four pinegrub goblins.",
+        "say": [],
+        "waiting": [
+          "Four pinegrub goblins. They keep to the hall and the western den."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "pinegrub_goblin",
+          "count": 4
+        }
+      },
+      {
+        "npc": "wren",
+        "todo": "Defeat the Mind Goblin.",
+        "say": [
+          "Good. Now the big one. He sits in the chamber at the back, behind the middle den. Eat before you go in, and do not count on running."
+        ],
+        "waiting": [
+          "The Mind Goblin is in the back chamber. Bring food."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "mind_goblin",
+          "count": 1
+        }
+      }
+    ],
+    "reward": {
+      "xp": 600,
+      "iron_bits": 300,
+      "gold_coins": 3,
+      "favor_tokens": 2,
+      "items": []
+    },
+    "done": [
+      "Wren laughs, tired and relieved. \"Quiet at last. The pines will grow back. Keep whatever he dropped.\""
+    ],
+    "giver": "wren",
+    "offer": [
+      "The warren mouth is north of the pines. Four of the pinegrubs first, so the rest learn to be careful. Then we talk about their leader."
+    ]
+  },
+  {
+    "id": "the_drainage_cut",
+    "name": "The Drainage Cut",
+    "summary": "Foreman Marrow needs timber and ore for the drainage cut.",
+    "level": 4,
+    "after": [
+      "glow_in_the_dark"
+    ],
+    "steps": [
+      {
+        "npc": "marrow",
+        "todo": "Bring six birch logs to Marrow.",
+        "say": [],
+        "waiting": [
+          "Six birch logs. Alderwood is west of the cut."
+        ],
+        "need": {
+          "type": "have",
+          "item": "birch_logs",
+          "count": 6
+        }
+      },
+      {
+        "npc": "marrow",
+        "todo": "Bring four iron ore to Marrow.",
+        "say": [
+          "Good timber. Now the ore for the pins: four iron. Ironback Rocks are east of the village. A level 10 pick."
+        ],
+        "waiting": [
+          "Four iron ore. East of the village, in the Ironback Rocks."
+        ],
+        "need": {
+          "type": "have",
+          "item": "iron_ore",
+          "count": 4
+        }
+      }
+    ],
+    "reward": {
+      "xp": 350,
+      "iron_bits": 120,
+      "gold_coins": 1,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Marrow slaps the last pin into the timber with the flat of her hand. \"That will hold until the next flood. Which is Tuesday.\""
+    ],
+    "giver": "marrow",
+    "offer": [
+      "The cut is not holding. I need birch for the shoring, six logs, and iron ore for the pins. Cut the birch in Alderwood, west of the water. Your forestry has to be level 10."
+    ]
+  },
+  {
+    "id": "a_crew_below",
+    "name": "A Crew Below",
+    "summary": "Corley wants proof of what happened to the second shift.",
+    "level": 6,
+    "after": [
+      "the_drainage_cut"
+    ],
+    "steps": [
+      {
+        "npc": "corley",
+        "todo": "Find three crew notes in the Delve and the Downs.",
+        "say": [],
+        "waiting": [
+          "Three crew notes. The rats, the bats and the wretches carry them."
+        ],
+        "need": {
+          "type": "have",
+          "item": "crew_note",
+          "count": 3
+        }
+      }
+    ],
+    "reward": {
+      "xp": 450,
+      "iron_bits": 160,
+      "gold_coins": 1,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Corley reads each slip twice and puts them away, one by one, inside his coat. \"They were trying to climb out. The water was faster. Thank you.\""
+    ],
+    "giver": "corley",
+    "offer": [
+      "The crew kept notes. Tally slips, shift marks, a line or two to their families. The things down there carry them still, in their pockets, in their nests. Bring me three. Then I will know."
+    ]
+  },
+  {
+    "id": "rats_in_the_stores",
+    "name": "Rats in the Stores",
+    "summary": "Peg wants the sump rats cleared out of the ore store.",
+    "level": 4,
+    "after": [
+      "glow_in_the_dark"
+    ],
+    "steps": [
+      {
+        "npc": "peg",
+        "todo": "Defeat eight sump rats.",
+        "say": [],
+        "waiting": [
+          "Eight sump rats. They run in packs of three."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "sump_rat",
+          "count": 8
+        }
+      }
+    ],
+    "reward": {
+      "xp": 300,
+      "iron_bits": 140,
+      "gold_coins": 1,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Peg counts the sacks twice. \"Whole. First time in a month. Take this and do not tell Brannoch I paid you.\""
+    ],
+    "giver": "peg",
+    "offer": [
+      "Eight sump rats, as many as you can find on the Downs or in the Delve. They come in threes, so bring something that does not die from three bites."
+    ]
+  },
+  {
+    "id": "iron_for_the_smith",
+    "name": "Iron for the Smith",
+    "summary": "Brannoch needs four iron bars, smelted by hand.",
+    "level": 8,
+    "after": [
+      "the_drainage_cut"
+    ],
+    "steps": [
+      {
+        "npc": "brannoch",
+        "todo": "Bring four iron bars to Brannoch.",
+        "say": [],
+        "waiting": [
+          "Four iron bars. Ore from Ironback Rocks, smelted at the furnace."
+        ],
+        "need": {
+          "type": "have",
+          "item": "iron_bar",
+          "count": 4
+        }
+      }
+    ],
+    "reward": {
+      "xp": 500,
+      "iron_bits": 180,
+      "gold_coins": 2,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Brannoch turns a bar over in the tongs and nods. \"Even. Clean. You will do.\""
+    ],
+    "giver": "brannoch",
+    "offer": [
+      "Four iron bars. You dig the ore, you smelt it at my furnace, one ore a bar. Smithing level 10. If you cannot smelt, learn on bronze and come back."
+    ]
+  },
+  {
+    "id": "the_foreman_below",
+    "name": "The Foreman Below",
+    "summary": "Marrow needs to know what became of her brother, the old foreman.",
+    "level": 10,
+    "after": [
+      "the_drainage_cut",
+      "a_crew_below"
+    ],
+    "steps": [
+      {
+        "npc": "marrow",
+        "todo": "Defeat the Foreman Below in the Delve of the Black Sump.",
+        "say": [],
+        "waiting": [
+          "The Foreman is in the chamber at the bottom of the Delve. Bring food."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "foreman_below",
+          "count": 1
+        }
+      }
+    ],
+    "reward": {
+      "xp": 1200,
+      "iron_bits": 500,
+      "gold_coins": 4,
+      "favor_tokens": 3,
+      "items": []
+    },
+    "done": [
+      "Marrow stands very still for a long time. \"Thank you. I will tell the village he was a good foreman. That is true as far as it goes.\""
+    ],
+    "giver": "marrow",
+    "offer": [
+      "Corley told me what you found. My brother is still down there. What is left of him throws picks at anything that moves.",
+      "The Delve is south of the village, down the road. Go through the galleries to the chamber at the bottom. You cannot run from him once it starts."
+    ]
+  },
+  {
+    "id": "harbor_catch",
+    "name": "A Catch for the Harbor",
+    "summary": "The harbormaster needs trout for the quay crews.",
+    "level": 10,
+    "after": [],
+    "steps": [
+      {
+        "npc": "jory",
+        "todo": "Bring six raw trout to Harbormaster Jory.",
+        "say": [],
+        "waiting": [
+          "Six raw trout. They bite near the shore on an ash rod."
+        ],
+        "need": {
+          "type": "have",
+          "item": "raw_trout",
+          "count": 6
+        }
+      }
+    ],
+    "reward": {
+      "xp": 520,
+      "iron_bits": 140,
+      "gold_coins": 1,
+      "favor_tokens": 0,
+      "items": []
+    },
+    "done": [
+      "Jory counts them twice and writes in the ledger. It is the first honest entry the book has seen all month."
+    ],
+    "giver": "jory",
+    "offer": [
+      "The crews have eaten nothing but bread for a week. Fish, good fish, from the piers. Trout will do. Six of them, raw, and I will see you paid.",
+      "Wick has the rods. Fish the south piers."
+    ]
+  },
+  {
+    "id": "the_maid_at_the_salt_lantern",
+    "name": "The Maid at the Salt Lantern",
+    "summary": "Aelwyn wants to hit something. The dune boars will do.",
+    "level": 8,
+    "after": [],
+    "steps": [
+      {
+        "npc": "maid",
+        "todo": "Defeat five stone boars in the dunes east of Innsharrow.",
+        "say": [],
+        "waiting": [
+          "Five boars. They are in the dunes, east of the city."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "stone_boar",
+          "count": 5
+        }
+      }
+    ],
+    "reward": {
+      "xp": 720,
+      "iron_bits": 210,
+      "gold_coins": 2,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Aelwyn listens, nods once, and for the first time that day stops carrying plates. \"Better. Thank you. I will remember this when it matters.\""
+    ],
+    "giver": "maid",
+    "offer": [
+      "The boars in the dunes keep eating the tavern garden. I would go myself but Tansy says I would be missed.",
+      "I would like you to hit five of them. Hard. Hard enough that I feel it from here."
+    ]
+  },
+  {
+    "id": "bow_practice",
+    "name": "Bow Practice",
+    "summary": "Dame Orla wants you to shoot four gnashers on the road.",
+    "level": 8,
+    "after": [],
+    "steps": [
+      {
+        "npc": "orla",
+        "todo": "Defeat four gnashers along the road with any weapon, a bow by preference.",
+        "say": [],
+        "waiting": [
+          "Four gnashers on the road verge. Keep your distance."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "gnasher",
+          "count": 4
+        }
+      }
+    ],
+    "reward": {
+      "xp": 460,
+      "iron_bits": 150,
+      "gold_coins": 1,
+      "favor_tokens": 0,
+      "items": []
+    },
+    "done": [
+      "\"Four. Good. You flinched less each time.\" Orla sets a hand on your shoulder for exactly one second."
+    ],
+    "giver": "orla",
+    "offer": [
+      "Words teach nothing. Four gnashers on the road verge. Shoot them from range if you have a bow, and if you do not, go and buy one."
+    ]
+  },
+  {
+    "id": "supper_for_the_quay",
+    "name": "Supper for the Quay",
+    "summary": "Brisket wants five cooked trout for the quay crews.",
+    "level": 10,
+    "after": [],
+    "steps": [
+      {
+        "npc": "brisket",
+        "todo": "Bring five cooked trout to Brisket Hale.",
+        "say": [],
+        "waiting": [
+          "Five cooked trout. Catch them, then use the range."
+        ],
+        "need": {
+          "type": "have",
+          "item": "cooked_trout",
+          "count": 5
+        }
+      }
+    ],
+    "reward": {
+      "xp": 580,
+      "iron_bits": 170,
+      "gold_coins": 1,
+      "favor_tokens": 0,
+      "items": []
+    },
+    "done": [
+      "Brisket tastes one and goes quiet. \"Perfect. Do not tell the others I said so.\""
+    ],
+    "giver": "brisket",
+    "offer": [
+      "The crews are hungry and the range is free. Five trout, properly cooked, and I will pay you well."
+    ]
+  },
+  {
+    "id": "lights_on_the_dunes",
+    "name": "Lights on the Dunes",
+    "summary": "Jory wants the blue lights on the dunes put out.",
+    "level": 10,
+    "after": [
+      "harbor_catch"
+    ],
+    "steps": [
+      {
+        "npc": "jory",
+        "todo": "Defeat five wisp hounds on the dunes east of Innsharrow.",
+        "say": [],
+        "waiting": [
+          "Five wisp hounds. They run the dunes east of the city at night."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "wisp_hound",
+          "count": 5
+        }
+      }
+    ],
+    "reward": {
+      "xp": 900,
+      "iron_bits": 240,
+      "gold_coins": 2,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Jory takes the report without looking up. \"Good. Now the dunes are only dark. I can work with dark.\""
+    ],
+    "giver": "jory",
+    "offer": [
+      "There are lights on the dunes after dark. Blue, low, and moving the wrong way. The crews say they are hounds, and that they follow the boats in.",
+      "Put out five. I do not care how. I care that they stop."
+    ]
+  },
+  {
+    "id": "wolf_at_the_door",
+    "name": "A Wolf at the Door",
+    "summary": "Orla wants the dire wolves west of the city thinned.",
+    "level": 12,
+    "after": [
+      "bow_practice"
+    ],
+    "steps": [
+      {
+        "npc": "orla",
+        "todo": "Defeat four dire wolves in the west woods.",
+        "say": [],
+        "waiting": [
+          "Four dire wolves in the west woods. Do not let them close."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "dire_wolf",
+          "count": 4
+        }
+      }
+    ],
+    "reward": {
+      "xp": 1100,
+      "iron_bits": 300,
+      "gold_coins": 2,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Orla looks at the pelts a long time. \"Shadow-touched. Burn them. Do not keep a scrap.\" Then, quieter, \"Well shot.\""
+    ],
+    "giver": "orla",
+    "offer": [
+      "The wolves came down from the hills this autumn. Too still, too quiet, always looking the wrong way. They took a net-mender last week.",
+      "Four of them. Keep your range. If one closes, you have already lost the exchange. Then make it a different exchange."
+    ]
+  }
+]

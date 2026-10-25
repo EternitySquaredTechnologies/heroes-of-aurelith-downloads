@@ -19,9 +19,9 @@
     },
     {
       "path": "data/monsters.json",
-      "size": 5319,
-      "sha256": "33e0b6b90858f86d7fc198dd3b95c180bd94d41ed5a6153370dc22a31d08957a",
-      "url": "c/33e0b6b90858f86d7fc198dd3b95c180bd94d41ed5a6153370dc22a31d08957a"
+      "size": 5881,
+      "sha256": "ee7a2aac2aa782ac96a09bfd53afce35fe3ff4082ae234c3f42a87c6585a2181",
+      "url": "c/ee7a2aac2aa782ac96a09bfd53afce35fe3ff4082ae234c3f42a87c6585a2181"
     },
     {
       "path": "data/nodes.json",
@@ -37,9 +37,9 @@
     },
     {
       "path": "data/quests.json",
-      "size": 22810,
-      "sha256": "6a70d0870ca1fcd1023eaad4245b91b8a100edad34bd171bf84f8b529409a0f7",
-      "url": "c/6a70d0870ca1fcd1023eaad4245b91b8a100edad34bd171bf84f8b529409a0f7"
+      "size": 25136,
+      "sha256": "b457c8b35e37ba98ae2f6f5eb41f3f7f3c452486403bd03396e07b82daea5cbe",
+      "url": "c/b457c8b35e37ba98ae2f6f5eb41f3f7f3c452486403bd03396e07b82daea5cbe"
     },
     {
       "path": "data/recipes.json",
@@ -61,9 +61,9 @@
     },
     {
       "path": "maps/mossgate.json",
-      "size": 132892,
-      "sha256": "da8a45dde2e5b2d72df2d29264748845f28f5f6af169d0c66179ca352b30610f",
-      "url": "c/da8a45dde2e5b2d72df2d29264748845f28f5f6af169d0c66179ca352b30610f"
+      "size": 133157,
+      "sha256": "9eaee7e5ad88de4b7436577160e5213ef4dbf7654c050834759309348a0edef4",
+      "url": "c/9eaee7e5ad88de4b7436577160e5213ef4dbf7654c050834759309348a0edef4"
     },
     {
       "path": "tiles/placeholder.png",
@@ -79,9 +79,9 @@
     },
     {
       "path": "ui/game.js",
-      "size": 160927,
-      "sha256": "1ca8d418718486da56f48160e9fe2cf653c1a4e50f057a67f8060c1e4e418d46",
-      "url": "c/1ca8d418718486da56f48160e9fe2cf653c1a4e50f057a67f8060c1e4e418d46"
+      "size": 162618,
+      "sha256": "c59062b8203ad145c13fa97dfc392c9268c6645a11c9ccaac42074466a40ad6d",
+      "url": "c/c59062b8203ad145c13fa97dfc392c9268c6645a11c9ccaac42074466a40ad6d"
     },
     {
       "path": "ui/icon.png",
@@ -108,5 +108,5 @@
       "url": "c/9b25e424243985a80c165e7598467c027be39f10a6b6ed0104f0f5007dbc9d91"
     }
   ],
-  "signature": "k/ehsk6MCJDzJnme51x5jjWlO8wdo5xQzfKPYeFpaS8wF5n7vXlmavYIfGCMz+d5icq9n3JcG00H6OiLXZ3iBA=="
+  "signature": "kO1/mHakFWZBCRlRafTxiKDSP4lSvPk4xtI7CMgjItpF7Kke84DaG+TSV9ihD5yDbwUntrw3nhSyhDQ8TEuQAw=="
 }
