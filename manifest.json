@@ -91,15 +91,15 @@
     },
     {
       "path": "ui/index.html",
-      "size": 11091,
-      "sha256": "a9521d47e4a9cdcb9561445dab833c8932378157d07c2499e028af449a552c05",
-      "url": "c/a9521d47e4a9cdcb9561445dab833c8932378157d07c2499e028af449a552c05"
+      "size": 11349,
+      "sha256": "ad2abfefbbfc9b289ebf7efc03c270936feb7201a04e09a53c71e0492c70e4c9",
+      "url": "c/ad2abfefbbfc9b289ebf7efc03c270936feb7201a04e09a53c71e0492c70e4c9"
     },
     {
       "path": "ui/renderer.js",
-      "size": 10567,
-      "sha256": "a87dcdca228ef63a5596bfc588338606e93fe3cd16eff393d1d33eb2416adfe6",
-      "url": "c/a87dcdca228ef63a5596bfc588338606e93fe3cd16eff393d1d33eb2416adfe6"
+      "size": 12639,
+      "sha256": "b6290da10786ef8145cfdd72e78c411beaa5ccf0aff6f2cf4aef518028476be0",
+      "url": "c/b6290da10786ef8145cfdd72e78c411beaa5ccf0aff6f2cf4aef518028476be0"
     },
     {
       "path": "ui/style.css",
@@ -108,5 +108,5 @@
       "url": "c/9ea0514bc1048b4a7bec116615e3925afc9510e318972613aec3869309886ae8"
     }
   ],
-  "signature": "AkyfVLsdImSBnfy+wV41Fpt8yqRXOg+Ya52g7VhbuAyEHCDxeiHDikzf9isnKdrVKq+vRlZ08SS1fAHPXs+uAw=="
+  "signature": "WaKQrtyDqRTJOqitAgsR/qDpoGmeRyO+uOMxRtk1L/wIpHOAYoxyswFYbbw8OiPkCQs+kf3kzhiOUKU+C2diBA=="
 }
