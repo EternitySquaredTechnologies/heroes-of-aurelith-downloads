@@ -31,9 +31,9 @@
     },
     {
       "path": "data/npcs.json",
-      "size": 25224,
-      "sha256": "37871506206438bb22efaf1855f96b85d7c5c3bb44876ff0750b0c0df1356f97",
-      "url": "c/37871506206438bb22efaf1855f96b85d7c5c3bb44876ff0750b0c0df1356f97"
+      "size": 29585,
+      "sha256": "ebd4f1d54d0dd48d0d043d5262408bf9969ce536cfda41906bc254314969fa23",
+      "url": "c/ebd4f1d54d0dd48d0d043d5262408bf9969ce536cfda41906bc254314969fa23"
     },
     {
       "path": "data/quests.json",
@@ -61,16 +61,16 @@
     },
     {
       "path": "maps/mossgate.json",
-      "size": 89885,
-      "sha256": "b0bb9a58c42073559996cd6ddc138ef66b9013cf2ea967ace5455c10ac34d17b",
-      "url": "c/b0bb9a58c42073559996cd6ddc138ef66b9013cf2ea967ace5455c10ac34d17b"
+      "size": 90644,
+      "sha256": "937d7c8d07abbe2e2a4ef2843737a13b6047c74ba3086c74450760cee6595be8",
+      "url": "c/937d7c8d07abbe2e2a4ef2843737a13b6047c74ba3086c74450760cee6595be8"
     },
     {
       "path": "tiles/placeholder.png",
-      "size": 2806,
-      "sha256": "31a3f9c09ff95f2b8be9304b69f21d159eb9fa2b84d625f8005186e2090fe5f2",
-      "url": "c/31a3f9c09ff95f2b8be9304b69f21d159eb9fa2b84d625f8005186e2090fe5f2"
+      "size": 3383,
+      "sha256": "a114cebafd0a4a005fe1ea96370128462d7ee4f66d3983a30d422a2be744b171",
+      "url": "c/a114cebafd0a4a005fe1ea96370128462d7ee4f66d3983a30d422a2be744b171"
     }
   ],
-  "signature": "ayCppzl/afo52XboJoAalAw6q8oO/bZguV2o5/vzT3N1k9HiDxyrk+cxxUmoTMVXSZbGBW+uZsxrSRvQ12FDCw=="
+  "signature": "4lNaFls4hxVEUF+C9D6zdRBpHDRW1VKXnzd6lOZlD1GFe3NPxdqLdNwDG7oVx+huFRt686r9HpZXD2hPkiIpBA=="
 }
