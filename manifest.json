@@ -19,9 +19,9 @@
     },
     {
       "path": "data/monsters.json",
-      "size": 4812,
-      "sha256": "cc56d8d1227dbb6b056b6a286794c06494a4cc5b3329585afc466fec651968c3",
-      "url": "c/cc56d8d1227dbb6b056b6a286794c06494a4cc5b3329585afc466fec651968c3"
+      "size": 5288,
+      "sha256": "fdaed78ede33b94e1cfa6b979adc94734e7ca405e6b71351be05744f5917cf9b",
+      "url": "c/fdaed78ede33b94e1cfa6b979adc94734e7ca405e6b71351be05744f5917cf9b"
     },
     {
       "path": "data/nodes.json",
@@ -61,9 +61,9 @@
     },
     {
       "path": "maps/mossgate.json",
-      "size": 89806,
-      "sha256": "0ee53851de6c5a16e48dca95c9f821b3ea9c16554194d2447d5de3a0e763e1c4",
-      "url": "c/0ee53851de6c5a16e48dca95c9f821b3ea9c16554194d2447d5de3a0e763e1c4"
+      "size": 89849,
+      "sha256": "e688b2d9fcc786ae24c46eeeaa1576e00862a1be1fa25f496834961771143020",
+      "url": "c/e688b2d9fcc786ae24c46eeeaa1576e00862a1be1fa25f496834961771143020"
     },
     {
       "path": "tiles/placeholder.png",
@@ -72,5 +72,5 @@
       "url": "c/31a3f9c09ff95f2b8be9304b69f21d159eb9fa2b84d625f8005186e2090fe5f2"
     }
   ],
-  "signature": "FtfXgHNpekPp7e0W1B+xNY3TybPBwRFedAHG5e+u9bWbyIZS84P59iID8dvQG2ZIXbvikOzSwxSNpXy48O6LCg=="
+  "signature": "3c/gy5MTJGXq9bGztOhypsi9G8yQRZRXkC1hMMSzgSEFmcNegpjMSCsKNAh9UnpqK+Zy633T+5vtbO0oRYghAw=="
 }
