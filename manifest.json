@@ -61,9 +61,9 @@
     },
     {
       "path": "maps/mossgate.json",
-      "size": 235186,
-      "sha256": "e703248b5bccfa38c011bf5bc807dfac013b4671a286c3f87b9b29a0250c7430",
-      "url": "c/e703248b5bccfa38c011bf5bc807dfac013b4671a286c3f87b9b29a0250c7430"
+      "size": 235257,
+      "sha256": "e871b13fc888eaf96569841fc5e53778d8f6ac3daf49789c2b53a4d87780f4b5",
+      "url": "c/e871b13fc888eaf96569841fc5e53778d8f6ac3daf49789c2b53a4d87780f4b5"
     },
     {
       "path": "tiles/placeholder.png",
@@ -79,9 +79,9 @@
     },
     {
       "path": "ui/game.js",
-      "size": 170968,
-      "sha256": "e7752636ec83e0d2704442e57054c377ebd245fa74fba1001cfcb5032e8e66c7",
-      "url": "c/e7752636ec83e0d2704442e57054c377ebd245fa74fba1001cfcb5032e8e66c7"
+      "size": 175937,
+      "sha256": "018ea434ce2f691c9778e6119463da9927416fb2679fd298a55176d8619aae4a",
+      "url": "c/018ea434ce2f691c9778e6119463da9927416fb2679fd298a55176d8619aae4a"
     },
     {
       "path": "ui/icon.png",
@@ -91,9 +91,9 @@
     },
     {
       "path": "ui/index.html",
-      "size": 11349,
-      "sha256": "ad2abfefbbfc9b289ebf7efc03c270936feb7201a04e09a53c71e0492c70e4c9",
-      "url": "c/ad2abfefbbfc9b289ebf7efc03c270936feb7201a04e09a53c71e0492c70e4c9"
+      "size": 12172,
+      "sha256": "41f84c672c2f79ef4a49ec7ddccd39d8bd4164eb55b0c45e92ecb7ceec2cf93e",
+      "url": "c/41f84c672c2f79ef4a49ec7ddccd39d8bd4164eb55b0c45e92ecb7ceec2cf93e"
     },
     {
       "path": "ui/renderer.js",
@@ -103,10 +103,10 @@
     },
     {
       "path": "ui/style.css",
-      "size": 16386,
-      "sha256": "9ea0514bc1048b4a7bec116615e3925afc9510e318972613aec3869309886ae8",
-      "url": "c/9ea0514bc1048b4a7bec116615e3925afc9510e318972613aec3869309886ae8"
+      "size": 18040,
+      "sha256": "430cf020a82f227618cac18aa61b1f319ba594ae46af5105e174059d3c30a271",
+      "url": "c/430cf020a82f227618cac18aa61b1f319ba594ae46af5105e174059d3c30a271"
     }
   ],
-  "signature": "EiY6c+VwxfE3g1r6SVde0dz6PZCyTjebRfT4JLz2mbDmfEqBfQGNVXYywRSlzBFEkwqQbiD1b1zqg/dHORQUAQ=="
+  "signature": "R2t2tfaakBjgq2Z6xOZqyiGVH4Lnf1+eb+jk4JxflPWsWsUrDahX5lOgDHKipur9gg2kBc/u33qbhwwP8eKTAQ=="
 }
