@@ -79,9 +79,9 @@
     },
     {
       "path": "ui/game.js",
-      "size": 180708,
-      "sha256": "7091bf85da6b603d0d53efbf770511bb2b75f0cd1c1f3b8ed07fed2efddbea93",
-      "url": "c/7091bf85da6b603d0d53efbf770511bb2b75f0cd1c1f3b8ed07fed2efddbea93"
+      "size": 181167,
+      "sha256": "8044a942977c2cbb97f0ec763be3b0b4bd0d6b1b60539c9fcd702057a58fb762",
+      "url": "c/8044a942977c2cbb97f0ec763be3b0b4bd0d6b1b60539c9fcd702057a58fb762"
     },
     {
       "path": "ui/icon.png",
@@ -91,9 +91,9 @@
     },
     {
       "path": "ui/index.html",
-      "size": 12700,
-      "sha256": "692c1b3405ee89a9e5a9414a4a380399a9ffc19db6fe8cdb6ef25458d1cc59b2",
-      "url": "c/692c1b3405ee89a9e5a9414a4a380399a9ffc19db6fe8cdb6ef25458d1cc59b2"
+      "size": 12954,
+      "sha256": "02713e91be4ca81a0b92e76eca338473771b1444aaf8ff293eb0e76e45614ca6",
+      "url": "c/02713e91be4ca81a0b92e76eca338473771b1444aaf8ff293eb0e76e45614ca6"
     },
     {
       "path": "ui/renderer.js",
@@ -108,5 +108,5 @@
       "url": "c/67ee669b1e1e1856f3920248258789167f659adfd00862e64e38737a6a91d152"
     }
   ],
-  "signature": "mwQ9bRMsXyway566yg4qyBVLqrvTF9wKm7cpOnHZFLy6IMO2Eu6GLBwSjPlTyyEgQ9CkFZPW2NvK19EFlVPeCw=="
+  "signature": "tnStVKRv2XSpiq+LW3ufzZ53qkP7SmWKZeLmf5ZFDDysjHPM8OvOr5kwdYAz4gN0/C2KHkGOnKnaybguZ65sBQ=="
 }
