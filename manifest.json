@@ -91,22 +91,22 @@
     },
     {
       "path": "ui/index.html",
-      "size": 12335,
-      "sha256": "85ad2f63731490f08e9895b4654f9b2f491cced7042cf00e4e68b5e034f60f17",
-      "url": "c/85ad2f63731490f08e9895b4654f9b2f491cced7042cf00e4e68b5e034f60f17"
+      "size": 12700,
+      "sha256": "692c1b3405ee89a9e5a9414a4a380399a9ffc19db6fe8cdb6ef25458d1cc59b2",
+      "url": "c/692c1b3405ee89a9e5a9414a4a380399a9ffc19db6fe8cdb6ef25458d1cc59b2"
     },
     {
       "path": "ui/renderer.js",
-      "size": 12639,
-      "sha256": "b6290da10786ef8145cfdd72e78c411beaa5ccf0aff6f2cf4aef518028476be0",
-      "url": "c/b6290da10786ef8145cfdd72e78c411beaa5ccf0aff6f2cf4aef518028476be0"
+      "size": 15054,
+      "sha256": "4ef18ef1acd8ed3be138de1c7362af3ff3e6279d2f448266d9d2985de3e5c02c",
+      "url": "c/4ef18ef1acd8ed3be138de1c7362af3ff3e6279d2f448266d9d2985de3e5c02c"
     },
     {
       "path": "ui/style.css",
-      "size": 18729,
-      "sha256": "9bec4aa37f3ed999f3fac390251dd9fe320227c63c77cbde265010c272ece352",
-      "url": "c/9bec4aa37f3ed999f3fac390251dd9fe320227c63c77cbde265010c272ece352"
+      "size": 19104,
+      "sha256": "67ee669b1e1e1856f3920248258789167f659adfd00862e64e38737a6a91d152",
+      "url": "c/67ee669b1e1e1856f3920248258789167f659adfd00862e64e38737a6a91d152"
     }
   ],
-  "signature": "AVQc7OkX3rf5Qa2yfikWWAv50t1HBMs5OgTaAdWu0Jg/CIYG0kk19+dKgjNsp9GbocADbQLiFXUQ7nG+DE/qDQ=="
+  "signature": "mwQ9bRMsXyway566yg4qyBVLqrvTF9wKm7cpOnHZFLy6IMO2Eu6GLBwSjPlTyyEgQ9CkFZPW2NvK19EFlVPeCw=="
 }
