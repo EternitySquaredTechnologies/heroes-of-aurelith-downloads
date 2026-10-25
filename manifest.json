@@ -2,8 +2,8 @@
   "version": "0.1.0",
   "protocol": 6,
   "minShellVersion": "0.1.0",
-  "server": "wss://fuzzy-motel-commonly-wood.trycloudflare.com",
-  "authUrl": "https://cms-direction-geneva-later.trycloudflare.com",
+  "server": "wss://him-ricky-boats-boundary.trycloudflare.com",
+  "authUrl": "https://charts-ordered-pushing-accent.trycloudflare.com",
   "files": [
     {
       "path": "data/game.json",
@@ -19,9 +19,9 @@
     },
     {
       "path": "data/monsters.json",
-      "size": 5288,
-      "sha256": "fdaed78ede33b94e1cfa6b979adc94734e7ca405e6b71351be05744f5917cf9b",
-      "url": "c/fdaed78ede33b94e1cfa6b979adc94734e7ca405e6b71351be05744f5917cf9b"
+      "size": 5319,
+      "sha256": "33e0b6b90858f86d7fc198dd3b95c180bd94d41ed5a6153370dc22a31d08957a",
+      "url": "c/33e0b6b90858f86d7fc198dd3b95c180bd94d41ed5a6153370dc22a31d08957a"
     },
     {
       "path": "data/nodes.json",
@@ -61,9 +61,9 @@
     },
     {
       "path": "maps/mossgate.json",
-      "size": 89849,
-      "sha256": "e688b2d9fcc786ae24c46eeeaa1576e00862a1be1fa25f496834961771143020",
-      "url": "c/e688b2d9fcc786ae24c46eeeaa1576e00862a1be1fa25f496834961771143020"
+      "size": 89885,
+      "sha256": "b0bb9a58c42073559996cd6ddc138ef66b9013cf2ea967ace5455c10ac34d17b",
+      "url": "c/b0bb9a58c42073559996cd6ddc138ef66b9013cf2ea967ace5455c10ac34d17b"
     },
     {
       "path": "tiles/placeholder.png",
@@ -72,5 +72,5 @@
       "url": "c/31a3f9c09ff95f2b8be9304b69f21d159eb9fa2b84d625f8005186e2090fe5f2"
     }
   ],
-  "signature": "3c/gy5MTJGXq9bGztOhypsi9G8yQRZRXkC1hMMSzgSEFmcNegpjMSCsKNAh9UnpqK+Zy633T+5vtbO0oRYghAw=="
+  "signature": "ayCppzl/afo52XboJoAalAw6q8oO/bZguV2o5/vzT3N1k9HiDxyrk+cxxUmoTMVXSZbGBW+uZsxrSRvQ12FDCw=="
 }
