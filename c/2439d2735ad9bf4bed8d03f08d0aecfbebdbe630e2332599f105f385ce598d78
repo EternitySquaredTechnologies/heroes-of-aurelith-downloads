@@ -1,0 +1,779 @@
+[
+  {
+    "id": "smelt_bronze",
+    "station": "furnace",
+    "skill": "smithing",
+    "level": 1,
+    "xp": 4,
+    "inputs": [
+      {
+        "item": "copper_ore",
+        "qty": 1
+      },
+      {
+        "item": "tin_ore",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "bronze_bar",
+      "qty": 1
+    }
+  },
+  {
+    "id": "smelt_iron",
+    "station": "furnace",
+    "skill": "smithing",
+    "level": 10,
+    "xp": 8,
+    "inputs": [
+      {
+        "item": "iron_ore",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "iron_bar",
+      "qty": 1
+    }
+  },
+  {
+    "id": "smelt_steel",
+    "station": "furnace",
+    "skill": "smithing",
+    "level": 20,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "iron_ore",
+        "qty": 1
+      },
+      {
+        "item": "coal",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "steel_bar",
+      "qty": 1
+    }
+  },
+  {
+    "id": "smelt_moonsilver",
+    "station": "furnace",
+    "skill": "smithing",
+    "level": 30,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "moonsilver_ore",
+        "qty": 1
+      },
+      {
+        "item": "coal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "moonsilver_bar",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_bronze_dagger",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 1,
+    "xp": 8,
+    "inputs": [
+      {
+        "item": "bronze_bar",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "bronze_dagger",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_bronze_sword",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 1,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "bronze_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "bronze_sword",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_iron_dagger",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 10,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "iron_bar",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "iron_dagger",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_iron_sword",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 10,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "iron_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "iron_sword",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_steel_dagger",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 20,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "steel_bar",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "steel_dagger",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_steel_sword",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 20,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "steel_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "steel_sword",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_mithril_dagger",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 30,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "moonsilver_bar",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "mithril_dagger",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_mithril_sword",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 30,
+    "xp": 128,
+    "inputs": [
+      {
+        "item": "moonsilver_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "mithril_sword",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_chain_body",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 20,
+    "xp": 128,
+    "inputs": [
+      {
+        "item": "steel_bar",
+        "qty": 4
+      }
+    ],
+    "output": {
+      "item": "chain_body",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_chain_legs",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 20,
+    "xp": 96,
+    "inputs": [
+      {
+        "item": "steel_bar",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "item": "chain_legs",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_chain_head",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 20,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "steel_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "chain_head",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_chain_offhand",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 20,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "steel_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "chain_offhand",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_mithril_body",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 30,
+    "xp": 256,
+    "inputs": [
+      {
+        "item": "moonsilver_bar",
+        "qty": 4
+      }
+    ],
+    "output": {
+      "item": "mithril_body",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_mithril_legs",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 30,
+    "xp": 192,
+    "inputs": [
+      {
+        "item": "moonsilver_bar",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "item": "mithril_legs",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_mithril_head",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 30,
+    "xp": 128,
+    "inputs": [
+      {
+        "item": "moonsilver_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "mithril_head",
+      "qty": 1
+    }
+  },
+  {
+    "id": "forge_mithril_offhand",
+    "station": "anvil",
+    "skill": "smithing",
+    "level": 30,
+    "xp": 128,
+    "inputs": [
+      {
+        "item": "moonsilver_bar",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "mithril_offhand",
+      "qty": 1
+    }
+  },
+  {
+    "id": "cook_shrimp",
+    "station": "range",
+    "skill": "cooking",
+    "level": 1,
+    "xp": 5,
+    "inputs": [
+      {
+        "item": "raw_shrimp",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "cooked_shrimp",
+      "qty": 1
+    }
+  },
+  {
+    "id": "cook_trout",
+    "station": "range",
+    "skill": "cooking",
+    "level": 10,
+    "xp": 10,
+    "inputs": [
+      {
+        "item": "raw_trout",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "cooked_trout",
+      "qty": 1
+    }
+  },
+  {
+    "id": "cook_salmon",
+    "station": "range",
+    "skill": "cooking",
+    "level": 20,
+    "xp": 20,
+    "inputs": [
+      {
+        "item": "raw_salmon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "cooked_salmon",
+      "qty": 1
+    }
+  },
+  {
+    "id": "cook_tuna",
+    "station": "range",
+    "skill": "cooking",
+    "level": 30,
+    "xp": 40,
+    "inputs": [
+      {
+        "item": "raw_tuna",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "cooked_tuna",
+      "qty": 1
+    }
+  },
+  {
+    "id": "cook_rabbit",
+    "station": "range",
+    "skill": "cooking",
+    "level": 1,
+    "xp": 5,
+    "inputs": [
+      {
+        "item": "raw_rabbit",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "item": "cooked_rabbit",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_pine_shortbow",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 1,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "pine_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "pine_shortbow",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_hazel_staff",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 1,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "pine_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "hazel_staff",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_birch_bow",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 10,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "birch_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "birch_bow",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_rowan_staff",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 10,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "birch_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "rowan_staff",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_oak_bow",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 20,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "oak_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "oak_bow",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_yew_staff",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 20,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "oak_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "yew_staff",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_willow_bow",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 30,
+    "xp": 128,
+    "inputs": [
+      {
+        "item": "willow_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "willow_bow",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_elder_staff",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 30,
+    "xp": 128,
+    "inputs": [
+      {
+        "item": "willow_logs",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "elder_staff",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_soft_leather_body",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 1,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "soft_leather",
+        "qty": 4
+      }
+    ],
+    "output": {
+      "item": "soft_leather_body",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_soft_leather_legs",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 1,
+    "xp": 24,
+    "inputs": [
+      {
+        "item": "soft_leather",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "item": "soft_leather_legs",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_soft_leather_head",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 1,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "soft_leather",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "soft_leather_head",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_soft_leather_offhand",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 1,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "soft_leather",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "soft_leather_offhand",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_soft_leather_cloak",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 1,
+    "xp": 16,
+    "inputs": [
+      {
+        "item": "soft_leather",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "soft_leather_cloak",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_hard_leather_body",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 10,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "hard_leather",
+        "qty": 4
+      }
+    ],
+    "output": {
+      "item": "hard_leather_body",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_hard_leather_legs",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 10,
+    "xp": 48,
+    "inputs": [
+      {
+        "item": "hard_leather",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "item": "hard_leather_legs",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_hard_leather_head",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 10,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "hard_leather",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "hard_leather_head",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_hard_leather_offhand",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 10,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "hard_leather",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "hard_leather_offhand",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_hard_leather_cloak",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 10,
+    "xp": 32,
+    "inputs": [
+      {
+        "item": "hard_leather",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "hard_leather_cloak",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_chain_cloak",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 20,
+    "xp": 64,
+    "inputs": [
+      {
+        "item": "stagskin",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "chain_cloak",
+      "qty": 1
+    }
+  },
+  {
+    "id": "make_mithril_cloak",
+    "station": "bench",
+    "skill": "crafting",
+    "level": 30,
+    "xp": 128,
+    "inputs": [
+      {
+        "item": "shadowhide",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "item": "mithril_cloak",
+      "qty": 1
+    }
+  }
+]

@@ -1,0 +1,145 @@
+[
+  {
+    "id": "furnace",
+    "name": "Furnace",
+    "kind": "craft",
+    "skill": "smithing",
+    "text": []
+  },
+  {
+    "id": "anvil",
+    "name": "Anvil",
+    "kind": "craft",
+    "skill": "smithing",
+    "text": []
+  },
+  {
+    "id": "range",
+    "name": "Cooking range",
+    "kind": "craft",
+    "skill": "cooking",
+    "text": []
+  },
+  {
+    "id": "bench",
+    "name": "Crafting bench",
+    "kind": "craft",
+    "skill": "crafting",
+    "text": []
+  },
+  {
+    "id": "bellstone",
+    "name": "Bellstone",
+    "kind": "bell",
+    "text": []
+  },
+  {
+    "id": "crown_stand",
+    "name": "The empty stand",
+    "kind": "inspect",
+    "text": [
+      "A cushion of red velvet on a plinth of white stone. The dent where the Crown sat is still there.",
+      "Someone has swept the stairs, but a little black ash is caught in the grain of the step."
+    ]
+  },
+  {
+    "id": "notice_board",
+    "name": "Notice board",
+    "kind": "inspect",
+    "text": [
+      "WANTED: strong backs to fell pine for the gate. Ask Hob at the south gate.",
+      "LOST: one brown mare. Do not ask Tam where. He knows.",
+      "The Warden asks that no one go into the Crown Tower after dark. No reason is given.",
+      "Smiths pay good bits for bronze bars. Copper and tin lie in the Old Quarry, east of the wall."
+    ]
+  },
+  {
+    "id": "sign_north",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "North road: the Mossgate Reach ends at the treeline. Nothing past it has been charted. South: Caer Aldmoor, one hour."
+    ]
+  },
+  {
+    "id": "sign_south",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "South road. West: Rabbit Meadow and the trapper's cabin. East: Mere Pool and the angler's dock. Straight on: the Tumbledown Watch."
+    ]
+  },
+  {
+    "id": "sign_west",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "West road. The Whispering Pines and the woodcutter's lodge lie ahead. The Goblin Warren is north of the pines. Go with food."
+    ]
+  },
+  {
+    "id": "sign_east",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "East road. The bridge over Silverrun Creek is just ahead. Beyond it: the Old Quarry and Hollow Farm."
+    ]
+  },
+  {
+    "id": "sign_warren",
+    "name": "Warning sign",
+    "kind": "inspect",
+    "text": [
+      "GOBLIN WARREN. Pinegrubs and nutcrackers inside, and something larger at the back. Once the big one has you, you cannot run. Four people went in this season and three came back."
+    ]
+  },
+  {
+    "id": "sign_pond",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "Mere Pool. Shrimp in the shallows. The dock is for anglers; the lamp is Marl's and he will know if you move it."
+    ]
+  },
+  {
+    "id": "sign_quarry",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "Old Quarry. Copper and tin for any back strong enough. Dunstan buys ore at fair weight."
+    ]
+  },
+  {
+    "id": "sign_farm",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "Hollow Farm. Follow the lane south. Shut the field gate behind you."
+    ]
+  },
+  {
+    "id": "sign_ruins",
+    "name": "Signpost",
+    "kind": "inspect",
+    "text": [
+      "Tumbledown Watch. A guard post from before the walls. It fell down before anyone now living was born. Mind the stones."
+    ]
+  },
+  {
+    "id": "ruin_stone",
+    "name": "Carved stone",
+    "kind": "inspect",
+    "text": [
+      "A worn block in the middle of the ruin, with a ring of letters round the edge. The weather has taken most of them.",
+      "What is left reads: HERE THE WATCH KEPT THE ROAD. Someone has scratched underneath it: and then it did not."
+    ]
+  },
+  {
+    "id": "town_well",
+    "name": "Old well",
+    "kind": "inspect",
+    "text": [
+      "The water is cold and hums a little at night. Everyone in Caer Aldmoor has stopped noticing."
+    ]
+  }
+]

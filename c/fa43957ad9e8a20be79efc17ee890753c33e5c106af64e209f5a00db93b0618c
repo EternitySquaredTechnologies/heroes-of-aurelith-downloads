@@ -1,0 +1,41 @@
+[
+  {
+    "id": "moss_imp",
+    "name": "Moss imp",
+    "level": 2,
+    "maxHp": 15,
+    "maxHit": 6,
+    "armor": 3,
+    "speed": 11,
+    "movement": 3,
+    "ironBits": [1, 4],
+    "respawnTicks": 50,
+    "wanderRadius": 3
+  },
+  {
+    "id": "glowcap_crawler",
+    "name": "Glowcap crawler",
+    "level": 3,
+    "maxHp": 19,
+    "maxHit": 8,
+    "armor": 5,
+    "speed": 9,
+    "movement": 2,
+    "ironBits": [2, 6],
+    "respawnTicks": 60,
+    "wanderRadius": 3
+  },
+  {
+    "id": "gnasher",
+    "name": "Gnasher",
+    "level": 6,
+    "maxHp": 36,
+    "maxHit": 12,
+    "armor": 9,
+    "speed": 10,
+    "movement": 3,
+    "ironBits": [3, 10],
+    "respawnTicks": 80,
+    "wanderRadius": 4
+  }
+]

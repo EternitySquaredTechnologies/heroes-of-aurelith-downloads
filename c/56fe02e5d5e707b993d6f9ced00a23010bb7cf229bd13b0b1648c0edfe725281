@@ -1,0 +1,246 @@
+[
+  {
+    "id": "moss_imp",
+    "name": "Moss imp",
+    "level": 2,
+    "maxHp": 15,
+    "maxHit": 6,
+    "armor": 3,
+    "speed": 11,
+    "movement": 3,
+    "ironBits": [
+      1,
+      4
+    ],
+    "respawnTicks": 50,
+    "wanderRadius": 3
+  },
+  {
+    "id": "glowcap_crawler",
+    "name": "Glowcap crawler",
+    "level": 3,
+    "maxHp": 19,
+    "maxHit": 8,
+    "armor": 5,
+    "speed": 9,
+    "movement": 2,
+    "ironBits": [
+      2,
+      6
+    ],
+    "respawnTicks": 60,
+    "wanderRadius": 3
+  },
+  {
+    "id": "gnasher",
+    "name": "Gnasher",
+    "level": 6,
+    "maxHp": 36,
+    "maxHit": 12,
+    "armor": 9,
+    "speed": 10,
+    "movement": 3,
+    "ironBits": [
+      3,
+      10
+    ],
+    "respawnTicks": 80,
+    "wanderRadius": 4
+  },
+  {
+    "id": "pinegrub_goblin",
+    "name": "Pinegrub goblin",
+    "level": 8,
+    "maxHp": 58,
+    "maxHit": 15,
+    "armor": 12,
+    "speed": 10,
+    "movement": 3,
+    "ironBits": [
+      6,
+      16
+    ],
+    "respawnTicks": 90,
+    "wanderRadius": 3
+  },
+  {
+    "id": "nutcracker_goblin",
+    "name": "Nutcracker goblin",
+    "level": 9,
+    "maxHp": 70,
+    "maxHit": 17,
+    "armor": 14,
+    "speed": 9,
+    "movement": 3,
+    "ironBits": [
+      8,
+      20
+    ],
+    "respawnTicks": 100,
+    "wanderRadius": 3
+  },
+  {
+    "id": "mind_goblin",
+    "name": "Mind Goblin",
+    "level": 12,
+    "maxHp": 260,
+    "maxHit": 18,
+    "armor": 16,
+    "speed": 8,
+    "movement": 2,
+    "ironBits": [
+      120,
+      200
+    ],
+    "respawnTicks": 600,
+    "wanderRadius": 1,
+    "ability": "pine_nut_throw",
+    "boss": true,
+    "drops": [
+      {
+        "item": "nutshell_ring",
+        "chance": 0.35,
+        "rarity": "rare"
+      },
+      {
+        "item": "mind_goblin_sash",
+        "chance": 0.35,
+        "rarity": "rare"
+      },
+      {
+        "item": "goblin_wit_boon",
+        "chance": 0.35,
+        "rarity": "rare"
+      }
+    ]
+  },
+  {
+    "id": "sump_rat",
+    "name": "Sump rat",
+    "level": 4,
+    "maxHp": 24,
+    "maxHit": 6,
+    "armor": 2,
+    "speed": 14,
+    "movement": 4,
+    "ironBits": [
+      2,
+      7
+    ],
+    "respawnTicks": 60,
+    "wanderRadius": 3,
+    "drops": [
+      {
+        "item": "crew_note",
+        "chance": 0.1,
+        "rarity": "basic"
+      }
+    ]
+  },
+  {
+    "id": "cave_bat",
+    "name": "Cave bat",
+    "level": 5,
+    "maxHp": 22,
+    "maxHit": 7,
+    "armor": 1,
+    "speed": 16,
+    "movement": 5,
+    "ironBits": [
+      3,
+      9
+    ],
+    "respawnTicks": 70,
+    "wanderRadius": 4,
+    "flies": true,
+    "drops": [
+      {
+        "item": "crew_note",
+        "chance": 0.1,
+        "rarity": "basic"
+      }
+    ]
+  },
+  {
+    "id": "bog_wretch",
+    "name": "Bog wretch",
+    "level": 7,
+    "maxHp": 60,
+    "maxHit": 11,
+    "armor": 6,
+    "speed": 6,
+    "movement": 2,
+    "ironBits": [
+      6,
+      16
+    ],
+    "respawnTicks": 90,
+    "wanderRadius": 2,
+    "ability": "wretch_bite",
+    "drops": [
+      {
+        "item": "crew_note",
+        "chance": 0.3,
+        "rarity": "basic"
+      }
+    ]
+  },
+  {
+    "id": "stone_boar",
+    "name": "Stone boar",
+    "level": 8,
+    "maxHp": 80,
+    "maxHit": 16,
+    "armor": 16,
+    "speed": 12,
+    "movement": 5,
+    "ironBits": [
+      8,
+      20
+    ],
+    "respawnTicks": 100,
+    "wanderRadius": 3,
+    "ability": "gore",
+    "charge": true
+  },
+  {
+    "id": "foreman_below",
+    "name": "The Foreman Below",
+    "level": 13,
+    "maxHp": 380,
+    "maxHit": 22,
+    "armor": 20,
+    "speed": 9,
+    "movement": 2,
+    "ironBits": [
+      160,
+      260
+    ],
+    "respawnTicks": 800,
+    "wanderRadius": 1,
+    "ability": "pick_throw",
+    "boss": true,
+    "drops": [
+      {
+        "item": "tally_ring",
+        "chance": 0.35,
+        "rarity": "rare"
+      },
+      {
+        "item": "foremans_belt",
+        "chance": 0.35,
+        "rarity": "rare"
+      },
+      {
+        "item": "sump_boon",
+        "chance": 0.35,
+        "rarity": "rare"
+      },
+      {
+        "item": "foremans_pick",
+        "chance": 0.5,
+        "rarity": "basic"
+      }
+    ]
+  }
+]

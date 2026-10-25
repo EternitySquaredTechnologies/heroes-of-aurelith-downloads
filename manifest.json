@@ -1,0 +1,76 @@
+{
+  "version": "0.1.0",
+  "protocol": 6,
+  "minShellVersion": "0.1.0",
+  "server": "wss://fuzzy-motel-commonly-wood.trycloudflare.com",
+  "authUrl": "https://cms-direction-geneva-later.trycloudflare.com",
+  "files": [
+    {
+      "path": "data/game.json",
+      "size": 191,
+      "sha256": "eaa1df4d7e5eafcf7ec8fa201e1dd09c89c1d7646b800cc9cd60ce2d79b54b3d",
+      "url": "c/eaa1df4d7e5eafcf7ec8fa201e1dd09c89c1d7646b800cc9cd60ce2d79b54b3d"
+    },
+    {
+      "path": "data/items.json",
+      "size": 16777,
+      "sha256": "be5d1d11e23c56c5a9f17b85a1a87db1112c79c2f0fb88629b76f096ded07322",
+      "url": "c/be5d1d11e23c56c5a9f17b85a1a87db1112c79c2f0fb88629b76f096ded07322"
+    },
+    {
+      "path": "data/monsters.json",
+      "size": 4812,
+      "sha256": "cc56d8d1227dbb6b056b6a286794c06494a4cc5b3329585afc466fec651968c3",
+      "url": "c/cc56d8d1227dbb6b056b6a286794c06494a4cc5b3329585afc466fec651968c3"
+    },
+    {
+      "path": "data/nodes.json",
+      "size": 5595,
+      "sha256": "06826fe501b2323f8a58c9a6067d2781f5bf6b0c0838e7a4c9ff02729b2a9e86",
+      "url": "c/06826fe501b2323f8a58c9a6067d2781f5bf6b0c0838e7a4c9ff02729b2a9e86"
+    },
+    {
+      "path": "data/npcs.json",
+      "size": 25224,
+      "sha256": "37871506206438bb22efaf1855f96b85d7c5c3bb44876ff0750b0c0df1356f97",
+      "url": "c/37871506206438bb22efaf1855f96b85d7c5c3bb44876ff0750b0c0df1356f97"
+    },
+    {
+      "path": "data/quests.json",
+      "size": 17965,
+      "sha256": "026f8ab3d456f0639f8771fada9831acbfe5a66bfb6858c173913691c319db82",
+      "url": "c/026f8ab3d456f0639f8771fada9831acbfe5a66bfb6858c173913691c319db82"
+    },
+    {
+      "path": "data/recipes.json",
+      "size": 12526,
+      "sha256": "2439d2735ad9bf4bed8d03f08d0aecfbebdbe630e2332599f105f385ce598d78",
+      "url": "c/2439d2735ad9bf4bed8d03f08d0aecfbebdbe630e2332599f105f385ce598d78"
+    },
+    {
+      "path": "data/shops.json",
+      "size": 8035,
+      "sha256": "6a17a51d75d748c14fed48ba6acc059b9317502e1cf91dac9965643a65bdb99a",
+      "url": "c/6a17a51d75d748c14fed48ba6acc059b9317502e1cf91dac9965643a65bdb99a"
+    },
+    {
+      "path": "data/stations.json",
+      "size": 5798,
+      "sha256": "352f1f7a13f87b967de6b919bb83628f5421e96c4e3958a671da81ad2489478e",
+      "url": "c/352f1f7a13f87b967de6b919bb83628f5421e96c4e3958a671da81ad2489478e"
+    },
+    {
+      "path": "maps/mossgate.json",
+      "size": 89806,
+      "sha256": "0ee53851de6c5a16e48dca95c9f821b3ea9c16554194d2447d5de3a0e763e1c4",
+      "url": "c/0ee53851de6c5a16e48dca95c9f821b3ea9c16554194d2447d5de3a0e763e1c4"
+    },
+    {
+      "path": "tiles/placeholder.png",
+      "size": 2806,
+      "sha256": "31a3f9c09ff95f2b8be9304b69f21d159eb9fa2b84d625f8005186e2090fe5f2",
+      "url": "c/31a3f9c09ff95f2b8be9304b69f21d159eb9fa2b84d625f8005186e2090fe5f2"
+    }
+  ],
+  "signature": "FtfXgHNpekPp7e0W1B+xNY3TybPBwRFedAHG5e+u9bWbyIZS84P59iID8dvQG2ZIXbvikOzSwxSNpXy48O6LCg=="
+}

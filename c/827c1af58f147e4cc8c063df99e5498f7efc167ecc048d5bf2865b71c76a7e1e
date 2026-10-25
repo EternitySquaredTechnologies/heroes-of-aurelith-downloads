@@ -1,0 +1,442 @@
+[
+  {
+    "id": "the_empty_stand",
+    "name": "The Empty Stand",
+    "summary": "The king is dead and the Crown is gone. Osbric wants a stranger with fresh eyes.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "tam",
+        "todo": "Ask Tam what he saw. He wants three moss imps driven off the road first.",
+        "say": [
+          "The harness is safe again. Thank you."
+        ],
+        "waiting": [
+          "I will tell you what I saw. But the imps keep chewing the harness. Drive off three, outside the wall, and I will tell you everything. They are south of the gate, among the trees."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "moss_imp",
+          "count": 3
+        }
+      },
+      {
+        "npc": "tam",
+        "todo": "Hear what Tam saw.",
+        "say": [
+          "A tall man in a pale mask walked out by the west gate on the night of the Harvest Watch. He did not walk like a man. He walked like water poured out of a jug.",
+          "Tell the Warden. Tell him I did not take the mare."
+        ],
+        "need": {
+          "type": "none"
+        }
+      },
+      {
+        "npc": "osbric",
+        "todo": "Tell Osbric about the masked man.",
+        "say": [
+          "The west gate. Of course. They went the long way round, so no guard would see.",
+          "You have done more in an afternoon than my whole watch did in eleven days. Take this. It is not much, but you will need the tools."
+        ],
+        "need": {
+          "type": "none"
+        }
+      }
+    ],
+    "reward": {
+      "xp": 120,
+      "iron_bits": 40,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": [
+        {
+          "item": "bronze_axe",
+          "qty": 1
+        },
+        {
+          "item": "bronze_pickaxe",
+          "qty": 1
+        },
+        {
+          "item": "reed_rod",
+          "qty": 1
+        },
+        {
+          "item": "rope_snare",
+          "qty": 1
+        }
+      ]
+    },
+    "done": [
+      "Osbric looks at the west gate for a long time, then back at you.",
+      "\"Good work, Wanderer. Come back when you have more of the Reach in your boots.\""
+    ],
+    "giver": "osbric",
+    "offer": [
+      "The Crown lay on a stand in the Tower. Look at it if you like; the guard on the door will let you stand outside, no further.",
+      "Before that, go to the stable and talk to Tam. He saw something that night and he is too frightened to say what.",
+      "Be kind to him. He is twelve and thinks he is in trouble."
+    ]
+  },
+  {
+    "id": "first_lesson",
+    "name": "The First Lesson",
+    "summary": "Magister Elowen wants to see you spend your first skill point.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "elowen",
+        "todo": "Open the skill tree (K) and spend a point, then return to the Magister.",
+        "say": [],
+        "waiting": [
+          "You have not spent a point yet. Press K."
+        ],
+        "need": {
+          "type": "spent",
+          "points": 1
+        }
+      }
+    ],
+    "reward": {
+      "xp": 40,
+      "iron_bits": 20,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "\"Good. Now you know how it feels. Every rank counts, and you can take them all back for a fee if you change your mind.\"",
+      "She nods, once, the way teachers do when you have not embarrassed them."
+    ],
+    "giver": "elowen",
+    "offer": [
+      "You have points to spend already. Open the tree with K and put one into anything. A hero with unspent points is a hero who is not trying."
+    ]
+  },
+  {
+    "id": "timber_for_the_gate",
+    "name": "Timber for the Gate",
+    "summary": "Hob needs pine to mend the south gate.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "hob",
+        "todo": "Bring Hob 10 pine logs (Forestry).",
+        "say": [],
+        "waiting": [
+          "Ten pine logs. Alda Brook is in the grove west of the wall. Chop a tree, it takes a few swings."
+        ],
+        "need": {
+          "type": "have",
+          "item": "pine_logs",
+          "count": 10
+        }
+      }
+    ],
+    "reward": {
+      "xp": 60,
+      "iron_bits": 70,
+      "gold_coins": 0,
+      "favor_tokens": 0,
+      "items": []
+    },
+    "done": [
+      "Hob takes the logs, counts them twice, and counts them a third time on principle.",
+      "\"Honest weight. Fine work.\""
+    ],
+    "giver": "hob",
+    "offer": [
+      "The south gate has not been mended since before the war. Ten pine logs, cut and clean. I will pay you out of my own pocket, which is a sentence I have never said."
+    ]
+  },
+  {
+    "id": "copper_and_tin",
+    "name": "Copper and Tin",
+    "summary": "Brandt needs bronze bars for the guard.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "brandt",
+        "todo": "Bring Brandt 3 bronze bars (Mining and Smithing).",
+        "say": [],
+        "waiting": [
+          "Three bronze bars. One copper and one tin each. The furnace is behind me."
+        ],
+        "need": {
+          "type": "have",
+          "item": "bronze_bar",
+          "count": 3
+        }
+      }
+    ],
+    "reward": {
+      "xp": 80,
+      "iron_bits": 120,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Brandt turns a bar over, sniffs it, and nods.",
+      "\"Clean smelt. You might be a smith yet.\""
+    ],
+    "giver": "brandt",
+    "offer": [
+      "The guard wants new buckles and I am out of bronze. Three bars. Copper and tin from the Old Quarry, smelt them at my furnace, a bar each.",
+      "Do it yourself. I will not pay for work I could do faster myself."
+    ]
+  },
+  {
+    "id": "supper_for_the_watch",
+    "name": "Supper for the Watch",
+    "summary": "Bram needs five cooked shrimp for the night watch.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "bram",
+        "todo": "Bring Bram 5 cooked shrimp (Fishing and Cooking).",
+        "say": [],
+        "waiting": [
+          "Five cooked shrimp. Catch them in the pond, cook them at my range. Do not burn them."
+        ],
+        "need": {
+          "type": "have",
+          "item": "cooked_shrimp",
+          "count": 5
+        }
+      }
+    ],
+    "reward": {
+      "xp": 60,
+      "iron_bits": 80,
+      "gold_coins": 0,
+      "favor_tokens": 1,
+      "items": [
+        {
+          "item": "bread",
+          "qty": 3
+        }
+      ]
+    },
+    "done": [
+      "Bram counts them. \"Five. Good. Have some bread. I mean it.\""
+    ],
+    "giver": "bram",
+    "offer": [
+      "The night watch eats better than the day watch, and I resent it. Five cooked shrimp, and I will not ask where you got them."
+    ]
+  },
+  {
+    "id": "leather_for_the_barracks",
+    "name": "Leather for the Barracks",
+    "summary": "Hild needs soft leather for new guard caps.",
+    "level": 1,
+    "after": [],
+    "steps": [
+      {
+        "npc": "hild",
+        "todo": "Bring Hild 4 soft leather (Hunting).",
+        "say": [],
+        "waiting": [
+          "Four soft leather. Rowan Fenwick will sell you a snare."
+        ],
+        "need": {
+          "type": "have",
+          "item": "soft_leather",
+          "count": 4
+        }
+      }
+    ],
+    "reward": {
+      "xp": 60,
+      "iron_bits": 60,
+      "gold_coins": 0,
+      "favor_tokens": 0,
+      "items": [
+        {
+          "item": "soft_leather_head",
+          "qty": 1
+        }
+      ]
+    },
+    "done": [
+      "Hild turns the leather in the light. \"Supple. You have a good eye. Keep the cap.\""
+    ],
+    "giver": "hild",
+    "offer": [
+      "The guard wears out caps like some people wear out socks. Four pieces of soft leather. Snare rabbits in the meadow south-west of the wall."
+    ]
+  },
+  {
+    "id": "imps_on_the_road",
+    "name": "Imps on the Road",
+    "summary": "Hob says the moss imps have got bold.",
+    "level": 1,
+    "after": [
+      "the_empty_stand"
+    ],
+    "steps": [
+      {
+        "npc": "hob",
+        "todo": "Defeat eight moss imps.",
+        "say": [],
+        "waiting": [
+          "Eight moss imps. Along the south road and in the trees."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "moss_imp",
+          "count": 8
+        }
+      }
+    ],
+    "reward": {
+      "xp": 100,
+      "iron_bits": 100,
+      "gold_coins": 0,
+      "favor_tokens": 0,
+      "items": []
+    },
+    "done": [
+      "Hob nods. \"The road is quieter. Thank you.\""
+    ],
+    "giver": "hob",
+    "offer": [
+      "The imps have started biting carts. Eight of them. Not a hero's job, just a job."
+    ]
+  },
+  {
+    "id": "glow_in_the_dark",
+    "name": "Glow in the Dark",
+    "summary": "Sergeant Maud wants the glowcap crawlers thinned out.",
+    "level": 3,
+    "after": [
+      "the_empty_stand"
+    ],
+    "steps": [
+      {
+        "npc": "maud",
+        "todo": "Defeat six glowcap crawlers.",
+        "say": [],
+        "waiting": [
+          "Six glowcap crawlers. They poison on a hit; eat before you start."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "glowcap_crawler",
+          "count": 6
+        }
+      }
+    ],
+    "reward": {
+      "xp": 160,
+      "iron_bits": 80,
+      "gold_coins": 1,
+      "favor_tokens": 1,
+      "items": []
+    },
+    "done": [
+      "Maud grunts. \"Not bad for a Wanderer. You may report to the yard whenever you want a drink of water.\""
+    ],
+    "giver": "maud",
+    "offer": [
+      "Crawlers. Poison on every bite. Six of them, farther out than the imps. Bring a shield and some food."
+    ]
+  },
+  {
+    "id": "gnashers_on_the_road",
+    "name": "Gnashers on the Road",
+    "summary": "The Warden wants the gnashers cleared from the road beyond the Reach.",
+    "level": 5,
+    "after": [
+      "glow_in_the_dark"
+    ],
+    "steps": [
+      {
+        "npc": "osbric",
+        "todo": "Defeat three gnashers.",
+        "say": [],
+        "waiting": [
+          "Three gnashers. They are in the far corners of the Reach."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "gnasher",
+          "count": 3
+        }
+      }
+    ],
+    "reward": {
+      "xp": 300,
+      "iron_bits": 150,
+      "gold_coins": 2,
+      "favor_tokens": 2,
+      "items": []
+    },
+    "done": [
+      "Osbric clasps your arm. \"The Reach is yours for now. Wait until you see the Moors.\""
+    ],
+    "giver": "osbric",
+    "offer": [
+      "The gnashers have taken the far road. They come in packs of three. Bring armor, bring food, and do not go alone if you can help it. You can't, I know. Go anyway."
+    ]
+  },
+  {
+    "id": "the_mind_goblin",
+    "name": "The Mind Goblin",
+    "summary": "Wren wants the goblins cleared from the warren and their leader put down.",
+    "level": 8,
+    "after": [
+      "glow_in_the_dark"
+    ],
+    "steps": [
+      {
+        "npc": "wren",
+        "todo": "Defeat four pinegrub goblins.",
+        "say": [],
+        "waiting": [
+          "Four pinegrub goblins. They keep to the hall and the western den."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "pinegrub_goblin",
+          "count": 4
+        }
+      },
+      {
+        "npc": "wren",
+        "todo": "Defeat the Mind Goblin.",
+        "say": [
+          "Good. Now the big one. He sits in the chamber at the back, behind the middle den. Eat before you go in, and do not count on running."
+        ],
+        "waiting": [
+          "The Mind Goblin is in the back chamber. Bring food."
+        ],
+        "need": {
+          "type": "kill",
+          "monster": "mind_goblin",
+          "count": 1
+        }
+      }
+    ],
+    "reward": {
+      "xp": 600,
+      "iron_bits": 300,
+      "gold_coins": 3,
+      "favor_tokens": 2,
+      "items": []
+    },
+    "done": [
+      "Wren laughs, tired and relieved. \"Quiet at last. The pines will grow back. Keep whatever he dropped.\""
+    ],
+    "giver": "wren",
+    "offer": [
+      "The warren mouth is north of the pines. Four of the pinegrubs first, so the rest learn to be careful. Then we talk about their leader."
+    ]
+  }
+]

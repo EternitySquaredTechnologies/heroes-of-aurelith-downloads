@@ -1,0 +1,326 @@
+[
+  {
+    "id": "pine_tree",
+    "name": "Pine tree",
+    "art": "tree",
+    "tint": "#5aa04a",
+    "skill": "forestry",
+    "level": 1,
+    "xp": 4,
+    "tool": "axe",
+    "toolTier": 1,
+    "yields": "pine_logs",
+    "chance": 0.6,
+    "depletes": 0.35,
+    "respawn": [
+      25,
+      55
+    ],
+    "verb": "chop"
+  },
+  {
+    "id": "birch_tree",
+    "name": "Birch tree",
+    "art": "tree",
+    "tint": "#a8c070",
+    "skill": "forestry",
+    "level": 10,
+    "xp": 8,
+    "tool": "axe",
+    "toolTier": 2,
+    "yields": "birch_logs",
+    "chance": 0.6,
+    "depletes": 0.35,
+    "respawn": [
+      25,
+      55
+    ],
+    "verb": "chop"
+  },
+  {
+    "id": "oak_tree",
+    "name": "Oak tree",
+    "art": "tree",
+    "tint": "#3f8040",
+    "skill": "forestry",
+    "level": 20,
+    "xp": 16,
+    "tool": "axe",
+    "toolTier": 3,
+    "yields": "oak_logs",
+    "chance": 0.6,
+    "depletes": 0.35,
+    "respawn": [
+      25,
+      55
+    ],
+    "verb": "chop"
+  },
+  {
+    "id": "willow_tree",
+    "name": "Willow tree",
+    "art": "tree",
+    "tint": "#7ab090",
+    "skill": "forestry",
+    "level": 30,
+    "xp": 32,
+    "tool": "axe",
+    "toolTier": 4,
+    "yields": "willow_logs",
+    "chance": 0.6,
+    "depletes": 0.35,
+    "respawn": [
+      25,
+      55
+    ],
+    "verb": "chop"
+  },
+  {
+    "id": "copper_rock",
+    "name": "Copper rock",
+    "art": "rock",
+    "tint": "#c8803c",
+    "skill": "mining",
+    "level": 1,
+    "xp": 4,
+    "tool": "pickaxe",
+    "toolTier": 1,
+    "yields": "copper_ore",
+    "chance": 0.55,
+    "depletes": 1,
+    "respawn": [
+      20,
+      50
+    ],
+    "verb": "mine"
+  },
+  {
+    "id": "tin_rock",
+    "name": "Tin rock",
+    "art": "rock",
+    "tint": "#b8c0d0",
+    "skill": "mining",
+    "level": 1,
+    "xp": 4,
+    "tool": "pickaxe",
+    "toolTier": 1,
+    "yields": "tin_ore",
+    "chance": 0.55,
+    "depletes": 1,
+    "respawn": [
+      20,
+      50
+    ],
+    "verb": "mine"
+  },
+  {
+    "id": "iron_rock",
+    "name": "Iron rock",
+    "art": "rock",
+    "tint": "#8a6a58",
+    "skill": "mining",
+    "level": 10,
+    "xp": 8,
+    "tool": "pickaxe",
+    "toolTier": 2,
+    "yields": "iron_ore",
+    "chance": 0.55,
+    "depletes": 1,
+    "respawn": [
+      20,
+      50
+    ],
+    "verb": "mine"
+  },
+  {
+    "id": "coal_rock",
+    "name": "Coal seam",
+    "art": "rock",
+    "tint": "#38343c",
+    "skill": "mining",
+    "level": 20,
+    "xp": 16,
+    "tool": "pickaxe",
+    "toolTier": 3,
+    "yields": "coal",
+    "chance": 0.55,
+    "depletes": 1,
+    "respawn": [
+      20,
+      50
+    ],
+    "verb": "mine"
+  },
+  {
+    "id": "moonsilver_rock",
+    "name": "Moonsilver vein",
+    "art": "rock",
+    "tint": "#bfe4ff",
+    "skill": "mining",
+    "level": 30,
+    "xp": 32,
+    "tool": "pickaxe",
+    "toolTier": 4,
+    "yields": "moonsilver_ore",
+    "chance": 0.55,
+    "depletes": 1,
+    "respawn": [
+      20,
+      50
+    ],
+    "verb": "mine"
+  },
+  {
+    "id": "shrimp_spot",
+    "name": "Shrimp shoal",
+    "art": "fish",
+    "tint": "#bfe8f4",
+    "skill": "fishing",
+    "level": 1,
+    "xp": 4,
+    "tool": "rod",
+    "toolTier": 1,
+    "yields": "raw_shrimp",
+    "chance": 0.6,
+    "depletes": 0,
+    "respawn": [
+      10,
+      20
+    ],
+    "verb": "fish"
+  },
+  {
+    "id": "trout_spot",
+    "name": "Trout shoal",
+    "art": "fish",
+    "tint": "#bfe8f4",
+    "skill": "fishing",
+    "level": 10,
+    "xp": 8,
+    "tool": "rod",
+    "toolTier": 2,
+    "yields": "raw_trout",
+    "chance": 0.6,
+    "depletes": 0,
+    "respawn": [
+      10,
+      20
+    ],
+    "verb": "fish"
+  },
+  {
+    "id": "salmon_spot",
+    "name": "Salmon shoal",
+    "art": "fish",
+    "tint": "#bfe8f4",
+    "skill": "fishing",
+    "level": 20,
+    "xp": 16,
+    "tool": "rod",
+    "toolTier": 3,
+    "yields": "raw_salmon",
+    "chance": 0.6,
+    "depletes": 0,
+    "respawn": [
+      10,
+      20
+    ],
+    "verb": "fish"
+  },
+  {
+    "id": "tuna_spot",
+    "name": "Tuna shoal",
+    "art": "fish",
+    "tint": "#bfe8f4",
+    "skill": "fishing",
+    "level": 30,
+    "xp": 32,
+    "tool": "rod",
+    "toolTier": 4,
+    "yields": "raw_tuna",
+    "chance": 0.6,
+    "depletes": 0,
+    "respawn": [
+      10,
+      20
+    ],
+    "verb": "fish"
+  },
+  {
+    "id": "rabbit_warren",
+    "name": "Rabbit warren",
+    "art": "warren",
+    "tint": "#a07848",
+    "skill": "hunting",
+    "level": 1,
+    "xp": 4,
+    "tool": "snare",
+    "toolTier": 1,
+    "yields": "soft_leather",
+    "also": "raw_rabbit",
+    "chance": 0.55,
+    "depletes": 0.3,
+    "respawn": [
+      20,
+      40
+    ],
+    "verb": "set a snare at"
+  },
+  {
+    "id": "fox_den",
+    "name": "Fox den",
+    "art": "warren",
+    "tint": "#7a5a3a",
+    "skill": "hunting",
+    "level": 10,
+    "xp": 8,
+    "tool": "snare",
+    "toolTier": 2,
+    "yields": "hard_leather",
+    "chance": 0.5,
+    "depletes": 0.4,
+    "respawn": [
+      30,
+      60
+    ],
+    "verb": "set a snare at"
+  },
+  {
+    "id": "stag_trail",
+    "name": "Stag trail",
+    "art": "warren",
+    "tint": "#7a5a3a",
+    "skill": "hunting",
+    "level": 20,
+    "xp": 16,
+    "tool": "snare",
+    "toolTier": 3,
+    "yields": "stagskin",
+    "chance": 0.5,
+    "depletes": 0.4,
+    "respawn": [
+      30,
+      60
+    ],
+    "verb": "set a snare at"
+  },
+  {
+    "id": "shadow_trail",
+    "name": "Shadow stag trail",
+    "art": "warren",
+    "tint": "#7a5a3a",
+    "skill": "hunting",
+    "level": 30,
+    "xp": 32,
+    "tool": "snare",
+    "toolTier": 4,
+    "yields": "shadowhide",
+    "chance": 0.5,
+    "depletes": 0.4,
+    "respawn": [
+      30,
+      60
+    ],
+    "verb": "set a snare at"
+  }
+]

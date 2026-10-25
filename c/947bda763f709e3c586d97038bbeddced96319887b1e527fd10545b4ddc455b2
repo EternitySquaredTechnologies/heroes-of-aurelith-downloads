@@ -1,0 +1,22 @@
+[
+  {
+    "id": "bronze_sword",
+    "name": "Bronze sword",
+    "kind": "weapon",
+    "weaponPower": 10,
+    "speed": 0
+  },
+  {
+    "id": "soft_leather_body",
+    "name": "Soft leather jerkin",
+    "kind": "body",
+    "armor": 4
+  },
+  {
+    "id": "cooked_shrimp",
+    "name": "Cooked shrimp",
+    "kind": "food",
+    "heal": 20,
+    "stackable": true
+  }
+]
