@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bellstone_plaza",
+    "name": "Bellstone Plaza",
+    "x": 45,
+    "y": 24,
+    "free": true
+  },
+  {
+    "id": "warren_gate",
+    "name": "Goblin Warren Gate",
+    "x": 13,
+    "y": 13,
+    "free": true
+  },
+  {
+    "id": "quarry_camp",
+    "name": "Quarry Camp",
+    "x": 86,
+    "y": 32,
+    "free": true
+  },
+  {
+    "id": "dunhollow",
+    "name": "Dunhollow",
+    "x": 45,
+    "y": 113,
+    "free": true
+  },
+  {
+    "id": "black_sump",
+    "name": "Delve of the Black Sump",
+    "x": 47,
+    "y": 135,
+    "free": false
+  },
+  {
+    "id": "innsharrow",
+    "name": "Innsharrow",
+    "x": 45,
+    "y": 189,
+    "free": false
+  },
+  {
+    "id": "wargwatch",
+    "name": "Wargwatch",
+    "x": 47,
+    "y": 277,
+    "free": false
+  },
+  {
+    "id": "nameless_cairns",
+    "name": "The Nameless Cairns",
+    "x": 47,
+    "y": 296,
+    "free": false
+  },
+  {
+    "id": "naerwick",
+    "name": "Naerwick",
+    "x": 47,
+    "y": 366,
+    "free": false
+  },
+  {
+    "id": "drowned_hall",
+    "name": "The Drowned Hall",
+    "x": 47,
+    "y": 392,
+    "free": false
+  }
+]

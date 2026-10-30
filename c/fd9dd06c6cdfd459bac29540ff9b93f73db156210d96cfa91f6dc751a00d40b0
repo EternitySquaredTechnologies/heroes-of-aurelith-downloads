@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:" />
+  <title>Heroes of Aurelith</title>
+  <link rel="icon" href="icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="frame">
+    <header>
+      <img id="logo" src="icon.png" alt="" width="96" height="96" />
+      <h1>Heroes of Aurelith</h1>
+      <p class="tag">The Crown is stolen. The realm is waiting.</p>
+    </header>
+
+    <section id="patch" class="panel">
+      <p id="patch-status" aria-live="polite">Checking for updates...</p>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="bar-fill" class="fill"></div>
+      </div>
+      <p id="patch-detail" class="muted"></p>
+      <button id="retry" class="hidden" type="button">Try again</button>
+    </section>
+
+    <section id="login" class="panel hidden">
+      <div class="tabs" role="tablist">
+        <button id="tab-login" role="tab" aria-selected="true" type="button">Sign in</button>
+        <button id="tab-register" role="tab" aria-selected="false" type="button">New account</button>
+      </div>
+      <form id="auth-form" autocomplete="off">
+        <label>Username
+          <input id="username" name="username" maxlength="32" required autocomplete="username" />
+        </label>
+        <label>Password
+          <input id="password" name="password" type="password" maxlength="128" required autocomplete="current-password" />
+        </label>
+        <ul id="auth-hints" class="hints hidden" aria-live="polite">
+          <li id="hint-user">Username: 3 to 12 letters and numbers, starting with a letter. No spaces or symbols.</li>
+          <li id="hint-pass">Password: at least 10 characters with letters and numbers, or 16 or more of anything. Nothing common, and not your username.</li>
+        </ul>
+        <label class="check"><input id="show-password" type="checkbox" /> Show password</label>
+        <label class="check"><input id="remember" type="checkbox" /> Keep me signed in on this computer</label>
+        <fieldset class="hidden" id="gender-row">
+          <legend>Body shape (cannot be changed later)</legend>
+          <label class="check"><input type="radio" name="gender" value="m" /> Male</label>
+          <label class="check"><input type="radio" name="gender" value="f" /> Female</label>
+        </fieldset>
+        <label class="check hidden" id="age-row"><input id="age" type="checkbox" /> I am 13 years old or older</label>
+        <button id="submit" type="submit">Sign in</button>
+        <p id="auth-error" class="error" role="alert"></p>
+        <button id="forgot" class="link" type="button">Forgot password?</button>
+      </form>
+      <form id="reset-form" class="hidden" autocomplete="off">
+        <p class="muted">Enter the recovery key you were shown when you made your account. Lost it too? Ask the game's operator for a one-hour code.</p>
+        <label>Username
+          <input id="reset-username" maxlength="32" required autocomplete="username" />
+        </label>
+        <label>Recovery key or code
+          <input id="reset-code" maxlength="32" required autocomplete="off" />
+        </label>
+        <label>New password
+          <input id="reset-password" type="password" maxlength="128" required autocomplete="new-password" />
+        </label>
+        <label class="check"><input id="show-reset-password" type="checkbox" /> Show password</label>
+        <button id="reset-submit" type="submit">Set new password</button>
+        <button id="reset-google" type="button">Reset with Google instead</button>
+        <button id="reset-back" class="link" type="button">Back to sign in</button>
+        <p id="reset-message" class="error" role="alert"></p>
+      </form>
+    </section>
+
+    <section id="recovery" class="panel hidden">
+      <h2>Your recovery key</h2>
+      <p>If you ever forget your password, this key is the only way to get your character back. Write it down or save it somewhere safe. It is shown once.</p>
+      <p><code id="recovery-key" class="recovery-key"></code></p>
+      <button id="recovery-copy" type="button">Copy</button>
+      <label class="check"><input id="recovery-saved" type="checkbox" /> I have saved my recovery key</label>
+      <button id="recovery-continue" type="button" disabled>Continue</button>
+    </section>
+
+    <section id="home" class="panel hidden">
+      <p id="welcome"></p>
+      <p id="home-note" class="muted">Mossgate Reach is open. Click a tile to walk there, or use the arrow keys or WASD. Click a monster to fight it, or Shift-click to look at it. Mouse wheel or + and - zoom; M shows the whole map.</p>
+      <p id="home-error" class="error" role="alert"></p>
+      <details id="recovery-tools">
+        <summary>Recovery key</summary>
+        <p class="muted">Make a new recovery key. The old one stops working.</p>
+        <label>Your password
+          <input id="recovery-password" type="password" maxlength="128" autocomplete="current-password" />
+        </label>
+        <button id="recovery-make" type="button">Make a new key</button>
+        <button id="google-link" type="button">Link my Google account</button>
+        <p class="muted">A linked Google account can reset your password if you lose it.</p>
+        <p id="recovery-error" class="error" role="alert"></p>
+      </details>
+      <button id="play" type="button">Play</button>
+      <button id="logout" type="button">Sign out</button>
+    </section>
+
+    <footer><span id="version" class="muted"></span></footer>
+  </main>
+
+  <section id="gameview" class="hidden">
+    <canvas id="stage" aria-label="Game world"></canvas>
+
+    <div id="hud" aria-live="off"></div>
+
+    <div id="vitals">
+      <div class="meter hp"><div id="hp-fill" class="meter-fill"></div><span id="hp-text"></span></div>
+      <div class="meter mp"><div id="mp-fill" class="meter-fill"></div><span id="mp-text"></span></div>
+      <div id="wallet">
+        <span class="coin iron" title="Iron bits"></span><span id="w-iron">0</span>
+        <span class="coin gold" title="Gold coins"></span><span id="w-gold">0</span>
+        <span class="coin favor" title="Favor tokens"></span><span id="w-favor">0</span>
+      </div>
+    </div>
+
+    <div id="toolbar">
+      <button id="btn-skills" type="button">Skills (K)</button>
+      <button id="btn-stats" type="button">Stats (C)</button>
+      <button id="btn-trades" type="button">Trades (V)</button>
+      <button id="btn-equip" type="button">Gear (E)</button>
+      <button id="btn-bag" type="button">Bag (I)</button>
+      <button id="btn-journal" type="button">Journal (J)</button>
+      <button id="btn-look" type="button">Look (L)</button>
+      <button id="btn-town" type="button">Town (T)</button>
+      <button id="btn-sound" type="button">Sound</button>
+      <button id="leave" type="button">Sign out</button>
+    </div>
+
+    <div id="toast" role="status"></div>
+
+    <div id="turns" class="hidden" aria-label="Turn order"></div>
+
+    <div id="fightbar" class="hidden">
+      <div id="fightinfo"></div>
+      <div id="actions"></div>
+    </div>
+
+    <div id="panel-skills" class="side hidden">
+      <h2>Skills</h2>
+      <p id="combat-level" class="muted"></p>
+      <div class="skill-bar" id="level-bar"><div></div></div>
+      <p id="skill-points"></p>
+      <div id="tree-tabs"></div>
+      <div id="tree-grid"></div>
+      <button id="respec" type="button">Respec</button>
+      <p class="muted">Click a skill to spend a point. Rows open at levels 8, 16, 24, 32, and 40. A skill needs a rank in the skills joined to it from above, and each of those ranks adds 3% damage to it.</p>
+    </div>
+
+    <div id="panel-bag" class="side hidden">
+      <h2>Inventory</h2>
+      <div id="bag-grid"></div>
+      <p class="muted">Click food to eat it, or gear to wear it. Shift-click a weapon to put it in the swap slot. Hover for details.</p>
+    </div>
+
+    <div id="panel-trades" class="side hidden">
+      <h2>Trades</h2>
+      <div id="trades-body"></div>
+      <p class="muted">Gathering and crafting skills. Each goes to level 30.</p>
+    </div>
+
+    <div id="panel-equip" class="side hidden">
+      <h2>Equipment</h2>
+      <div id="equip"></div>
+      <p class="muted">Click worn gear to take it off. The weapon you hold decides your style. Hover for details.</p>
+      <h3>Toolbelt</h3>
+      <div id="toolbelt" class="row"></div>
+      <p class="muted">Gathering uses the tools on your belt. A better tool works faster and opens higher trees, rocks and shoals. Click a tool in your bag to put it on the belt.</p>
+    </div>
+
+    <div id="panel-stats" class="side hidden">
+      <h2>Hero stats</h2>
+      <div id="stats-vitals"></div>
+      <div id="gear-stats"></div>
+    </div>
+
+    <div id="panel-look" class="side hidden">
+      <h2>Appearance</h2>
+      <canvas id="look-preview" width="80" height="80"></canvas>
+      <p id="look-gender" class="muted"></p>
+      <div id="look-skin" class="row"></div>
+    </div>
+
+    <div id="panel-sound" class="side hidden">
+      <h2>Sound</h2>
+      <label>Master <input id="vol-master" type="range" min="0" max="1" step="0.05" /></label>
+      <label>Effects <input id="vol-sfx" type="range" min="0" max="1" step="0.05" /></label>
+      <label>Music <input id="vol-music" type="range" min="0" max="1" step="0.05" /></label>
+      <label class="check"><input id="mute" type="checkbox" /> Mute everything</label>
+    </div>
+
+    <div id="panel-journal" class="side hidden">
+      <h2>Journal</h2>
+      <div id="journal-body"></div>
+    </div>
+
+    <div id="panel-shop" class="side wide hidden">
+      <h2 id="shop-title">Shop</h2>
+      <div id="shop-body"></div>
+      <button id="shop-close" type="button">Done</button>
+    </div>
+
+    <div id="panel-storage" class="side wide hidden">
+      <h2>Storage</h2>
+      <div id="storage-body"></div>
+      <button id="storage-close" type="button">Done</button>
+    </div>
+
+    <div id="panel-station" class="side wide hidden">
+      <h2 id="station-title">Station</h2>
+      <div id="station-body"></div>
+      <button id="station-close" type="button">Done</button>
+    </div>
+
+    <div id="panel-perks" class="side wide hidden">
+      <h2 id="perks-title">Steward</h2>
+      <div id="perks-body"></div>
+      <button id="perks-close" type="button">Done</button>
+    </div>
+
+    <div id="panel-anchor" class="side wide hidden">
+      <h2 id="anchor-title">Teleport anchor</h2>
+      <div id="anchor-body"></div>
+      <button id="anchor-close" type="button">Done</button>
+    </div>
+
+    <div id="intro" class="hidden" role="dialog" aria-label="Introduction">
+      <canvas id="intro-canvas" width="320" height="180"></canvas>
+      <div id="intro-card">
+        <h2 id="intro-title"></h2>
+        <p id="intro-text"></p>
+        <div id="intro-foot"><span id="intro-hint"></span><button id="intro-skip" type="button">Skip</button></div>
+      </div>
+    </div>
+
+    <div id="signout-confirm" class="hidden" role="alertdialog" aria-labelledby="so-title">
+      <div class="box">
+        <h3 id="so-title">Sign out?</h3>
+        <p id="so-text">Your progress is saved. If you are in a fight, you leave it.</p>
+        <div class="row">
+          <button id="so-yes" type="button">Sign out</button>
+          <button id="so-no" type="button">Stay</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="buy-confirm" class="hidden" role="alertdialog" aria-labelledby="bc-text">
+      <div class="box">
+        <p id="bc-text"></p>
+        <p id="bc-note" class="muted"></p>
+        <div class="row">
+          <button id="bc-yes" type="button">Yes</button>
+          <button id="bc-no" type="button">No</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="loading" class="hidden" role="status"><div class="box"><div class="swirl"></div><p id="loading-text">Passing through the portal...</p></div></div>
+
+    <div id="busy" class="hidden"><div id="busy-fill"></div><span id="busy-text"></span></div>
+
+    <div id="dialog" class="hidden">
+      <h3 id="dlg-name"></h3>
+      <p id="dlg-role" class="muted"></p>
+      <div id="dlg-lines"></div>
+      <div id="dlg-options"></div>
+    </div>
+
+    <div id="chat">
+      <div id="chatnav"><button id="chat-prev" type="button" title="Older messages">Previous</button><button id="chat-next" type="button" title="Newer messages">Next</button></div>
+      <ul id="chatlog"></ul>
+      <form id="chatform" autocomplete="off">
+        <input id="chatinput" maxlength="120" placeholder="Press Enter to chat" aria-label="Chat message" />
+      </form>
+    </div>
+  </section>
+
+  <script src="audio.js"></script>
+  <script src="game.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

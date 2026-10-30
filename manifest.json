@@ -2,9 +2,15 @@
   "version": "0.1.0",
   "protocol": 6,
   "minShellVersion": "0.1.0",
-  "server": "wss://him-ricky-boats-boundary.trycloudflare.com",
-  "authUrl": "https://charts-ordered-pushing-accent.trycloudflare.com",
+  "server": "wss://devices-associations-winning-excited.trycloudflare.com",
+  "authUrl": "https://distance-component-chamber-objects.trycloudflare.com",
   "files": [
+    {
+      "path": "data/anchors.json",
+      "size": 1156,
+      "sha256": "e1a06edd05207fe4939f8f20391ad339428570fdd32044abad43320dc726c0c6",
+      "url": "c/e1a06edd05207fe4939f8f20391ad339428570fdd32044abad43320dc726c0c6"
+    },
     {
       "path": "data/game.json",
       "size": 191,
@@ -13,9 +19,9 @@
     },
     {
       "path": "data/items.json",
-      "size": 20136,
-      "sha256": "d4506e37aab5e22ca1c563de7122936657cfab1c1157bf86efa5fa2483a97427",
-      "url": "c/d4506e37aab5e22ca1c563de7122936657cfab1c1157bf86efa5fa2483a97427"
+      "size": 20279,
+      "sha256": "d6f4ae983a99b5c311ae1d5ae722dc9528fcf170de9225cbe49d2bc52cc8e6a3",
+      "url": "c/d6f4ae983a99b5c311ae1d5ae722dc9528fcf170de9225cbe49d2bc52cc8e6a3"
     },
     {
       "path": "data/monsters.json",
@@ -31,9 +37,9 @@
     },
     {
       "path": "data/npcs.json",
-      "size": 42279,
-      "sha256": "a62dc5b0317f51de7cc3554ba1e3d0d0b50515914c34729b569d8b0c8a125943",
-      "url": "c/a62dc5b0317f51de7cc3554ba1e3d0d0b50515914c34729b569d8b0c8a125943"
+      "size": 42983,
+      "sha256": "5517fba850b0c5362ffe41560714104121bfed992617b6ed588da70cf4e83db3",
+      "url": "c/5517fba850b0c5362ffe41560714104121bfed992617b6ed588da70cf4e83db3"
     },
     {
       "path": "data/quests.json",
@@ -49,15 +55,15 @@
     },
     {
       "path": "data/shops.json",
-      "size": 13182,
-      "sha256": "00952e48ff7510d75db9761f17d095a759a4aeee29c07a18f92de4a28d6e0b39",
-      "url": "c/00952e48ff7510d75db9761f17d095a759a4aeee29c07a18f92de4a28d6e0b39"
+      "size": 13385,
+      "sha256": "1c943d861268da39b2c8a94a3f39bf2a2f6617439f37b3da12486c8ac75c13c9",
+      "url": "c/1c943d861268da39b2c8a94a3f39bf2a2f6617439f37b3da12486c8ac75c13c9"
     },
     {
       "path": "data/stations.json",
-      "size": 9261,
-      "sha256": "8f4fcec0ac7b00dd6a2150e8087a820821f4271449730e95d2f15931e2e15a55",
-      "url": "c/8f4fcec0ac7b00dd6a2150e8087a820821f4271449730e95d2f15931e2e15a55"
+      "size": 9482,
+      "sha256": "342d638b204ce112e666a3c9a8e10b1b6cf6941ff6582b3fcfad235b0fb1a12e",
+      "url": "c/342d638b204ce112e666a3c9a8e10b1b6cf6941ff6582b3fcfad235b0fb1a12e"
     },
     {
       "path": "maps/mossgate.json",
@@ -79,9 +85,9 @@
     },
     {
       "path": "ui/game.js",
-      "size": 181167,
-      "sha256": "8044a942977c2cbb97f0ec763be3b0b4bd0d6b1b60539c9fcd702057a58fb762",
-      "url": "c/8044a942977c2cbb97f0ec763be3b0b4bd0d6b1b60539c9fcd702057a58fb762"
+      "size": 184857,
+      "sha256": "5e5d11ec0c734cbcc0fcae4f435b732e59faa0f218fc9e1d98be4b5b7a348c02",
+      "url": "c/5e5d11ec0c734cbcc0fcae4f435b732e59faa0f218fc9e1d98be4b5b7a348c02"
     },
     {
       "path": "ui/icon.png",
@@ -91,9 +97,9 @@
     },
     {
       "path": "ui/index.html",
-      "size": 12954,
-      "sha256": "02713e91be4ca81a0b92e76eca338473771b1444aaf8ff293eb0e76e45614ca6",
-      "url": "c/02713e91be4ca81a0b92e76eca338473771b1444aaf8ff293eb0e76e45614ca6"
+      "size": 13169,
+      "sha256": "fd9dd06c6cdfd459bac29540ff9b93f73db156210d96cfa91f6dc751a00d40b0",
+      "url": "c/fd9dd06c6cdfd459bac29540ff9b93f73db156210d96cfa91f6dc751a00d40b0"
     },
     {
       "path": "ui/renderer.js",
@@ -108,5 +114,5 @@
       "url": "c/67ee669b1e1e1856f3920248258789167f659adfd00862e64e38737a6a91d152"
     }
   ],
-  "signature": "tnStVKRv2XSpiq+LW3ufzZ53qkP7SmWKZeLmf5ZFDDysjHPM8OvOr5kwdYAz4gN0/C2KHkGOnKnaybguZ65sBQ=="
+  "signature": "UMGUf9cnUBAoJlspMZBffsh4iGrVDPNUuLT8bJw2wi7ZiGyBms4K91Pv11dz8hNDMrd54kgz96XMC9r0QOsGDg=="
 }

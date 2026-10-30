@@ -1,0 +1,1085 @@
+[
+  {
+    "id": "bronze_sword",
+    "name": "Bronze sword",
+    "kind": "weapon",
+    "weaponClass": "blade",
+    "tier": 1,
+    "weaponPower": 10,
+    "speed": 0,
+    "value": 10
+  },
+  {
+    "id": "iron_sword",
+    "name": "Iron sword",
+    "kind": "weapon",
+    "weaponClass": "blade",
+    "tier": 2,
+    "weaponPower": 16,
+    "speed": 0,
+    "value": 70
+  },
+  {
+    "id": "steel_sword",
+    "name": "Steel sword",
+    "kind": "weapon",
+    "weaponClass": "blade",
+    "tier": 3,
+    "weaponPower": 26,
+    "speed": 0,
+    "value": 450
+  },
+  {
+    "id": "mithril_sword",
+    "name": "Mithril sword",
+    "kind": "weapon",
+    "weaponClass": "blade",
+    "tier": 4,
+    "weaponPower": 40,
+    "speed": 0,
+    "value": 2800
+  },
+  {
+    "id": "bronze_dagger",
+    "name": "Bronze dagger",
+    "kind": "weapon",
+    "weaponClass": "dagger",
+    "tier": 1,
+    "weaponPower": 10,
+    "speed": 0,
+    "value": 8
+  },
+  {
+    "id": "iron_dagger",
+    "name": "Iron dagger",
+    "kind": "weapon",
+    "weaponClass": "dagger",
+    "tier": 2,
+    "weaponPower": 16,
+    "speed": 0,
+    "value": 56
+  },
+  {
+    "id": "steel_dagger",
+    "name": "Steel dagger",
+    "kind": "weapon",
+    "weaponClass": "dagger",
+    "tier": 3,
+    "weaponPower": 26,
+    "speed": 0,
+    "value": 360
+  },
+  {
+    "id": "mithril_dagger",
+    "name": "Mithril dagger",
+    "kind": "weapon",
+    "weaponClass": "dagger",
+    "tier": 4,
+    "weaponPower": 40,
+    "speed": 0,
+    "value": 2240
+  },
+  {
+    "id": "pine_shortbow",
+    "name": "Pine shortbow",
+    "kind": "weapon",
+    "weaponClass": "bow",
+    "tier": 1,
+    "weaponPower": 10,
+    "speed": 0,
+    "value": 10
+  },
+  {
+    "id": "birch_bow",
+    "name": "Birch bow",
+    "kind": "weapon",
+    "weaponClass": "bow",
+    "tier": 2,
+    "weaponPower": 16,
+    "speed": 0,
+    "value": 70
+  },
+  {
+    "id": "oak_bow",
+    "name": "Oak bow",
+    "kind": "weapon",
+    "weaponClass": "bow",
+    "tier": 3,
+    "weaponPower": 26,
+    "speed": 0,
+    "value": 450
+  },
+  {
+    "id": "willow_bow",
+    "name": "Willow bow",
+    "kind": "weapon",
+    "weaponClass": "bow",
+    "tier": 4,
+    "weaponPower": 40,
+    "speed": 0,
+    "value": 2800
+  },
+  {
+    "id": "hazel_staff",
+    "name": "Pine staff",
+    "kind": "weapon",
+    "weaponClass": "staff",
+    "tier": 1,
+    "weaponPower": 10,
+    "speed": 0,
+    "value": 12
+  },
+  {
+    "id": "rowan_staff",
+    "name": "Birch staff",
+    "kind": "weapon",
+    "weaponClass": "staff",
+    "tier": 2,
+    "weaponPower": 16,
+    "speed": 0,
+    "value": 84
+  },
+  {
+    "id": "yew_staff",
+    "name": "Oak staff",
+    "kind": "weapon",
+    "weaponClass": "staff",
+    "tier": 3,
+    "weaponPower": 26,
+    "speed": 0,
+    "value": 540
+  },
+  {
+    "id": "elder_staff",
+    "name": "Willow staff",
+    "kind": "weapon",
+    "weaponClass": "staff",
+    "tier": 4,
+    "weaponPower": 40,
+    "speed": 0,
+    "value": 3360
+  },
+  {
+    "id": "soft_leather_body",
+    "name": "Soft leather jerkin",
+    "kind": "armor",
+    "slot": "body",
+    "tier": 1,
+    "armor": 4,
+    "value": 14
+  },
+  {
+    "id": "hard_leather_body",
+    "name": "Hardened leather body",
+    "kind": "armor",
+    "slot": "body",
+    "tier": 2,
+    "armor": 11,
+    "value": 90
+  },
+  {
+    "id": "chain_body",
+    "name": "Chain body",
+    "kind": "armor",
+    "slot": "body",
+    "tier": 3,
+    "armor": 21,
+    "value": 560
+  },
+  {
+    "id": "mithril_body",
+    "name": "Mithril body",
+    "kind": "armor",
+    "slot": "body",
+    "tier": 4,
+    "armor": 39,
+    "value": 3400
+  },
+  {
+    "id": "soft_leather_legs",
+    "name": "Soft leather leggings",
+    "kind": "armor",
+    "slot": "legs",
+    "tier": 1,
+    "armor": 3,
+    "value": 10
+  },
+  {
+    "id": "hard_leather_legs",
+    "name": "Hardened leather leggings",
+    "kind": "armor",
+    "slot": "legs",
+    "tier": 2,
+    "armor": 7,
+    "value": 63
+  },
+  {
+    "id": "chain_legs",
+    "name": "Chain leggings",
+    "kind": "armor",
+    "slot": "legs",
+    "tier": 3,
+    "armor": 13,
+    "value": 392
+  },
+  {
+    "id": "mithril_legs",
+    "name": "Mithril leggings",
+    "kind": "armor",
+    "slot": "legs",
+    "tier": 4,
+    "armor": 24,
+    "value": 2380
+  },
+  {
+    "id": "soft_leather_head",
+    "name": "Soft leather cap",
+    "kind": "armor",
+    "slot": "head",
+    "tier": 1,
+    "armor": 2,
+    "value": 7
+  },
+  {
+    "id": "hard_leather_head",
+    "name": "Hardened leather cap",
+    "kind": "armor",
+    "slot": "head",
+    "tier": 2,
+    "armor": 5,
+    "value": 45
+  },
+  {
+    "id": "chain_head",
+    "name": "Chain helm",
+    "kind": "armor",
+    "slot": "head",
+    "tier": 3,
+    "armor": 9,
+    "value": 280
+  },
+  {
+    "id": "mithril_head",
+    "name": "Mithril helm",
+    "kind": "armor",
+    "slot": "head",
+    "tier": 4,
+    "armor": 17,
+    "value": 1700
+  },
+  {
+    "id": "soft_leather_offhand",
+    "name": "Soft leather buckler",
+    "kind": "armor",
+    "slot": "offhand",
+    "tier": 1,
+    "armor": 2,
+    "value": 8,
+    "flatReduction": 2
+  },
+  {
+    "id": "hard_leather_offhand",
+    "name": "Hardened leather buckler",
+    "kind": "armor",
+    "slot": "offhand",
+    "tier": 2,
+    "armor": 5,
+    "value": 54,
+    "flatReduction": 4
+  },
+  {
+    "id": "chain_offhand",
+    "name": "Chain shield",
+    "kind": "armor",
+    "slot": "offhand",
+    "tier": 3,
+    "armor": 11,
+    "value": 336,
+    "flatReduction": 7
+  },
+  {
+    "id": "mithril_offhand",
+    "name": "Mithril shield",
+    "kind": "armor",
+    "slot": "offhand",
+    "tier": 4,
+    "armor": 20,
+    "value": 2040,
+    "flatReduction": 12
+  },
+  {
+    "id": "soft_leather_cloak",
+    "name": "Soft leather cloak",
+    "kind": "armor",
+    "slot": "cloak",
+    "tier": 1,
+    "armor": 1,
+    "value": 6
+  },
+  {
+    "id": "hard_leather_cloak",
+    "name": "Hardened leather cloak",
+    "kind": "armor",
+    "slot": "cloak",
+    "tier": 2,
+    "armor": 3,
+    "value": 36
+  },
+  {
+    "id": "chain_cloak",
+    "name": "Chain cloak",
+    "kind": "armor",
+    "slot": "cloak",
+    "tier": 3,
+    "armor": 6,
+    "value": 224
+  },
+  {
+    "id": "mithril_cloak",
+    "name": "Mithril cloak",
+    "kind": "armor",
+    "slot": "cloak",
+    "tier": 4,
+    "armor": 11,
+    "value": 1360
+  },
+  {
+    "id": "copper_amulet",
+    "name": "Copper amulet",
+    "kind": "armor",
+    "slot": "amulet",
+    "tier": 1,
+    "armor": 0,
+    "value": 13,
+    "dropOnly": true
+  },
+  {
+    "id": "silver_amulet",
+    "name": "Silver amulet",
+    "kind": "armor",
+    "slot": "amulet",
+    "tier": 2,
+    "armor": 0,
+    "value": 81,
+    "dropOnly": true
+  },
+  {
+    "id": "gold_amulet",
+    "name": "Gold amulet",
+    "kind": "armor",
+    "slot": "amulet",
+    "tier": 3,
+    "armor": 0,
+    "value": 504,
+    "dropOnly": true
+  },
+  {
+    "id": "moonsilver_amulet",
+    "name": "Moonsilver amulet",
+    "kind": "armor",
+    "slot": "amulet",
+    "tier": 4,
+    "armor": 0,
+    "value": 3060,
+    "dropOnly": true
+  },
+  {
+    "id": "reed_band",
+    "name": "Reed Band",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 1,
+    "armor": 0,
+    "value": 8,
+    "dropOnly": true
+  },
+  {
+    "id": "silver_loop",
+    "name": "Silver Loop",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 2,
+    "armor": 0,
+    "value": 54,
+    "dropOnly": true
+  },
+  {
+    "id": "moonglass_ring",
+    "name": "Moonglass Ring",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 3,
+    "armor": 0,
+    "value": 336,
+    "dropOnly": true
+  },
+  {
+    "id": "aurelith_signet",
+    "name": "Aurelith Signet",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 4,
+    "armor": 0,
+    "value": 2040,
+    "dropOnly": true
+  },
+  {
+    "id": "rope_belt",
+    "name": "Rope Belt",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 1,
+    "armor": 0,
+    "value": 8,
+    "dropOnly": true
+  },
+  {
+    "id": "studded_belt",
+    "name": "Studded Belt",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 2,
+    "armor": 0,
+    "value": 54,
+    "dropOnly": true
+  },
+  {
+    "id": "guard_belt",
+    "name": "Guard's Belt",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 3,
+    "armor": 0,
+    "value": 336,
+    "dropOnly": true
+  },
+  {
+    "id": "stormhide_belt",
+    "name": "Stormhide Belt",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 4,
+    "armor": 0,
+    "value": 2040,
+    "dropOnly": true
+  },
+  {
+    "id": "hearth_boon",
+    "name": "Hearth Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 1,
+    "armor": 0,
+    "value": 8,
+    "dropOnly": true
+  },
+  {
+    "id": "ember_boon",
+    "name": "Ember Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 2,
+    "armor": 0,
+    "value": 54,
+    "dropOnly": true
+  },
+  {
+    "id": "tide_boon",
+    "name": "Tide Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 3,
+    "armor": 0,
+    "value": 336,
+    "dropOnly": true
+  },
+  {
+    "id": "star_boon",
+    "name": "Star Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 4,
+    "armor": 0,
+    "value": 2040,
+    "dropOnly": true
+  },
+  {
+    "id": "nutshell_ring",
+    "name": "Nutshell Ring",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 2,
+    "armor": 0,
+    "value": 120,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "mind_goblin_sash",
+    "name": "Mind Goblin's Sash",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 2,
+    "armor": 0,
+    "value": 120,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "goblin_wit_boon",
+    "name": "Goblin Wit Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 2,
+    "armor": 0,
+    "value": 120,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "pine_nuts",
+    "name": "Pine nuts",
+    "kind": "material",
+    "value": 1,
+    "stackable": true
+  },
+  {
+    "id": "tally_ring",
+    "name": "Foreman's Tally Ring",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 2,
+    "armor": 0,
+    "value": 140,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "foremans_belt",
+    "name": "Foreman's Tool Belt",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 2,
+    "armor": 0,
+    "value": 140,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "sump_boon",
+    "name": "Black Sump Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 2,
+    "armor": 0,
+    "value": 140,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "foremans_pick",
+    "name": "Foreman's Pick",
+    "kind": "tool",
+    "toolType": "pickaxe",
+    "tier": 3,
+    "value": 200,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "nutcracker_buckler",
+    "name": "Nutcracker's Buckler",
+    "kind": "armor",
+    "slot": "offhand",
+    "tier": 2,
+    "armor": 5,
+    "flatReduction": 4,
+    "value": 400,
+    "dropOnly": true,
+    "bossOnly": true,
+    "power": "thorns"
+  },
+  {
+    "id": "foremans_hardhat",
+    "name": "Foreman's Hardhat",
+    "kind": "armor",
+    "slot": "head",
+    "tier": 2,
+    "armor": 5,
+    "value": 400,
+    "dropOnly": true,
+    "bossOnly": true,
+    "power": "unmoving"
+  },
+  {
+    "id": "crew_note",
+    "name": "Crew note",
+    "kind": "material",
+    "value": 0,
+    "stackable": true
+  },
+  {
+    "id": "raw_shrimp",
+    "name": "Raw shrimp",
+    "kind": "material",
+    "value": 2,
+    "stackable": true
+  },
+  {
+    "id": "cooked_shrimp",
+    "name": "Cooked shrimp",
+    "kind": "food",
+    "heal": 20,
+    "value": 4,
+    "stackable": true
+  },
+  {
+    "id": "raw_trout",
+    "name": "Raw trout",
+    "kind": "material",
+    "value": 6,
+    "stackable": true
+  },
+  {
+    "id": "cooked_trout",
+    "name": "Cooked trout",
+    "kind": "food",
+    "heal": 45,
+    "value": 12,
+    "stackable": true
+  },
+  {
+    "id": "raw_salmon",
+    "name": "Raw salmon",
+    "kind": "material",
+    "value": 20,
+    "stackable": true
+  },
+  {
+    "id": "cooked_salmon",
+    "name": "Cooked salmon",
+    "kind": "food",
+    "heal": 80,
+    "value": 40,
+    "stackable": true
+  },
+  {
+    "id": "raw_tuna",
+    "name": "Raw tuna",
+    "kind": "material",
+    "value": 60,
+    "stackable": true
+  },
+  {
+    "id": "cooked_tuna",
+    "name": "Cooked tuna",
+    "kind": "food",
+    "heal": 125,
+    "value": 120,
+    "stackable": true
+  },
+  {
+    "id": "raw_rabbit",
+    "name": "Raw rabbit",
+    "kind": "material",
+    "value": 3,
+    "stackable": true
+  },
+  {
+    "id": "cooked_rabbit",
+    "name": "Cooked rabbit",
+    "kind": "food",
+    "heal": 30,
+    "value": 7,
+    "stackable": true
+  },
+  {
+    "id": "bread",
+    "name": "Loaf of bread",
+    "kind": "food",
+    "heal": 12,
+    "value": 3,
+    "stackable": true
+  },
+  {
+    "id": "pine_logs",
+    "name": "Pine logs",
+    "kind": "material",
+    "value": 2,
+    "stackable": true
+  },
+  {
+    "id": "birch_logs",
+    "name": "Birch logs",
+    "kind": "material",
+    "value": 8,
+    "stackable": true
+  },
+  {
+    "id": "oak_logs",
+    "name": "Oak logs",
+    "kind": "material",
+    "value": 24,
+    "stackable": true
+  },
+  {
+    "id": "willow_logs",
+    "name": "Willow logs",
+    "kind": "material",
+    "value": 80,
+    "stackable": true
+  },
+  {
+    "id": "copper_ore",
+    "name": "Copper ore",
+    "kind": "material",
+    "value": 3,
+    "stackable": true
+  },
+  {
+    "id": "tin_ore",
+    "name": "Tin ore",
+    "kind": "material",
+    "value": 3,
+    "stackable": true
+  },
+  {
+    "id": "iron_ore",
+    "name": "Iron ore",
+    "kind": "material",
+    "value": 14,
+    "stackable": true
+  },
+  {
+    "id": "coal",
+    "name": "Coal",
+    "kind": "material",
+    "value": 20,
+    "stackable": true
+  },
+  {
+    "id": "moonsilver_ore",
+    "name": "Moonsilver ore",
+    "kind": "material",
+    "value": 300,
+    "stackable": true
+  },
+  {
+    "id": "bronze_bar",
+    "name": "Bronze bar",
+    "kind": "material",
+    "value": 8,
+    "stackable": true
+  },
+  {
+    "id": "iron_bar",
+    "name": "Iron bar",
+    "kind": "material",
+    "value": 30,
+    "stackable": true
+  },
+  {
+    "id": "steel_bar",
+    "name": "Steel bar",
+    "kind": "material",
+    "value": 90,
+    "stackable": true
+  },
+  {
+    "id": "moonsilver_bar",
+    "name": "Moonsilver bar",
+    "kind": "material",
+    "value": 700,
+    "stackable": true
+  },
+  {
+    "id": "soft_leather",
+    "name": "Soft leather",
+    "kind": "material",
+    "value": 4,
+    "stackable": true
+  },
+  {
+    "id": "hard_leather",
+    "name": "Hardened leather",
+    "kind": "material",
+    "value": 14,
+    "stackable": true
+  },
+  {
+    "id": "stagskin",
+    "name": "Stagskin",
+    "kind": "material",
+    "value": 50,
+    "stackable": true
+  },
+  {
+    "id": "shadowhide",
+    "name": "Shadowhide",
+    "kind": "material",
+    "value": 150,
+    "stackable": true
+  },
+  {
+    "id": "bronze_axe",
+    "name": "Bronze axe",
+    "kind": "tool",
+    "toolType": "axe",
+    "tier": 1,
+    "value": 16
+  },
+  {
+    "id": "iron_axe",
+    "name": "Iron axe",
+    "kind": "tool",
+    "toolType": "axe",
+    "tier": 2,
+    "value": 90
+  },
+  {
+    "id": "steel_axe",
+    "name": "Steel axe",
+    "kind": "tool",
+    "toolType": "axe",
+    "tier": 3,
+    "value": 500
+  },
+  {
+    "id": "moonsilver_axe",
+    "name": "Moonsilver axe",
+    "kind": "tool",
+    "toolType": "axe",
+    "tier": 4,
+    "value": 3000
+  },
+  {
+    "id": "bronze_pickaxe",
+    "name": "Bronze pickaxe",
+    "kind": "tool",
+    "toolType": "pickaxe",
+    "tier": 1,
+    "value": 16
+  },
+  {
+    "id": "iron_pickaxe",
+    "name": "Iron pickaxe",
+    "kind": "tool",
+    "toolType": "pickaxe",
+    "tier": 2,
+    "value": 90
+  },
+  {
+    "id": "steel_pickaxe",
+    "name": "Steel pickaxe",
+    "kind": "tool",
+    "toolType": "pickaxe",
+    "tier": 3,
+    "value": 500
+  },
+  {
+    "id": "moonsilver_pickaxe",
+    "name": "Moonsilver pickaxe",
+    "kind": "tool",
+    "toolType": "pickaxe",
+    "tier": 4,
+    "value": 3000
+  },
+  {
+    "id": "reed_rod",
+    "name": "Reed rod",
+    "kind": "tool",
+    "toolType": "rod",
+    "tier": 1,
+    "value": 16
+  },
+  {
+    "id": "ash_rod",
+    "name": "Ash rod",
+    "kind": "tool",
+    "toolType": "rod",
+    "tier": 2,
+    "value": 90
+  },
+  {
+    "id": "oak_rod",
+    "name": "Oak rod",
+    "kind": "tool",
+    "toolType": "rod",
+    "tier": 3,
+    "value": 500
+  },
+  {
+    "id": "lantern_rod",
+    "name": "Lantern rod",
+    "kind": "tool",
+    "toolType": "rod",
+    "tier": 4,
+    "value": 3000
+  },
+  {
+    "id": "rope_snare",
+    "name": "Rope snare",
+    "kind": "tool",
+    "toolType": "snare",
+    "tier": 1,
+    "value": 16
+  },
+  {
+    "id": "hemp_snare",
+    "name": "Hemp snare",
+    "kind": "tool",
+    "toolType": "snare",
+    "tier": 2,
+    "value": 90
+  },
+  {
+    "id": "net_trap",
+    "name": "Net trap",
+    "kind": "tool",
+    "toolType": "snare",
+    "tier": 3,
+    "value": 500
+  },
+  {
+    "id": "pit_trap",
+    "name": "Pit trap",
+    "kind": "tool",
+    "toolType": "snare",
+    "tier": 4,
+    "value": 3000
+  },
+  {
+    "id": "wolf_pelt",
+    "name": "Wolf pelt",
+    "kind": "material",
+    "value": 14,
+    "stackable": true
+  },
+  {
+    "id": "grave_dust",
+    "name": "Grave dust",
+    "kind": "material",
+    "value": 10,
+    "stackable": true
+  },
+  {
+    "id": "smoked_venison",
+    "name": "Smoked venison",
+    "kind": "food",
+    "heal": 70,
+    "value": 30,
+    "stackable": true
+  },
+  {
+    "id": "pickman_ring",
+    "name": "Pickman's Bone Ring",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 3,
+    "armor": 0,
+    "value": 200,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "bone_sash",
+    "name": "Bone Sash",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 3,
+    "armor": 0,
+    "value": 200,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "cairn_boon",
+    "name": "Cairn Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 3,
+    "armor": 0,
+    "value": 200,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "pickmans_bone_mask",
+    "name": "Pickman's Bone Mask",
+    "kind": "armor",
+    "slot": "head",
+    "tier": 3,
+    "armor": 6,
+    "value": 600,
+    "dropOnly": true,
+    "bossOnly": true,
+    "power": "thorns"
+  },
+  {
+    "id": "drowned_coin",
+    "name": "Drowned coin",
+    "kind": "material",
+    "value": 16,
+    "stackable": true
+  },
+  {
+    "id": "eel_skin",
+    "name": "Eel skin",
+    "kind": "material",
+    "value": 18,
+    "stackable": true
+  },
+  {
+    "id": "elrenor_ring",
+    "name": "Elrenor's Signet",
+    "kind": "armor",
+    "slot": "ring",
+    "tier": 3,
+    "armor": 0,
+    "value": 260,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "tide_sash",
+    "name": "Tide Sash",
+    "kind": "armor",
+    "slot": "belt",
+    "tier": 3,
+    "armor": 0,
+    "value": 260,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "mere_boon",
+    "name": "Mere Boon",
+    "kind": "armor",
+    "slot": "boon",
+    "tier": 3,
+    "armor": 0,
+    "value": 260,
+    "dropOnly": true,
+    "bossOnly": true
+  },
+  {
+    "id": "tidal_aegis",
+    "name": "Elrenor's Tidal Aegis",
+    "kind": "armor",
+    "slot": "offhand",
+    "tier": 3,
+    "armor": 6,
+    "flatReduction": 6,
+    "value": 700,
+    "dropOnly": true,
+    "bossOnly": true,
+    "power": "unmoving"
+  },
+  {
+    "id": "teleport_crystal",
+    "name": "Teleport Crystal",
+    "kind": "material",
+    "value": 1500,
+    "stackable": true
+  }
+]
