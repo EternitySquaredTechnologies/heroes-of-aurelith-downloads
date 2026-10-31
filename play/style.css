@@ -211,14 +211,16 @@ footer { margin-top: 16px; text-align: right; }
 #fightbar {
   position: absolute;
   left: calc(min(380px, 34vw) + 24px);
-  right: 10px;
+  width: 520px;
+  max-width: calc(100% - min(380px, 34vw) - 34px);
   bottom: 10px;
-  padding: 8px 10px;
+  padding: 5px 7px;
   background: rgba(20, 16, 28, 0.92);
-  border: 3px solid var(--edge);
+  border: 2px solid var(--edge);
 }
 #fightbar.hidden { display: none; }
-#auto-btn { margin-bottom: 6px; }
+#fight-util { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+#fight-util button.act { padding: 2px 6px; font-size: 11px; }
 #hover-tip {
   position: absolute;
   z-index: 30;
@@ -245,8 +247,9 @@ footer { margin-top: 16px; text-align: right; }
 #node-menu .act { text-align: left; }
 #hover-tip .tip-title { color: var(--gold); font-size: 13px; margin-bottom: 2px; }
 #hover-tip .tip-line { color: var(--muted); }
-#fightinfo { font-size: 13px; color: var(--muted); margin-bottom: 6px; min-height: 1.3em; }
-#actions { display: flex; flex-wrap: wrap; gap: 5px; }
+#fightinfo { font-size: 12px; color: var(--muted); margin-bottom: 4px; min-height: 1.3em; }
+#actions { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 3px; }
+#actions button.act { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 4px 5px; font-size: 12px; }
 button.act { margin: 0; padding: 6px 9px; font-size: 13px; }
 button.act.selected { outline: 3px solid var(--gold); background: #7560aa; }
 
@@ -535,7 +538,7 @@ button.link:hover { opacity: 1; }
   #chat { left: 6px; bottom: 6px; width: calc(100vw - 80px); }
   #chatlog { max-height: 90px; }
   #gameview:has(#fightbar:not(.hidden)) #chat { display: none; }
-  #fightbar { left: 6px; right: 6px; bottom: 6px; max-height: 45vh; overflow-y: auto; }
+  #fightbar { left: 6px; right: 6px; width: auto; max-width: none; bottom: 6px; max-height: 45vh; overflow-y: auto; }
   button.act { min-height: 38px; }
   .side { left: 6px !important; right: 6px !important; top: 52px !important; width: auto !important; min-width: 0; max-height: calc(100% - 64px); resize: none; }
   .side h2.grip { cursor: default; }

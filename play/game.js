@@ -2039,11 +2039,13 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     const statuses = h ? h.statuses.map((s) => `${pretty(s.id)} (${s.rounds})`).join(', ') : '';
     info.textContent =
       `Round ${f.round}: ` +
-      (opts && opts.actor === G.selfId ? `Your turn. ${opts.moveLeft} moves left. Taking an action ends your turn.` : 'Waiting for the other side to act.') +
+      (opts && opts.actor === G.selfId ? `Your turn, ${opts.moveLeft} moves left` : 'Waiting for the other side') +
       (statuses ? `  -  ${statuses}` : '');
 
     const box = $('actions');
+    const util = $('fight-util');
     box.textContent = '';
+    for (const x of util.querySelectorAll('.x')) x.remove();
     if (!opts || opts.actor !== G.selfId) return;
     opts.abilities.forEach((a, i) => {
       const b = document.createElement('button');
@@ -2060,11 +2062,11 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     const extra = (label, onClick, disabled) => {
       const b = document.createElement('button');
       b.type = 'button';
-      b.className = 'act';
+      b.className = 'act x';
       b.textContent = label;
       b.disabled = Boolean(disabled);
       b.addEventListener('click', onClick);
-      box.appendChild(b);
+      util.appendChild(b);
     };
     if (opts.canSwap || G.inv?.equipment?.weapon2) extra('Q Swap weapon', () => (opts.canSwap ? sendFight({ t: 'swap' }) : toast('You have already acted this turn.')), !opts.canSwap);
     extra('G Guard', () => sendFight({ t: 'guard' }), opts.acted);
