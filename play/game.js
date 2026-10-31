@@ -3266,7 +3266,7 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     bar.classList.toggle('hidden', !G.busy);
     if (!G.busy) return;
     $('busy-text').textContent = msg.what;
-    $('busy-fill').style.width = `${Math.min(100, Math.round(((msg.done + 1) / (msg.of + 1)) * 100))}%`;
+    $('busy-fill').style.width = `${Math.min(100, Math.round(((msg.done + 1) / msg.of) * 100))}%`;
   }
 
   // jobs
