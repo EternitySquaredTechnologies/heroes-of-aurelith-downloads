@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://*.trycloudflare.com wss://*.trycloudflare.com; base-uri 'none'; form-action 'none'" />
   <title>Heroes of the Wealdmark</title>
   <link rel="icon" href="icon.png" />
@@ -131,12 +131,21 @@
       <button id="leave" type="button">Sign out</button>
     </div>
 
+    <div id="mbar" aria-label="Touch controls">
+      <button id="mb-zin" type="button" aria-label="Zoom in">+</button>
+      <button id="mb-zout" type="button" aria-label="Zoom out">&minus;</button>
+      <button id="mb-map" type="button">Map</button>
+      <button id="mb-chat" type="button">Chat</button>
+      <button id="mb-close" type="button">Close</button>
+    </div>
+
     <div id="toast" role="status"></div>
 
     <div id="turns" class="hidden" aria-label="Turn order"></div>
 
     <div id="fightbar" class="hidden">
       <div id="fightinfo"></div>
+      <button id="auto-btn" class="act" type="button">X Combat: Manual</button>
       <div id="actions"></div>
     </div>
 

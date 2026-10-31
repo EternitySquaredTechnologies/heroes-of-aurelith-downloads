@@ -218,6 +218,7 @@ footer { margin-top: 16px; text-align: right; }
   border: 3px solid var(--edge);
 }
 #fightbar.hidden { display: none; }
+#auto-btn { margin-bottom: 6px; }
 #hover-tip {
   position: absolute;
   z-index: 30;
@@ -230,6 +231,18 @@ footer { margin-top: 16px; text-align: right; }
   line-height: 1.35;
 }
 #hover-tip.hidden { display: none; }
+#node-menu {
+  position: fixed;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 5px;
+  background: rgba(20, 16, 28, 0.97);
+  border: 2px solid var(--edge);
+}
+#node-menu.hidden { display: none; }
+#node-menu .act { text-align: left; }
 #hover-tip .tip-title { color: var(--gold); font-size: 13px; margin-bottom: 2px; }
 #hover-tip .tip-line { color: var(--muted); }
 #fightinfo { font-size: 13px; color: var(--muted); margin-bottom: 6px; min-height: 1.3em; }
@@ -503,3 +516,29 @@ button.link:hover { opacity: 1; }
 .hints li.ok { color: #7fd48a; }
 .hints li.ok::before { content: '\2713'; left: 0; }
 .hints li.bad { color: #e88a8a; }
+
+/* Touch and small screens */
+#stage { touch-action: none; }
+.side h2.grip { touch-action: none; }
+#mbar { display: none; }
+@media (pointer: coarse), (max-width: 760px) {
+  body { touch-action: manipulation; }
+  #mbar { display: flex; flex-direction: column; gap: 6px; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); z-index: 5; }
+  #mbar button { margin: 0; min-width: 48px; min-height: 44px; padding: 6px 8px; font-size: 14px; }
+  #toolbar { left: 6px; right: 6px; top: 6px; flex-wrap: nowrap; overflow-x: auto; gap: 4px; scrollbar-width: none; }
+  #toolbar::-webkit-scrollbar { display: none; }
+  #toolbar button { flex: none; min-height: 36px; padding: 4px 8px; font-size: 12px; white-space: nowrap; }
+  #hud { display: none; }
+  #vitals { top: 52px; left: 6px; width: 170px; padding: 6px 8px; }
+  #turns { top: 52px; left: 186px; transform: none; max-width: calc(100vw - 250px); flex-wrap: wrap; }
+  #toast { top: 100px; max-width: calc(100vw - 24px); }
+  #chat { left: 6px; bottom: 6px; width: calc(100vw - 80px); }
+  #chatlog { max-height: 90px; }
+  #gameview:has(#fightbar:not(.hidden)) #chat { display: none; }
+  #fightbar { left: 6px; right: 6px; bottom: 6px; max-height: 45vh; overflow-y: auto; }
+  button.act { min-height: 38px; }
+  .side { left: 6px !important; right: 6px !important; top: 52px !important; width: auto !important; min-width: 0; max-height: calc(100% - 64px); resize: none; }
+  .side h2.grip { cursor: default; }
+  .modal-box { min-width: 0; max-width: calc(100vw - 16px); }
+  #dialog { left: 6px !important; right: 6px !important; width: auto !important; max-width: none; }
+}

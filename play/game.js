@@ -1434,6 +1434,10 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     syncFromState(msg.state);
     G.fight.options = null;
     G.dest = null;
+    if (G.auto && bossFight()) {
+      setAuto(false);
+      toast('Auto combat is off: not available against bosses and minibosses.');
+    }
     addLog('A fight begins!', 'round');
     $('turns').classList.remove('hidden');
     $('fightbar').classList.remove('hidden');
@@ -1659,8 +1663,9 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
       f.pending = null;
       syncFromState(state);
       f.options = options;
-      if (options && options.actor === G.selfId) f.selected = basicOf(options);
+      if (options && options.actor === G.selfId) f.baseSel = f.selected = basicOf(options);
       renderFightUi();
+      if (options && options.actor === G.selfId) scheduleAuto();
     }
     if (f.end && !f.options && !f.pending) finishFight();
   }
@@ -1694,6 +1699,178 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
 
   const isMyTurn = () => Boolean(G.fight && G.fight.options && G.fight.options.actor === G.selfId && !G.fight.queue.length);
   const hero = () => G.fight.actors.get(G.selfId);
+
+  // ---- auto combat: plays the hero's turns for you. Never in boss or miniboss fights.
+
+  const isBossActor = (a) => Boolean(a.boss || (a.mon && G.data && G.data.monsters.get(a.mon)?.miniboss));
+  const bossFight = () => Boolean(G.fight) && [...G.fight.actors.values()].some((a) => a.side === 'enemy' && isBossActor(a));
+  const cheb = (a, b) => Math.max(Math.abs(a.x - b.x), Math.abs(a.y - b.y));
+
+  function renderAutoBtn() {
+    const b = $('auto-btn');
+    if (!b) return;
+    const blocked = bossFight();
+    b.disabled = blocked;
+    b.classList.toggle('selected', Boolean(G.auto) && !blocked);
+    b.textContent = G.auto && !blocked ? 'X Combat: Auto' : 'X Combat: Manual';
+    b.title = blocked ? 'Auto combat is not available against bosses and minibosses.' : 'Switch between Auto and Manual (X). Auto plays your turns: heals and buffs, eats when hurt, attacks with the strongest ability in reach, otherwise walks toward the nearest enemy. You can still pick an ability yourself on any turn and Auto stays on.';
+  }
+
+  function setAuto(on) {
+    G.auto = on;
+    clearTimeout(G.autoTimer);
+    G.autoTimer = null;
+    renderAutoBtn();
+    if (on) scheduleAuto();
+  }
+
+  function toggleAuto() {
+    if (!G || !G.fight) return;
+    if (bossFight()) return toast('Auto combat is not available against bosses and minibosses.');
+    setAuto(!G.auto);
+    toast(G.auto ? 'Combat: Auto. Press X for Manual.' : 'Combat: Manual. Press X for Auto.');
+  }
+
+  function scheduleAuto() {
+    if (!G.auto || G.autoTimer) return;
+    G.autoTimer = setTimeout(autoStep, 450);
+  }
+
+  /**
+   * Self abilities auto combat casts for you. heal: used when hurt (below the share of max health). buff: used once while a
+   * fight is on, when its status is not already running. summon: used when you have no familiar out.
+   */
+  const AUTO_SELF = {
+    heal: { kind: 'heal', below: 0.6 },
+    second_wind: { kind: 'heal', below: 0.7 },
+    stoneskin: { kind: 'heal', below: 0.8 },
+    unbreakable: { kind: 'buff', status: 'unbreakable', below: 0.35 },
+    war_cry: { kind: 'buff', status: 'war_cry' },
+    deadeye: { kind: 'buff', status: 'deadeye' },
+    mana_shield: { kind: 'buff', status: 'mana_shield' },
+    arcane_surge: { kind: 'buff', status: 'arcane_surge' },
+    fortify: { kind: 'buff', status: 'fortify' },
+    retaliate: { kind: 'buff', status: 'retaliate', near: true },
+    parry: { kind: 'buff', status: 'parry', near: true },
+    summon_familiar: { kind: 'summon' },
+  };
+
+  /** A heal or buff worth casting now, or null. Heals come first when hurt; the rest wait until a foe is close. */
+  function autoSelf(o, h, foes) {
+    const pct = h.hp / h.maxHp;
+    const has = (id) => h.statuses.some((st) => st.id === id);
+    const close = foes.some((fo) => manhattan(fo.pos, h.pos) <= 3);
+    let pick = null;
+    for (const a of o.abilities) {
+      const rule = AUTO_SELF[a.id];
+      if (!rule || !a.usable) continue;
+      let rank = 0;
+      if (rule.kind === 'heal' && pct < rule.below) rank = 3;
+      else if (rule.kind === 'buff' && rule.below && pct < rule.below && !has(rule.status)) rank = 3;
+      else if (rule.kind === 'buff' && !rule.below && !has(rule.status) && (rule.near ? foes.some((fo) => manhattan(fo.pos, h.pos) === 1) : close)) rank = 1;
+      else if (rule.kind === 'summon' && close && ![...G.fight.actors.values()].some((x) => x.alive && x.ownerId === G.selfId)) rank = 2;
+      if (rank && (!pick || rank > pick.rank)) pick = { rank, id: a.id };
+    }
+    return pick ? { t: 'ability', id: pick.id } : null;
+  }
+
+  /** The best thing to do with the action this turn, or null. Strength is guessed from the mana cost, and hitting more enemies counts for more. */
+  function autoPick(o, h, foes) {
+    let best = null;
+    for (const a of o.abilities) {
+      if (!a.usable) continue;
+      const range = a.range || 1;
+      let act = null;
+      let hits = 1;
+      const near = [...foes].sort((p, q) => manhattan(p.pos, h.pos) - manhattan(q.pos, h.pos))[0];
+      switch (a.shape) {
+        case 'adjacent':
+          if (manhattan(near.pos, h.pos) === 1) act = { t: 'ability', id: a.id, target: near.id };
+          break;
+        case 'ranged':
+        case 'chain':
+          if (manhattan(near.pos, h.pos) <= range) act = { t: 'ability', id: a.id, target: near.id };
+          break;
+        case 'multi':
+          if (manhattan(near.pos, h.pos) <= range) {
+            act = { t: 'ability', id: a.id, target: near.id };
+            hits = Math.min(a.maxTargets || 1, foes.filter((f) => manhattan(f.pos, h.pos) <= range).length);
+          }
+          break;
+        case 'front3x3': {
+          const close = foes.filter((f) => cheb(f.pos, h.pos) <= 2);
+          if (manhattan(near.pos, h.pos) === 1 && close.length >= 2) {
+            act = { t: 'ability', id: a.id, dir: dirToward(h.pos, near.pos) };
+            hits = Math.min(a.maxTargets || 1, close.length);
+          }
+          break;
+        }
+        case 'ring': {
+          const around = foes.filter((f) => cheb(f.pos, h.pos) === 1);
+          if (around.length >= 2) {
+            act = { t: 'ability', id: a.id };
+            hits = around.length;
+          }
+          break;
+        }
+        case 'area': {
+          const rad = a.radius || 1;
+          let top = null;
+          for (const f of foes) {
+            if (manhattan(f.pos, h.pos) > range) continue;
+            const n = foes.filter((g) => cheb(g.pos, f.pos) <= rad).length;
+            if (!top || n > top.n) top = { at: f.pos, n };
+          }
+          if (top && top.n >= 2) {
+            act = { t: 'ability', id: a.id, at: { x: top.at.x, y: top.at.y } };
+            hits = top.n;
+          }
+          break;
+        }
+        default:
+          break;
+      }
+      if (!act) continue;
+      const score = hits * (1 + a.mana / 20);
+      if (!best || score > best.score) best = { act, score };
+    }
+    return best ? best.act : null;
+  }
+
+  function autoStep() {
+    if (!G) return;
+    G.autoTimer = null;
+    if (!G.auto || !isMyTurn()) return;
+    // You picked an ability yourself this turn: let you finish it. Auto stays on and takes the next turn.
+    if (G.fight.selected !== G.fight.baseSel) return;
+    if (bossFight()) {
+      setAuto(false);
+      return toast('Auto combat is off: not available against bosses and minibosses.');
+    }
+    const f = G.fight;
+    const o = f.options;
+    const h = hero();
+    const foes = [...f.actors.values()].filter((a) => a.side === 'enemy' && a.alive);
+    if (!h || foes.length === 0) return sendFight({ t: 'end' });
+
+    if (!o.acted) {
+      const pct = h.hp / h.maxHp;
+      const self = autoSelf(o, h, foes);
+      if (self && pct < 0.6) return sendFight(self);
+      if (pct < 0.45 && foodSlot() >= 0) return sendFight({ t: 'eat', slot: foodSlot() });
+      if (pct < 0.2 && foodSlot() < 0) return sendFight({ t: 'flee' });
+      if (self) return sendFight(self);
+      const pick = autoPick(o, h, foes);
+      if (pick) return sendFight(pick);
+    }
+    if (o.moveLeft > 0) {
+      const near = [...foes].sort((p, q) => manhattan(p.pos, h.pos) - manhattan(q.pos, h.pos))[0];
+      const here = manhattan(near.pos, h.pos);
+      const step = [...o.reach].sort((p, q) => manhattan(p, near.pos) - manhattan(q, near.pos))[0];
+      if (step && manhattan(step, near.pos) < here) return sendFight({ t: 'move', to: { x: step.x, y: step.y } });
+    }
+    sendFight({ t: 'end' });
+  }
 
   function sendFight(action) {
     if (!isMyTurn()) return;
@@ -1855,6 +2032,7 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     const f = G.fight;
     if (!f) return;
     renderTurns();
+    renderAutoBtn();
     const info = $('fightinfo');
     const h = hero();
     const opts = f.options;
@@ -2620,7 +2798,7 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
       x.textContent = '\u00d7';
       x.title = 'Close';
       x.setAttribute('aria-label', 'Close');
-      x.addEventListener('mousedown', (e) => e.stopPropagation());
+      x.addEventListener('pointerdown', (e) => e.stopPropagation());
       x.addEventListener('click', () => {
         if (PANELS.includes(p)) {
           const i = openOrder.indexOf(p);
@@ -2631,11 +2809,11 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
       });
       el.insertBefore(x, el.firstChild);
       if (!el.classList.contains('side')) continue;
-      el.addEventListener('mousedown', () => raise(el));
+      el.addEventListener('pointerdown', () => raise(el));
       const bar = el.querySelector('h2');
       if (!bar) continue;
       bar.classList.add('grip');
-      bar.addEventListener('mousedown', (ev) => {
+      bar.addEventListener('pointerdown', (ev) => {
         if (ev.button !== 0) return;
         ev.preventDefault();
         const box = el.offsetParent || document.body;
@@ -2648,11 +2826,13 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
           el.style.top = `${Math.min(Math.max(0, e.clientY - sy), Math.max(0, box.clientHeight - 40))}px`;
         };
         const up = () => {
-          document.removeEventListener('mousemove', move);
-          document.removeEventListener('mouseup', up);
+          document.removeEventListener('pointermove', move);
+          document.removeEventListener('pointerup', up);
+          document.removeEventListener('pointercancel', up);
         };
-        document.addEventListener('mousemove', move);
-        document.addEventListener('mouseup', up);
+        document.addEventListener('pointermove', move);
+        document.addEventListener('pointerup', up);
+        document.addEventListener('pointercancel', up);
       });
     }
   }
@@ -3649,6 +3829,70 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     window.coe.send({ t: 'move', x, y });
   }
 
+  /** Pinch to zoom, long-press to examine a tile, and the on-screen buttons that stand in for hotkeys. */
+  function setupTouch(canvas) {
+    const dist = (t) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+    let pinch = null;
+    let press = null;
+    const cancelPress = () => {
+      if (press) clearTimeout(press.timer);
+      press = null;
+    };
+    on(canvas, 'touchstart', (ev) => {
+      if (!G) return;
+      if (ev.touches.length === 2) {
+        cancelPress();
+        pinch = { d: dist(ev.touches), z: G.zoom };
+      } else if (ev.touches.length === 1 && !pinch) {
+        const t = ev.touches[0];
+        press = {
+          x: t.clientX,
+          y: t.clientY,
+          fired: false,
+          timer: setTimeout(() => {
+            if (!G || !press) return;
+            press.fired = true;
+            inspectTile(tileAt({ clientX: press.x, clientY: press.y }));
+          }, 550),
+        };
+      }
+    }, { passive: true });
+    on(canvas, 'touchmove', (ev) => {
+      if (!G) return;
+      if (pinch && ev.touches.length === 2) {
+        ev.preventDefault();
+        G.noClick = performance.now() + 400;
+        setZoom(pinch.z + Math.round(Math.log(dist(ev.touches) / pinch.d) / Math.log(1.25)));
+      } else if (press && ev.touches.length === 1) {
+        const t = ev.touches[0];
+        if (Math.hypot(t.clientX - press.x, t.clientY - press.y) > 10) cancelPress();
+      }
+    }, { passive: false });
+    on(canvas, 'touchend', (ev) => {
+      if (pinch) G.noClick = performance.now() + 400;
+      if (ev.touches.length < 2) pinch = null;
+      if (press) {
+        if (press.fired) ev.preventDefault(); // the long-press already examined the tile; no walking
+        cancelPress();
+      }
+    }, { passive: false });
+    on(canvas, 'touchcancel', () => {
+      pinch = null;
+      cancelPress();
+    });
+    on($('mb-zin'), 'click', () => setZoom(G.zoom + 1));
+    on($('mb-zout'), 'click', () => setZoom(G.zoom - 1));
+    on($('mb-map'), 'click', () => setZoom(G.zoom === -12 ? 0 : -12));
+    on($('mb-chat'), 'click', () => $('chatinput').focus());
+    on($('mb-close'), 'click', () => {
+      closeNodeMenu();
+      if (!$('buy-confirm').classList.contains('hidden')) return closeBuyConfirm();
+      closePanels();
+      if (G.busy) window.coe.send({ t: 'stop' });
+      closeTown(true);
+    });
+  }
+
   function onMouseMove(ev) {
     if (!G) return;
     const t = tileAt(ev);
@@ -3676,12 +3920,51 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     toast(text || `Tile ${t.x}, ${t.y}`);
   }
 
+  /** Click a tree, rock, spot or workbench: a small menu offers the work (Chop, Mine, Fish, Use...), a walk, or a look, instead of starting at once. */
+  function closeNodeMenu() {
+    const m = $('node-menu');
+    if (m) m.classList.add('hidden');
+  }
+
+  function openNodeMenu(node, ev) {
+    const def = G.data && G.data.nodes.get(node.ref);
+    const m = $('node-menu');
+    m.textContent = '';
+    const add = (label, fn) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'act';
+      b.textContent = label;
+      b.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeNodeMenu();
+        fn();
+      });
+      m.appendChild(b);
+    };
+    const verb = node.kind === 'station' ? 'use' : def && def.verb ? def.verb : 'gather';
+    add(`${verb[0].toUpperCase()}${verb.slice(1)} ${node.name}`, () => {
+      G.dest = null;
+      window.coe.send({ t: 'interact', target: node.id });
+    });
+    add('Walk here', () => requestMove(Math.round(node.x), Math.round(node.y)));
+    add('Examine', () => inspectTile({ x: Math.round(node.x), y: Math.round(node.y) }));
+    m.classList.remove('hidden');
+    const w = m.offsetWidth;
+    const h = m.offsetHeight;
+    m.style.left = `${Math.max(4, Math.min(ev.clientX + 6, window.innerWidth - w - 4))}px`;
+    m.style.top = `${Math.max(4, Math.min(ev.clientY + 6, window.innerHeight - h - 4))}px`;
+  }
+
   function onClick(ev) {
     if (!G || G.modal) return;
+    if (G.noClick && performance.now() < G.noClick) return; // the end of a pinch is not a tap
     const t = tileAt(ev);
     if (ev.shiftKey) return inspectTile(t);
     if (G.fight) return fightTileClick(t);
+    closeNodeMenu();
     const thing = [...G.entities.values()].find((e) => (e.kind === 'npc' || e.kind === 'node' || e.kind === 'station') && Math.round(e.x) === t.x && Math.round(e.y) === t.y);
+    if (thing && (thing.kind === 'node' || thing.kind === 'station')) return openNodeMenu(thing, ev);
     if (thing) {
       G.dest = null;
       return window.coe.send({ t: 'interact', target: thing.id });
@@ -3714,6 +3997,7 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
       return;
     }
     if (ev.key === 'Escape') {
+      closeNodeMenu();
       if (!$('buy-confirm').classList.contains('hidden')) return closeBuyConfirm();
       closePanels();
       if (G.busy) window.coe.send({ t: 'stop' });
@@ -3739,6 +4023,7 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     if (k === 'c') return togglePanel('panel-stats');
     if (k === 'e' && !G.fight) return togglePanel('panel-equip');
     if (G.fight) {
+      if (k === 'x') return toggleAuto();
       if (fightKey(ev.key)) ev.preventDefault();
       return;
     }
@@ -4469,6 +4754,12 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     tip.id = 'hover-tip';
     tip.className = 'hidden';
     $('stage').parentElement.appendChild(tip);
+    if (!$('node-menu')) {
+      const menu = document.createElement('div');
+      menu.id = 'node-menu';
+      menu.className = 'hidden';
+      $('stage').parentElement.appendChild(menu);
+    }
 
     const canvas = $('stage');
     const now = performance.now();
@@ -4531,6 +4822,7 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
       updateTip();
     });
     on(canvas, 'click', onClick);
+    setupTouch(canvas);
     on(canvas, 'wheel', (ev) => {
       ev.preventDefault();
       setZoom(G.zoom + (ev.deltaY < 0 ? 1 : -1));
@@ -4540,6 +4832,7 @@ const DEBUFFS = new Set(['stagger', 'slow', 'bleed', 'poison', 'burn', 'sunder',
     on($('chat-prev'), 'click', () => $('chatlog').scrollBy({ top: -Math.max(40, $('chatlog').clientHeight - 20), behavior: 'smooth' }));
     on($('chat-next'), 'click', () => $('chatlog').scrollBy({ top: Math.max(40, $('chatlog').clientHeight - 20), behavior: 'smooth' }));
     on($('btn-trades'), 'click', () => togglePanel('panel-trades'));
+    on($('auto-btn'), 'click', toggleAuto);
     on($('bc-no'), 'click', closeBuyConfirm);
     on($('bc-yes'), 'click', () => {
       const pending = G.buyPending;
